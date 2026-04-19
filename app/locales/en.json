@@ -37,36 +37,35 @@
     }
   },
   "home": {
-    "appSetupGuide": {
-      "title": "App setup guide",
-      "instructions": "First, enable the app. In your store-admin, Click on Online Store > Customize > Theme setting > App embeds > Find \"Easy Overlay Settings\" and click on Enable / Disable."
+    "dashboard": {
+      "title": "Dashboard",
+      "description": "You can match product images with products or variants based on SKU, barcode, or title, and upload them from Google Drive or Dropbox.",
+      "createNewUpload": "Create new upload",
+      "stats": {
+        "totalUploaded": "Total uploaded",
+        "timeSaved": "Time saved",
+        "hours": "hours"
+      }
     },
-    "actions": {
-      "enableAppBlock": "Enable App Block",
-      "disableAppBlock": "Disable App Block"
-    },
-    "plan": {
-      "limitReachedTitle": "Free Plan Limit Reached",
-      "limitReachedDesc": "Free plan limit reached (3 products). Upgrade to Plus plan.",
-      "freeBadge": "Free Plan",
-      "freeLimit": "3 products limit"
-    },
-    "filters": {
-      "searchPlaceholder": "Search by group name",
-      "statusLabel": "Status"
-    },
-    "modal": {
-      "deleteTitle": "Delete overlay group?",
-      "deleteBody": "Are you sure you want to delete this overlay group? This cannot be undone."
-    },
-    "table": {
-      "heading": "Overlays",
-      "group": "Group",
-      "targets": "Targets",
-      "status": "Status",
-      "action": "Action",
-      "editBlocked": "Upgrade to edit All Products overlay",
-      "fallbackName": "Overlay {{index}}"
+    "setupGuide": {
+      "title": "Setup guide",
+      "description": "Use this personalized guide to get your app up and running.",
+      "completed": "{{count}} / {{total}} completed",
+      "steps": {
+        "connectSource": {
+          "title": "Connect image source",
+          "description": "You can use Google Drive or Dropbox as your image source. Google Drive is selected by default.",
+          "connectGoogle": "Connect Google Drive",
+          "connectDropbox": "Connect Dropbox",
+          "changeSource": "Change source"
+        },
+        "matchImages": {
+          "title": "Match Images"
+        },
+        "previewBulk": {
+          "title": "Preview & bulk upload images"
+        }
+      }
     }
   },
   "builder": {

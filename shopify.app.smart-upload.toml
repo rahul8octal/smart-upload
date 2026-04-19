@@ -1,9 +1,12 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-client_id = "13a6111503f330d11d661bde5cf3c2c9"
-name = "overlay"
+client_id = "bdf9e987f3c66a819d1b795ba91e0bac"
+name = "smart-upload"
 application_url = "https://supersentimentally-intercommunicable-charolette.ngrok-free.dev"
 embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
 
 [webhooks]
 api_version = "2026-01"
@@ -18,6 +21,3 @@ use_legacy_install_flow = false
 redirect_urls = [
   "https://supersentimentally-intercommunicable-charolette.ngrok-free.dev/auth/callback"
 ]
-
-[build]
-automatically_update_urls_on_dev = true

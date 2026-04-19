@@ -1,6 +1,6 @@
 import { authenticate } from "../shopify.server";
 import db from "../db.server";
-import {deleteFile} from "../helper";
+import { deleteFile } from "../helper.server";
 
 export const action = async ({ request }) => {
   try {

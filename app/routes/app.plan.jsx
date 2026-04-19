@@ -419,16 +419,6 @@ export default function PlanIndex() {
                 : t("plans.limitedProducts", "Up to {{count}} active products", { count: plan.access_products })}
             </Text>
 
-            <Bleed marginInline="400" marginBlockEnd="400">
-              <Box background="bg-surface-secondary" padding="400">
-                <Text variant="bodyMd" fontWeight="medium">
-                  {plan.trial_days > 0
-                    ? t("plans.freeTrial", "{{count}}-day free trial", { count: plan.trial_days })
-                    : t("plans.noTrial", "No trial period")}
-                </Text>
-              </Box>
-            </Bleed>
-
             <Box paddingBlockStart="200">
               {button}
             </Box>

@@ -6,6 +6,10 @@ import {
   ScrollRestoration,
   useLoaderData,
 } from "@remix-run/react";
+
+if (typeof window !== "undefined" && typeof process === "undefined") {
+  window.process = { env: {} };
+}
 import { json } from "@remix-run/node";
 // import './style.css';
 import "@shopify/polaris/build/esm/styles.css";
@@ -79,7 +83,7 @@ export default function App() {
   }, []);
 
   return (
-    <html>
+    <html lang="en" suppressHydrationWarning>
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -90,25 +94,9 @@ export default function App() {
         />
         <Meta />
         <Links />
-        <script
-          type="text/javascript"
-          dangerouslySetInnerHTML={{
-            __html: `
-      window.$crisp=[];
-      window.CRISP_WEBSITE_ID="8892d852-2cc6-485d-8927-c5d6dc43cb3c";
-      (function(){
-        d=document;
-        s=d.createElement("script");
-        s.src="https://client.crisp.chat/l.js";
-        s.async=1;
-        d.getElementsByTagName("head")[0].appendChild(s);
-      })();
-    `,
-          }}
-        />
 
       </head>
-      <body>
+      <body suppressHydrationWarning>
         <I18nProvider locale={locale} messages={messages}>
           <Outlet />
         </I18nProvider>

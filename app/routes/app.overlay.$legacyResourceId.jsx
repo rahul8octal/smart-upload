@@ -61,7 +61,7 @@ import prisma from "../db.server";
 // import path from "path";
 import { CommonModal } from "../component/CommonModal";
 import { OverlayPreviewModal } from "../component/OverlayPreviewModal";
-import { deleteFile, uploadFile } from '../helper.js';
+import { deleteFile, uploadFile } from '../helper.server';
 
 const fetchOverlays = async (legacyResourceId, shop, skip, perPage = 10) => {
   try {

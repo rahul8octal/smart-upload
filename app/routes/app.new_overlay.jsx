@@ -43,7 +43,7 @@ import { useFetcher, useLoaderData, useNavigate, useNavigation } from "@remix-ru
 import { json } from "@remix-run/node";
 import { authenticate } from "../shopify.server";
 import prisma from "../db.server";
-import { uploadFile, deleteFile } from "../helper";
+import { uploadFile, deleteFile } from "../helper.server";
 import { randomUUID } from "crypto";
 import { useI18n } from "../i18n";
 import { saveOverlayMetafield, deleteOverlayMetafield } from "../utils/metafields.server";

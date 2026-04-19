@@ -16,13 +16,13 @@ import {
     Link,
 } from '@shopify/polaris';
 import { useCallback, useState, useEffect, useRef } from 'react';
-import prisma from '../db.server.js';
-import {CSV_HEADERS} from '../helper.js';
+import prisma from '../db.server';
+import { CSV_HEADERS } from '../constants';
 import Papa from "papaparse";
-import { authenticate } from '../shopify.server.js';
+import { authenticate } from '../shopify.server';
 import {
     GET_ALL_SHOPIFY_PRODUCTS_PAGINATED,
-} from '../component/ShopifyQuery.jsx';
+} from '../component/ShopifyQuery';
 
 export const loader = async ({ request }) => {
     return null;
