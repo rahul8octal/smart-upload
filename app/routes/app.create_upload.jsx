@@ -174,9 +174,7 @@ export default function CreateUpload() {
 
   return (
     <Page>
-      <h1 style={{fontSize: '50px', color: 'red'}}>APP IS UPDATED</h1>
        <Box paddingBlockEnd="500">
-          <Text>DEBUG: JS Connection: {googleConnected ? 'CONNECTED' : 'NOT CONNECTED'}, DB Token: {settings?.google_access_token ? 'YES' : 'NO'}, Folders: {folders.length}</Text>
           <Button variant="plain" icon={ArrowLeftIcon} onClick={handleBack}>
             {currentStep === 1 ? t("common.actions.back", "Back") : "Create upload"}
           </Button>
