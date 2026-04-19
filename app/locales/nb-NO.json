@@ -1,0 +1,182 @@
+{
+  "common": {
+    "actions": {
+      "createOverlay": "Opprett Overlay",
+      "delete": "Slett",
+      "cancel": "Avbryt",
+      "enable": "Aktiver",
+      "disable": "Deaktiver",
+      "previous": "Forrige",
+      "next": "Neste",
+      "clearAll": "Tøm alle",
+      "upgradePlan": "Oppgrader plan",
+      "save": "Lagre",
+      "discard": "Forkast",
+      "confirm": "Ja"
+    },
+    "table": {
+      "showing": "Viser",
+      "of": "av",
+      "page": "Side",
+      "noResultsTitle": "Ingen overlays enda",
+      "noResultsDesc": "Opprett nye overlays for butikken din"
+    },
+    "status": {
+      "active": "Aktiv",
+      "inactive": "Inaktiv",
+      "all": "Alle"
+    },
+    "targets": {
+      "allProducts": "Alle produkter",
+      "products": "{{count}} produkt",
+      "productsPlural": "{{count}} produkter"
+    },
+    "resources": {
+      "overlay": "overlay",
+      "overlays": "overlays"
+    }
+  },
+  "home": {
+    "appSetupGuide": {
+      "title": "Veiledning for oppsett av app",
+      "instructions": "Først, aktiver appen. I butikkens admin-panel, klikk på Nettbutikk > Tilpass > Tema-innstillinger > App-innlegg > Finn \"Easy Overlay Settings\" og klikk Aktiver / Deaktiver."
+    },
+    "actions": {
+      "enableAppBlock": "Aktiver app-blokk",
+      "disableAppBlock": "Deaktiver app-blokk"
+    },
+    "plan": {
+      "limitReachedTitle": "Gratisplan-grense nådd",
+      "limitReachedDesc": "Grense for gratisplan nådd (3 produkter). Oppgrader til Plus-plan.",
+      "freeBadge": "Gratisplan",
+      "freeLimit": "3 produkter grense"
+    },
+    "filters": {
+      "searchPlaceholder": "Søk etter gruppenavn",
+      "statusLabel": "Status"
+    },
+    "modal": {
+      "deleteTitle": "Slett overlay-gruppe?",
+      "deleteBody": "Er du sikker på at du vil slette denne overlay-gruppen? Dette kan ikke angres."
+    },
+    "table": {
+      "heading": "Overlays",
+      "group": "Gruppe",
+      "targets": "Mål",
+      "status": "Status",
+      "action": "Handling",
+      "editBlocked": "Oppgrader for å redigere Alle Produkter overlay",
+      "fallbackName": "Overlay {{index}}"
+    }
+  },
+  "builder": {
+    "preview": {
+      "previewLanguage": "Forhåndsvisningsspråk",
+      "selectProduct": "Velg produkt for forhåndsvisning",
+      "placeholderAll": "Alle produkter",
+      "placeholderSelected": "Valgte produkter",
+      "loading": "Laster...",
+      "noProducts": "Ingen produkter valgt",
+      "note": "Kun for forhåndsvisning.",
+      "title": "Forhåndsvisning",
+      "tooltip": {
+        "saveFirst": "Lagre overlay for å forhåndsvise",
+        "selectProduct": "Velg et produkt for å forhåndsvise",
+        "open": "Forhåndsvis overlay i butikk",
+        "noHandle": "Ingen produktidentifikator tilgjengelig for forhåndsvisning"
+      }
+    },
+    "toast": {
+      "somethingWrong": "Noe gikk galt",
+      "statusUpdated": "Status oppdatert",
+      "overlaySaved": "Overlay lagret",
+      "addOverlay": "Legg til minst ett overlay.",
+      "selectProduct": "Velg minst ett produkt.",
+      "selectCollection": "Velg minst en samling.",
+      "fixErrors": "Fiks feilene i overlayene dine.",
+      "leaveWarning": "Lagre eller forkast endringer før du går.",
+      "looksGreat": "Flott! Overlay ser bra ut."
+    },
+    "errors": {
+      "textRequired": "Vennligst skriv inn tekst for tekst-overlay.",
+      "imageRequired": "Legg til et bilde for bilde-overlay."
+    },
+    "statusModal": {
+      "title": "Oppdater status",
+      "body": "Er du sikker på at du vil oppdatere statusen til dette overlayet?",
+      "confirm": "Oppdater status"
+    },
+    "publish": {
+      "banner": "Overlay publisert!",
+      "dismiss": "Lukk overlay publiseringsvarsel",
+      "title": "Er overlayet synlig i butikken din?",
+      "helpText": "Hvis overlayet ikke vises på produktsiden eller du vil ha det på en annen plassering, kontakt oss.",
+      "confirmYes": "Ja, perfekt!",
+      "confirmNo": "Det er problemer"
+    },
+    "form": {
+      "overlayGroupTitle": "Overlay-gruppe",
+      "groupNameLabel": "Gruppenavn",
+      "groupNamePlaceholder": "f.eks. Feriepromo",
+      "selectSource": "Velg kilde",
+      "allProducts": "Alle produkter",
+      "allProductsBadge": "Plus-plan",
+      "products": "Produkter",
+      "selectProducts": "Velg produkter",
+      "productsSelected": "{{count}} produkt valgt",
+      "productsSelectedPlural": "{{count}} produkter valgt",
+      "productListHeading": "Produkt(er)",
+      "productListSelectedBadge": "{{count}} valgt",
+      "searchProducts": "Søk produkter",
+      "createOverlayTitle": "Opprett overlay",
+      "createTextOverlay": "Tekst-overlay",
+      "createImageOverlay": "Bilde-overlay",
+      "productPreviewTooltip": "Forhåndsvis dette produktet i butikken",
+      "manageOverlay": "Administrer overlay",
+      "fontSettings": "Skrifttypeinnstillinger",
+      "alignmentSettings": "Justering & posisjon",
+      "spacingSettings": "Avstandinnstillinger",
+      "sectionSettings": "Seksjonsinnstillinger",
+      "imageSettings": "Bildeinnstillinger",
+      "imageSpacingSettings": "Avstandinnstillinger"
+    }
+  },
+  "settings": {
+    "title": "Innstillinger",
+    "language": {
+      "heading": "App-språk",
+      "description": "Velg språk for app-grensesnittet.",
+      "label": "Språk",
+      "saved": "Innstillinger lagret",
+      "save": "Lagre"
+    }
+  },
+  "navigation": {
+    "home": "Hjem",
+    "settings": "Innstillinger",
+    "plan": "Plan"
+  },
+  "plans": {
+    "title": "Plan og priser",
+    "current": "Gjeldende",
+    "upgrade": "Oppgrader",
+    "downgrade": "Nedgrader",
+    "perMonth": "/ måned",
+    "unlimitedProducts": "Ubegrenset antall aktive produkter",
+    "limitedProducts": "Opptil {{count}} aktive produkter",
+    "freeTrial": "{{count}} dagers gratis prøveperiode",
+    "noTrial": "Ingen prøveperiode",
+    "billingWarning": "Faktureringen din er {{status}}",
+    "errors": {
+      "somethingWrong": "Noe går galt",
+      "patience": "Vi jobber med saken. Takk for tålmodigheten"
+    },
+    "modal": {
+      "title": "Endre plan",
+      "confirm": "Bekreft endring",
+      "cancel": "Avbryt",
+      "switchingTo": "Du bytter til **{{title}}**.",
+      "limitWarning": "Denne planen er begrenset til {{count}} produkter. Hvis bruken din overstiger denne grensen, vil overskytende produkter bli deaktivert (men ikke slettet)."
+    }
+  }
+}

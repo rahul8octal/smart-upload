@@ -1,0 +1,182 @@
+{
+  "common": {
+    "actions": {
+      "createOverlay": "Örtüşme Oluştur",
+      "delete": "Sil",
+      "cancel": "İptal",
+      "enable": "Etkinleştir",
+      "disable": "Devre Dışı Bırak",
+      "previous": "Önceki",
+      "next": "Sonraki",
+      "clearAll": "Tümünü Temizle",
+      "upgradePlan": "Planı Yükselt",
+      "save": "Kaydet",
+      "discard": "İptal Et",
+      "confirm": "Evet"
+    },
+    "table": {
+      "showing": "Gösteriliyor",
+      "of": " / ",
+      "page": "Sayfa",
+      "noResultsTitle": "Henüz örtüşme yok",
+      "noResultsDesc": "Mağazanız için yeni örtüşmeler oluşturun"
+    },
+    "status": {
+      "active": "Aktif",
+      "inactive": "Pasif",
+      "all": "Hepsi"
+    },
+    "targets": {
+      "allProducts": "Tüm ürünler",
+      "products": "{{count}} ürün",
+      "productsPlural": "{{count}} ürün"
+    },
+    "resources": {
+      "overlay": "örtüşme",
+      "overlays": "örtüşmeler"
+    }
+  },
+  "home": {
+    "appSetupGuide": {
+      "title": "Uygulama Kurulum Rehberi",
+      "instructions": "Önce uygulamayı etkinleştirin. Mağaza yönetici panelinde, Online Store > Customize > Theme settings > App embeds > 'Easy Overlay Settings' bulun ve Etkinleştir / Devre Dışı Bırak seçeneğini tıklayın."
+    },
+    "actions": {
+      "enableAppBlock": "Uygulama Bloğunu Etkinleştir",
+      "disableAppBlock": "Uygulama Bloğunu Devre Dışı Bırak"
+    },
+    "plan": {
+      "limitReachedTitle": "Ücretsiz Plan Sınırı Doldu",
+      "limitReachedDesc": "Ücretsiz plan limiti doldu (3 ürün). Plus plana yükseltin.",
+      "freeBadge": "Ücretsiz Plan",
+      "freeLimit": "3 ürün limiti"
+    },
+    "filters": {
+      "searchPlaceholder": "Grup adına göre ara",
+      "statusLabel": "Durum"
+    },
+    "modal": {
+      "deleteTitle": "Örtüşme grubunu sil?",
+      "deleteBody": "Bu örtüşme grubunu silmek istediğinizden emin misiniz? Bu işlem geri alınamaz."
+    },
+    "table": {
+      "heading": "Örtüşmeler",
+      "group": "Grup",
+      "targets": "Hedefler",
+      "status": "Durum",
+      "action": "İşlem",
+      "editBlocked": "Tüm ürün örtüşmesini düzenlemek için planı yükseltin",
+      "fallbackName": "Örtüşme {{index}}"
+    }
+  },
+  "builder": {
+    "preview": {
+      "previewLanguage": "Önizleme Dili",
+      "selectProduct": "Önizleme için Ürün Seç",
+      "placeholderAll": "Tüm ürünler",
+      "placeholderSelected": "Seçilen ürünler",
+      "loading": "Yükleniyor...",
+      "noProducts": "Hiç ürün seçilmedi",
+      "note": "Sadece önizleme için.",
+      "title": "Önizleme",
+      "tooltip": {
+        "saveFirst": "Önizlemek için örtüşmeyi kaydedin",
+        "selectProduct": "Önizlemek için ürün seçin",
+        "open": "Mağazada örtüşmeyi önizle",
+        "noHandle": "Önizleme için ürün tanıtıcısı yok"
+      }
+    },
+    "toast": {
+      "somethingWrong": "Bir şeyler yanlış gitti",
+      "statusUpdated": "Durum başarıyla güncellendi",
+      "overlaySaved": "Örtüşme başarıyla kaydedildi",
+      "addOverlay": "Lütfen en az bir örtüşme ekleyin.",
+      "selectProduct": "Lütfen en az bir ürün seçin.",
+      "selectCollection": "Lütfen en az bir koleksiyon seçin.",
+      "fixErrors": "Örtüşme(ler)inizdeki hataları düzeltin.",
+      "leaveWarning": "Çıkmadan önce değişiklikleri kaydedin veya iptal edin.",
+      "looksGreat": "Harika! Örtüşme iyi görünüyor."
+    },
+    "errors": {
+      "textRequired": "Metin örtüşmesi için lütfen metin girin.",
+      "imageRequired": "Resim örtüşmesi için lütfen bir resim ekleyin."
+    },
+    "statusModal": {
+      "title": "Durumu Güncelle",
+      "body": "Bu örtüşmenin durumunu güncellemek istediğinizden emin misiniz?",
+      "confirm": "Durumu Güncelle"
+    },
+    "publish": {
+      "banner": "Örtüşme yayınlandı!",
+      "dismiss": "Örtüşme yayın bildirimini kapat",
+      "title": "Örtüşmeniz mağazanızda görünür durumda mı?",
+      "helpText": "Örtüşme ürün sayfasında görünmüyorsa veya farklı bir konumda olmasını istiyorsanız bizimle iletişime geçin.",
+      "confirmYes": "Evet, mükemmel!",
+      "confirmNo": "Sorunlar var"
+    },
+    "form": {
+      "overlayGroupTitle": "Örtüşme Grubu",
+      "groupNameLabel": "Grup adı",
+      "groupNamePlaceholder": "Örn. Tatil Kampanyası",
+      "selectSource": "Kaynak Seç",
+      "allProducts": "Tüm Ürünler",
+      "allProductsBadge": "Plus Plan",
+      "products": "Ürünler",
+      "selectProducts": "Ürün Seç",
+      "productsSelected": "{{count}} ürün seçildi",
+      "productsSelectedPlural": "{{count}} ürün seçildi",
+      "productListHeading": "Ürün(ler)",
+      "productListSelectedBadge": "{{count}} seçildi",
+      "searchProducts": "Ürün ara",
+      "createOverlayTitle": "Örtüşme Oluştur",
+      "createTextOverlay": "Metin Örtüşmesi",
+      "createImageOverlay": "Resim Örtüşmesi",
+      "productPreviewTooltip": "Bu ürünü mağazada önizle",
+      "manageOverlay": "Örtüşmeyi Yönet",
+      "fontSettings": "Yazı Tipi Ayarları",
+      "alignmentSettings": "Hizalama & Konum",
+      "spacingSettings": "Boşluk Ayarları",
+      "sectionSettings": "Bölüm Ayarları",
+      "imageSettings": "Resim Ayarları",
+      "imageSpacingSettings": "Boşluk Ayarları"
+    }
+  },
+  "settings": {
+    "title": "Ayarlar",
+    "language": {
+      "heading": "Uygulama Dili",
+      "description": "Uygulama arayüzü için dili seçin.",
+      "label": "Dil",
+      "saved": "Ayarlar kaydedildi",
+      "save": "Kaydet"
+    }
+  },
+  "navigation": {
+    "home": "Ana Sayfa",
+    "settings": "Ayarlar",
+    "plan": "Plan"
+  },
+  "plans": {
+    "title": "Plan ve Fiyatlandırma",
+    "current": "Mevcut",
+    "upgrade": "Yükselt",
+    "downgrade": "Düşür",
+    "perMonth": "/ ay",
+    "unlimitedProducts": "Sınırsız aktif ürün",
+    "limitedProducts": "{{count}} aktif ürüne kadar",
+    "freeTrial": "{{count}} günlük ücretsiz deneme",
+    "noTrial": "Deneme süresi yok",
+    "billingWarning": "Faturalandırmanız {{status}}",
+    "errors": {
+      "somethingWrong": "Bir şeyler ters gidiyor",
+      "patience": "Üzerinde çalışıyoruz. Sabrınız için teşekkürler"
+    },
+    "modal": {
+      "title": "Plan Değiştir",
+      "confirm": "Değişikliği Onayla",
+      "cancel": "İptal",
+      "switchingTo": "**{{title}}** planına geçiş yapıyorsunuz.",
+      "limitWarning": "Bu plan {{count}} ürünle sınırlıdır. Kullanımınız bu sınırı aşarsa, fazla ürünler devre dışı bırakılır (ancak silinmez)."
+    }
+  }
+}

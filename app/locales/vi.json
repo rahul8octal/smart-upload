@@ -1,0 +1,182 @@
+{
+  "common": {
+    "actions": {
+      "createOverlay": "Tạo lớp phủ",
+      "delete": "Xóa",
+      "cancel": "Hủy",
+      "enable": "Bật",
+      "disable": "Tắt",
+      "previous": "Trước",
+      "next": "Tiếp",
+      "clearAll": "Xóa tất cả",
+      "upgradePlan": "Nâng cấp gói",
+      "save": "Lưu",
+      "discard": "Bỏ",
+      "confirm": "Có"
+    },
+    "table": {
+      "showing": "Hiển thị",
+      "of": "trên",
+      "page": "Trang",
+      "noResultsTitle": "Chưa có lớp phủ",
+      "noResultsDesc": "Tạo lớp phủ mới cho cửa hàng của bạn"
+    },
+    "status": {
+      "active": "Hoạt động",
+      "inactive": "Không hoạt động",
+      "all": "Tất cả"
+    },
+    "targets": {
+      "allProducts": "Tất cả sản phẩm",
+      "products": "{{count}} sản phẩm",
+      "productsPlural": "{{count}} sản phẩm"
+    },
+    "resources": {
+      "overlay": "lớp phủ",
+      "overlays": "các lớp phủ"
+    }
+  },
+  "home": {
+    "appSetupGuide": {
+      "title": "Hướng dẫn thiết lập ứng dụng",
+      "instructions": "Đầu tiên, bật ứng dụng. Trong trang quản trị cửa hàng, nhấp vào Cửa hàng trực tuyến > Tùy chỉnh > Cài đặt chủ đề > Ứng dụng nhúng > tìm \"Easy Overlay Settings\" và bật/tắt."
+    },
+    "actions": {
+      "enableAppBlock": "Bật khối ứng dụng",
+      "disableAppBlock": "Tắt khối ứng dụng"
+    },
+    "plan": {
+      "limitReachedTitle": "Đã đạt giới hạn gói miễn phí",
+      "limitReachedDesc": "Giới hạn gói miễn phí đã đạt (3 sản phẩm). Nâng cấp lên gói Plus.",
+      "freeBadge": "Gói miễn phí",
+      "freeLimit": "Giới hạn 3 sản phẩm"
+    },
+    "filters": {
+      "searchPlaceholder": "Tìm theo tên nhóm",
+      "statusLabel": "Trạng thái"
+    },
+    "modal": {
+      "deleteTitle": "Xóa nhóm lớp phủ?",
+      "deleteBody": "Bạn có chắc chắn muốn xóa nhóm lớp phủ này không? Hành động này không thể hoàn tác."
+    },
+    "table": {
+      "heading": "Các lớp phủ",
+      "group": "Nhóm",
+      "targets": "Đích",
+      "status": "Trạng thái",
+      "action": "Hành động",
+      "editBlocked": "Nâng cấp gói để chỉnh sửa lớp phủ tất cả sản phẩm",
+      "fallbackName": "Lớp phủ {{index}}"
+    }
+  },
+  "builder": {
+    "preview": {
+      "previewLanguage": "Ngôn ngữ xem trước",
+      "selectProduct": "Chọn sản phẩm để xem trước",
+      "placeholderAll": "Tất cả sản phẩm",
+      "placeholderSelected": "Sản phẩm đã chọn",
+      "loading": "Đang tải...",
+      "noProducts": "Chưa chọn sản phẩm",
+      "note": "Chỉ dùng để xem trước.",
+      "title": "Xem trước",
+      "tooltip": {
+        "saveFirst": "Lưu lớp phủ để xem trước",
+        "selectProduct": "Chọn sản phẩm để xem trước",
+        "open": "Xem trước lớp phủ trên cửa hàng",
+        "noHandle": "Không có mã sản phẩm để xem trước"
+      }
+    },
+    "toast": {
+      "somethingWrong": "Có lỗi xảy ra",
+      "statusUpdated": "Cập nhật trạng thái thành công",
+      "overlaySaved": "Lưu lớp phủ thành công",
+      "addOverlay": "Vui lòng thêm ít nhất một lớp phủ.",
+      "selectProduct": "Vui lòng chọn ít nhất một sản phẩm.",
+      "selectCollection": "Vui lòng chọn ít nhất một bộ sưu tập.",
+      "fixErrors": "Vui lòng sửa các lỗi trong lớp phủ của bạn.",
+      "leaveWarning": "Hãy lưu hoặc bỏ thay đổi trước khi rời đi.",
+      "looksGreat": "Tuyệt vời! Lớp phủ trông ổn."
+    },
+    "errors": {
+      "textRequired": "Vui lòng nhập văn bản cho lớp phủ văn bản.",
+      "imageRequired": "Vui lòng thêm hình ảnh cho lớp phủ hình ảnh."
+    },
+    "statusModal": {
+      "title": "Cập nhật trạng thái",
+      "body": "Bạn có chắc muốn cập nhật trạng thái lớp phủ này không?",
+      "confirm": "Cập nhật trạng thái"
+    },
+    "publish": {
+      "banner": "Lớp phủ đã được xuất bản!",
+      "dismiss": "Đóng thông báo xuất bản",
+      "title": "Lớp phủ có hiển thị trong cửa hàng không?",
+      "helpText": "Nếu lớp phủ không hiển thị trên trang sản phẩm hoặc bạn muốn vị trí khác, hãy liên hệ chúng tôi.",
+      "confirmYes": "Vâng, hoàn hảo!",
+      "confirmNo": "Có vấn đề"
+    },
+    "form": {
+      "overlayGroupTitle": "Nhóm lớp phủ",
+      "groupNameLabel": "Tên nhóm",
+      "groupNamePlaceholder": "vd: Khuyến mãi ngày lễ",
+      "selectSource": "Chọn nguồn",
+      "allProducts": "Tất cả sản phẩm",
+      "allProductsBadge": "Gói Plus",
+      "products": "Sản phẩm",
+      "selectProducts": "Chọn sản phẩm",
+      "productsSelected": "{{count}} sản phẩm đã chọn",
+      "productsSelectedPlural": "{{count}} sản phẩm đã chọn",
+      "productListHeading": "Sản phẩm",
+      "productListSelectedBadge": "{{count}} đã chọn",
+      "searchProducts": "Tìm sản phẩm",
+      "createOverlayTitle": "Tạo lớp phủ",
+      "createTextOverlay": "Lớp phủ văn bản",
+      "createImageOverlay": "Lớp phủ hình ảnh",
+      "productPreviewTooltip": "Xem trước sản phẩm này trên cửa hàng",
+      "manageOverlay": "Quản lý lớp phủ",
+      "fontSettings": "Cài đặt font",
+      "alignmentSettings": "Căn chỉnh & Vị trí",
+      "spacingSettings": "Cài đặt khoảng cách",
+      "sectionSettings": "Cài đặt mục",
+      "imageSettings": "Cài đặt hình ảnh",
+      "imageSpacingSettings": "Cài đặt khoảng cách"
+    }
+  },
+  "settings": {
+    "title": "Cài đặt",
+    "language": {
+      "heading": "Ngôn ngữ ứng dụng",
+      "description": "Chọn ngôn ngữ cho giao diện ứng dụng.",
+      "label": "Ngôn ngữ",
+      "saved": "Đã lưu cài đặt",
+      "save": "Lưu"
+    }
+  },
+  "navigation": {
+    "home": "Trang chủ",
+    "settings": "Cài đặt",
+    "plan": "Gói dịch vụ"
+  },
+  "plans": {
+    "title": "Gói dịch vụ & Giá cả",
+    "current": "Hiện tại",
+    "upgrade": "Nâng cấp",
+    "downgrade": "Hạ cấp",
+    "perMonth": "/ tháng",
+    "unlimitedProducts": "Không giới hạn sản phẩm hoạt động",
+    "limitedProducts": "Tối đa {{count}} sản phẩm hoạt động",
+    "freeTrial": "{{count}} ngày dùng thử miễn phí",
+    "noTrial": "Không có thời gian dùng thử",
+    "billingWarning": "Trạng thái thanh toán của bạn là {{status}}",
+    "errors": {
+      "somethingWrong": "Đã xảy ra lỗi",
+      "patience": "Chúng tôi đang xử lý. Cảm ơn sự kiên nhẫn của bạn"
+    },
+    "modal": {
+      "title": "Thay đổi gói dịch vụ",
+      "confirm": "Xác nhận thay đổi",
+      "cancel": "Hủy",
+      "switchingTo": "Bạn đang chuyển sang gói **{{title}}**.",
+      "limitWarning": "Gói này giới hạn {{count}} sản phẩm. Nếu bạn sử dụng quá giới hạn này, các sản phẩm dư ra sẽ bị vô hiệu hóa (nhưng không bị xóa)."
+    }
+  }
+}

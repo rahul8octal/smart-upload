@@ -1,0 +1,163 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Session {
+  id            String    @id
+  shop          String
+  state         String
+  isOnline      Boolean   @default(false)
+  scope         String?
+  expires       DateTime?
+  accessToken   String
+  userId        BigInt?
+  firstName     String?
+  lastName      String?
+  email         String?
+  accountOwner  Boolean   @default(false)
+  locale        String?
+  collaborator  Boolean?  @default(false)
+  emailVerified Boolean?  @default(false)
+  locales       Json?
+}
+
+model shop_settings {
+  id           Int      @id @default(autoincrement())
+  shop         String   @unique
+  app_language String?
+  created_at   DateTime @default(now())
+  updated_at   DateTime @updatedAt
+}
+
+model product_overlays {
+  id                  Int           @id @default(autoincrement())
+  shop_id             String
+  product_id          String
+  overlay_group_id    String?
+  group_name          String?
+  product_title       String?
+  product_handle      String?
+  type                SpoType
+  image_url           String?       @db.Text
+  text                String?
+  font_family         String?
+  font_size           String?
+  font_color          String?
+  font_weight         String?
+  font_style          String?
+  bg_color            String?
+  opacity             String?
+  rotation            String?
+  padding_top         String?
+  padding_right       String?
+  padding_bottom      String?
+  padding_left        String?
+  border_radius       String?
+  text_align          SpoTextAlign?
+  position            SpoPosition?
+  display_in          Json
+  scale_in_collection String?
+  scale_in_product    String?
+  scale_in_search     String?
+  status              String?       @default("active")
+  translations        Json?
+  created_at          DateTime      @default(now())
+  updated_at          DateTime      @updatedAt
+  old_db_id           Int?
+  overlay_targets     overlay_targets[]
+}
+
+model plan_master {
+  id              Int          @id @default(autoincrement())
+  title           String
+  slug            String
+  monthly_price   String?
+  trial_days      String?
+  access_products String?
+  old_db_id       Int?
+  created_at      DateTime     @default(now())
+  updated_at      DateTime     @updatedAt
+  shop_plans      shop_plans[]
+}
+
+model shop_plans {
+  id               Int         @id @default(autoincrement())
+  shop             String
+  plan_id          Int
+  monthly_price    String?
+  access_products  String?
+  start_date       String?
+  end_date         String?
+  status           PlanType?   @default(Active)
+  charge_id        String?
+  charge_status    String?
+  plan_type        String
+  plan_name        String?
+  return_url       String?     @db.Text
+  is_test          String?
+  activated_on     String?
+  trial_ends_on    String?
+  cancelled_on     String?
+  trial_days       String?
+  confirmation_url String?     @db.Text
+  old_db_id        Int?
+  created_at       DateTime    @default(now())
+  updated_at       DateTime    @updatedAt
+  plan_master      plan_master @relation(fields: [plan_id], references: [id])
+
+  @@index([plan_id], map: "shop_plans_plan_id_fkey")
+}
+
+enum PlanType {
+  Active
+  Inactive
+}
+
+enum SpoType {
+  TEXT
+  IMAGE
+}
+
+enum SpoTextAlign {
+  LEFT
+  CENTER
+  RIGHT
+}
+
+enum SpoPosition {
+  TOP_LEFT
+  TOP_CENTER
+  TOP_RIGHT
+  MIDDLE_LEFT
+  MIDDLE_CENTER
+  MIDDLE_RIGHT
+  BOTTOM_LEFT
+  BOTTOM_CENTER
+  BOTTOM_RIGHT
+}
+
+model overlay_targets {
+  id            Int           @id @default(autoincrement())
+  overlay_id    Int
+  scope         OverlayScope
+  target_id     String?
+  target_handle String?
+  created_at    DateTime      @default(now())
+  updated_at    DateTime      @updatedAt
+
+  product_overlays product_overlays @relation(fields: [overlay_id], references: [id], onDelete: Cascade)
+
+  @@index([overlay_id])
+  @@index([scope, target_id])
+}
+
+enum OverlayScope {
+  ALL_PRODUCTS
+  PRODUCT
+  COLLECTION
+}

@@ -1,0 +1,34 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "c7f1a63bf63ada23b08c50349d9e63e6"
+name = "Tata image text overlay"
+application_url = "https://panther-easyoverlay-0c2a66f4e12c.herokuapp.com/"
+embedded = true
+
+[webhooks]
+api_version = "2025-10"
+
+  [[webhooks.subscriptions]]
+  uri = "https://panther-easyoverlay-0c2a66f4e12c.herokuapp.com/webhooks/shopify/customer_data_erasure"
+  compliance_topics = [ "customers/redact" ]
+
+  [[webhooks.subscriptions]]
+  uri = "https://panther-easyoverlay-0c2a66f4e12c.herokuapp.com/webhooks/shopify/customer_data_request"
+  compliance_topics = [ "customers/data_request" ]
+
+  [[webhooks.subscriptions]]
+  uri = "https://panther-easyoverlay-0c2a66f4e12c.herokuapp.com/webhooks/shopify/shop_data_erasure"
+  compliance_topics = [ "shop/redact" ]
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_products,write_products,read_themes,read_locales"
+optional_scopes = [ ]
+use_legacy_install_flow = false
+
+[auth]
+redirect_urls = [
+  "https://panther-easyoverlay-0c2a66f4e12c.herokuapp.com/auth/callback",
+  "https://panther-easyoverlay-0c2a66f4e12c.herokuapp.com/auth/shopify/callback",
+  "https://panther-easyoverlay-0c2a66f4e12c.herokuapp.com/api/auth/callback"
+]

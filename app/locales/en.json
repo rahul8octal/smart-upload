@@ -1,0 +1,182 @@
+{
+  "common": {
+    "actions": {
+      "createOverlay": "Create Overlay",
+      "delete": "Delete",
+      "cancel": "Cancel",
+      "enable": "Enable",
+      "disable": "Disable",
+      "previous": "Previous",
+      "next": "Next",
+      "clearAll": "Clear all",
+      "upgradePlan": "Upgrade Plan",
+      "save": "Save",
+      "discard": "Discard",
+      "confirm": "Yes"
+    },
+    "table": {
+      "showing": "Showing",
+      "of": "of",
+      "page": "Page",
+      "noResultsTitle": "No overlays yet",
+      "noResultsDesc": "Create new overlays for your store"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive",
+      "all": "All"
+    },
+    "targets": {
+      "allProducts": "All products",
+      "products": "{{count}} product",
+      "productsPlural": "{{count}} products"
+    },
+    "resources": {
+      "overlay": "overlay",
+      "overlays": "overlays"
+    }
+  },
+  "home": {
+    "appSetupGuide": {
+      "title": "App setup guide",
+      "instructions": "First, enable the app. In your store-admin, Click on Online Store > Customize > Theme setting > App embeds > Find \"Easy Overlay Settings\" and click on Enable / Disable."
+    },
+    "actions": {
+      "enableAppBlock": "Enable App Block",
+      "disableAppBlock": "Disable App Block"
+    },
+    "plan": {
+      "limitReachedTitle": "Free Plan Limit Reached",
+      "limitReachedDesc": "Free plan limit reached (3 products). Upgrade to Plus plan.",
+      "freeBadge": "Free Plan",
+      "freeLimit": "3 products limit"
+    },
+    "filters": {
+      "searchPlaceholder": "Search by group name",
+      "statusLabel": "Status"
+    },
+    "modal": {
+      "deleteTitle": "Delete overlay group?",
+      "deleteBody": "Are you sure you want to delete this overlay group? This cannot be undone."
+    },
+    "table": {
+      "heading": "Overlays",
+      "group": "Group",
+      "targets": "Targets",
+      "status": "Status",
+      "action": "Action",
+      "editBlocked": "Upgrade to edit All Products overlay",
+      "fallbackName": "Overlay {{index}}"
+    }
+  },
+  "builder": {
+    "preview": {
+      "previewLanguage": "Preview language",
+      "selectProduct": "Select Product For Preview",
+      "placeholderAll": "All products",
+      "placeholderSelected": "Selected products",
+      "loading": "Loading...",
+      "noProducts": "No products selected",
+      "note": "For preview display only.",
+      "title": "Preview",
+      "tooltip": {
+        "saveFirst": "Preview is disabled until you save your overlay changes.",
+        "selectProduct": "Select a product to preview",
+        "open": "Preview overlay on storefront",
+        "noHandle": "No product handle available to preview"
+      }
+    },
+    "toast": {
+      "somethingWrong": "Something went wrong",
+      "statusUpdated": "Status updated successfully",
+      "overlaySaved": "Overlay saved successfully",
+      "addOverlay": "Please add at least one overlay.",
+      "selectProduct": "Please select at least one product.",
+      "selectCollection": "Please select at least one collection.",
+      "fixErrors": "Please fix the errors in your overlay(s).",
+      "leaveWarning": "Save or discard changes before leaving.",
+      "looksGreat": "Great! Overlay looks good."
+    },
+    "errors": {
+      "textRequired": "Please enter text for the text overlay.",
+      "imageRequired": "Please add an image for the image overlay."
+    },
+    "statusModal": {
+      "title": "Update Status",
+      "body": "Are you sure to update status of this overlay?",
+      "confirm": "Update Status"
+    },
+    "publish": {
+      "banner": "Overlay published!",
+      "dismiss": "Dismiss overlay publish notice",
+      "title": "Is your overlay visible on your store?",
+      "helpText": "If your overlay is not displayed on the product page or you want it in a different position, contact us.",
+      "confirmYes": "Yes, perfect!",
+      "confirmNo": "There are problems"
+    },
+    "form": {
+      "overlayGroupTitle": "Overlay Group",
+      "groupNameLabel": "Group name",
+      "groupNamePlaceholder": "e.g. Holiday Promo",
+      "selectSource": "Select Source",
+      "allProducts": "All Products",
+      "allProductsBadge": "Plus Plan",
+      "products": "Products",
+      "selectProducts": "Select Products",
+      "productsSelected": "{{count}} product selected",
+      "productsSelectedPlural": "{{count}} products selected",
+      "productListHeading": "Product(s)",
+      "productListSelectedBadge": "{{count}} selected",
+      "searchProducts": "Search products",
+      "createOverlayTitle": "Create Overlay",
+      "createTextOverlay": "Text Overlay",
+      "createImageOverlay": "Image Overlay",
+      "productPreviewTooltip": "Preview this product on storefront",
+      "manageOverlay": "Manage Overlay",
+      "fontSettings": "Font Settings",
+      "alignmentSettings": "Alignment & Position",
+      "spacingSettings": "Spacing Settings",
+      "sectionSettings": "Section Settings",
+      "imageSettings": "Image Settings",
+      "imageSpacingSettings": "Spacing Settings"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "language": {
+      "heading": "App Language",
+      "description": "Choose the language for your app interface.",
+      "label": "Language",
+      "saved": "Settings saved",
+      "save": "Save"
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "settings": "Settings",
+    "plan": "Plan"
+  },
+  "plans": {
+    "title": "Plan & Pricing",
+    "current": "Current",
+    "upgrade": "Upgrade",
+    "downgrade": "Downgrade",
+    "perMonth": "/ month",
+    "unlimitedProducts": "Unlimited active products",
+    "limitedProducts": "Up to {{count}} active products",
+    "freeTrial": "{{count}}-day free trial",
+    "noTrial": "No trial period",
+    "billingWarning": "Your billing is {{status}}",
+    "errors": {
+      "somethingWrong": "Something is going wrong",
+      "patience": "We are working on it. Thanks for your patience"
+    },
+    "modal": {
+      "title": "Change Plan",
+      "confirm": "Confirm Change",
+      "cancel": "Cancel",
+      "switchingTo": "You are switching to **{{title}}**.",
+      "limitWarning": "This plan is limited to {{count}} products. If you usage exceeds this limit, excess products will be deactivated (but not deleted)."
+    }
+  }
+}

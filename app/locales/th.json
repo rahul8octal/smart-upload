@@ -1,0 +1,182 @@
+{
+  "common": {
+    "actions": {
+      "createOverlay": "สร้างโอเวอร์เลย์",
+      "delete": "ลบ",
+      "cancel": "ยกเลิก",
+      "enable": "เปิดใช้งาน",
+      "disable": "ปิดใช้งาน",
+      "previous": "ก่อนหน้า",
+      "next": "ถัดไป",
+      "clearAll": "ล้างทั้งหมด",
+      "upgradePlan": "อัปเกรดแผน",
+      "save": "บันทึก",
+      "discard": "ทิ้ง",
+      "confirm": "ใช่"
+    },
+    "table": {
+      "showing": "แสดง",
+      "of": "จาก",
+      "page": "หน้า",
+      "noResultsTitle": "ยังไม่มีโอเวอร์เลย์",
+      "noResultsDesc": "สร้างโอเวอร์เลย์ใหม่สำหรับร้านของคุณ"
+    },
+    "status": {
+      "active": "ใช้งาน",
+      "inactive": "ไม่ใช้งาน",
+      "all": "ทั้งหมด"
+    },
+    "targets": {
+      "allProducts": "สินค้าทั้งหมด",
+      "products": "{{count}} สินค้า",
+      "productsPlural": "{{count}} สินค้า"
+    },
+    "resources": {
+      "overlay": "โอเวอร์เลย์",
+      "overlays": "โอเวอร์เลย์"
+    }
+  },
+  "home": {
+    "appSetupGuide": {
+      "title": "คู่มือการตั้งค่าแอป",
+      "instructions": "ก่อนอื่น เปิดใช้งานแอป ในแผงผู้ดูแลร้านค้า คลิก ร้านค้าออนไลน์ > ปรับแต่ง > การตั้งค่าธีม > แอปฝังตัว > ค้นหา \"Easy Overlay Settings\" และเปิด/ปิด"
+    },
+    "actions": {
+      "enableAppBlock": "เปิดใช้งานบล็อกแอป",
+      "disableAppBlock": "ปิดใช้งานบล็อกแอป"
+    },
+    "plan": {
+      "limitReachedTitle": "ถึงขีดจำกัดของแผนฟรี",
+      "limitReachedDesc": "ถึงขีดจำกัดของแผนฟรี (3 สินค้า) อัปเกรดเป็นแผน Plus",
+      "freeBadge": "แผนฟรี",
+      "freeLimit": "จำกัด 3 สินค้า"
+    },
+    "filters": {
+      "searchPlaceholder": "ค้นหาตามชื่อกลุ่ม",
+      "statusLabel": "สถานะ"
+    },
+    "modal": {
+      "deleteTitle": "ลบกลุ่มโอเวอร์เลย์?",
+      "deleteBody": "คุณแน่ใจหรือไม่ว่าต้องการลบกลุ่มโอเวอร์เลย์นี้? การดำเนินการนี้ไม่สามารถย้อนกลับได้"
+    },
+    "table": {
+      "heading": "โอเวอร์เลย์",
+      "group": "กลุ่ม",
+      "targets": "เป้าหมาย",
+      "status": "สถานะ",
+      "action": "การกระทำ",
+      "editBlocked": "อัปเกรดแผนเพื่อแก้ไขโอเวอร์เลย์สินค้าทั้งหมด",
+      "fallbackName": "โอเวอร์เลย์ {{index}}"
+    }
+  },
+  "builder": {
+    "preview": {
+      "previewLanguage": "ภาษาพรีวิว",
+      "selectProduct": "เลือกสินค้าเพื่อพรีวิว",
+      "placeholderAll": "สินค้าทั้งหมด",
+      "placeholderSelected": "สินค้าที่เลือก",
+      "loading": "กำลังโหลด...",
+      "noProducts": "ยังไม่ได้เลือกสินค้า",
+      "note": "สำหรับการแสดงตัวอย่างเท่านั้น",
+      "title": "พรีวิว",
+      "tooltip": {
+        "saveFirst": "บันทึกโอเวอร์เลย์เพื่อพรีวิว",
+        "selectProduct": "เลือกสินค้าเพื่อพรีวิว",
+        "open": "พรีโอเวอร์เลย์ในร้านค้า",
+        "noHandle": "ไม่มีรหัสสินค้าสำหรับพรีวิว"
+      }
+    },
+    "toast": {
+      "somethingWrong": "เกิดข้อผิดพลาด",
+      "statusUpdated": "อัปเดตสถานะเรียบร้อย",
+      "overlaySaved": "บันทึกโอเวอร์เลย์เรียบร้อย",
+      "addOverlay": "โปรดเพิ่มโอเวอร์เลย์อย่างน้อยหนึ่งรายการ",
+      "selectProduct": "โปรดเลือกสินค้าอย่างน้อยหนึ่งรายการ",
+      "selectCollection": "โปรดเลือกคอลเลกชันอย่างน้อยหนึ่งรายการ",
+      "fixErrors": "โปรดแก้ไขข้อผิดพลาดในโอเวอร์เลย์ของคุณ",
+      "leaveWarning": "บันทึกหรือทิ้งการเปลี่ยนแปลงก่อนออก",
+      "looksGreat": "เยี่ยม! โอเวอร์เลย์ดูดี"
+    },
+    "errors": {
+      "textRequired": "กรุณาใส่ข้อความสำหรับโอเวอร์เลย์ข้อความ",
+      "imageRequired": "โปรดเพิ่มรูปภาพสำหรับโอเวอร์เลย์รูปภาพ"
+    },
+    "statusModal": {
+      "title": "อัปเดตสถานะ",
+      "body": "คุณแน่ใจหรือไม่ว่าต้องการอัปเดตสถานะของโอเวอร์เลย์นี้?",
+      "confirm": "อัปเดตสถานะ"
+    },
+    "publish": {
+      "banner": "โอเวอร์เลย์ถูกเผยแพร่แล้ว!",
+      "dismiss": "ปิดการแจ้งเตือนการเผยแพร่",
+      "title": "โอเวอร์เลย์ของคุณปรากฏในร้านหรือไม่?",
+      "helpText": "หากโอเวอร์เลย์ไม่แสดงบนหน้าสินค้าหรือคุณต้องการตำแหน่งอื่น ติดต่อเรา",
+      "confirmYes": "ใช่ สมบูรณ์แบบ!",
+      "confirmNo": "มีปัญหา"
+    },
+    "form": {
+      "overlayGroupTitle": "กลุ่มโอเวอร์เลย์",
+      "groupNameLabel": "ชื่อกลุ่ม",
+      "groupNamePlaceholder": "เช่น โปรโมชั่นวันหยุด",
+      "selectSource": "เลือกแหล่งที่มา",
+      "allProducts": "สินค้าทั้งหมด",
+      "allProductsBadge": "แผน Plus",
+      "products": "สินค้า",
+      "selectProducts": "เลือกสินค้า",
+      "productsSelected": "{{count}} สินค้าเลือกแล้ว",
+      "productsSelectedPlural": "{{count}} สินค้าเลือกแล้ว",
+      "productListHeading": "สินค้า",
+      "productListSelectedBadge": "{{count}} เลือกแล้ว",
+      "searchProducts": "ค้นหาสินค้า",
+      "createOverlayTitle": "สร้างโอเวอร์เลย์",
+      "createTextOverlay": "โอเวอร์เลย์ข้อความ",
+      "createImageOverlay": "โอเวอร์เลย์รูปภาพ",
+      "productPreviewTooltip": "พรีวิวสินค้านี้ในร้าน",
+      "manageOverlay": "จัดการโอเวอร์เลย์",
+      "fontSettings": "การตั้งค่าฟอนต์",
+      "alignmentSettings": "การจัดตำแหน่ง & ตำแหน่ง",
+      "spacingSettings": "การตั้งค่าช่องว่าง",
+      "sectionSettings": "การตั้งค่าเซคชัน",
+      "imageSettings": "การตั้งค่ารูปภาพ",
+      "imageSpacingSettings": "การตั้งค่าช่องว่าง"
+    }
+  },
+  "settings": {
+    "title": "การตั้งค่า",
+    "language": {
+      "heading": "ภาษาของแอป",
+      "description": "เลือกภาษาสำหรับอินเทอร์เฟซของแอป",
+      "label": "ภาษา",
+      "saved": "บันทึกการตั้งค่าแล้ว",
+      "save": "บันทึก"
+    }
+  },
+  "navigation": {
+    "home": "หน้าแรก",
+    "settings": "การตั้งค่า",
+    "plan": "แผนบริการ"
+  },
+  "plans": {
+    "title": "แผนบริการและราคา",
+    "current": "ปัจจุบัน",
+    "upgrade": "อัปเกรด",
+    "downgrade": "ลดระดับ",
+    "perMonth": "/ เดือน",
+    "unlimitedProducts": "สินค้าที่ใช้งานได้ไม่จำกัด",
+    "limitedProducts": "สินค้าที่ใช้งานได้สูงสุด {{count}} รายการ",
+    "freeTrial": "ทดลองใช้ฟรี {{count}} วัน",
+    "noTrial": "ไม่มีระยะเวลาทดลองใช้",
+    "billingWarning": "สถานะการเรียกเก็บเงินของคุณคือ {{status}}",
+    "errors": {
+      "somethingWrong": "มีบางอย่างผิดพลาด",
+      "patience": "เรากำลังดำเนินการ ขอบคุณที่อดทนรอ"
+    },
+    "modal": {
+      "title": "เปลี่ยนแผนบริการ",
+      "confirm": "ยืนยันการเปลี่ยน",
+      "cancel": "ยกเลิก",
+      "switchingTo": "คุณกำลังเปลี่ยนเป็น **{{title}}**",
+      "limitWarning": "แผนนี้จำกัดสินค้าที่ {{count}} รายการ หากการใช้งานเกินที่กำหนด สินค้าที่เกินจะถูกปิดการใช้งาน (แต่จะไม่ถูกลบ)"
+    }
+  }
+}

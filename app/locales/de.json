@@ -1,0 +1,182 @@
+{
+  "common": {
+    "actions": {
+      "createOverlay": "Overlay erstellen",
+      "delete": "Löschen",
+      "cancel": "Abbrechen",
+      "enable": "Aktivieren",
+      "disable": "Deaktivieren",
+      "previous": "Zurück",
+      "next": "Weiter",
+      "clearAll": "Alles löschen",
+      "upgradePlan": "Plan upgraden",
+      "save": "Speichern",
+      "discard": "Verwerfen",
+      "confirm": "Ja"
+    },
+    "table": {
+      "showing": "Anzeigen",
+      "of": "von",
+      "page": "Seite",
+      "noResultsTitle": "Noch keine Overlays",
+      "noResultsDesc": "Erstellen Sie neue Overlays für Ihren Shop"
+    },
+    "status": {
+      "active": "Aktiv",
+      "inactive": "Inaktiv",
+      "all": "Alle"
+    },
+    "targets": {
+      "allProducts": "Alle Produkte",
+      "products": "{{count}} Produkt",
+      "productsPlural": "{{count}} Produkte"
+    },
+    "resources": {
+      "overlay": "Overlay",
+      "overlays": "Overlays"
+    }
+  },
+  "home": {
+    "appSetupGuide": {
+      "title": "Anleitung zur App-Einrichtung",
+      "instructions": "Aktivieren Sie zuerst die App. Gehen Sie im Shop-Adminbereich zu Online-Shop > Anpassen > Theme-Einstellungen > App-Einbettungen > Suchen Sie \"Easy Overlay Settings\" und aktivieren oder deaktivieren Sie diese."
+    },
+    "actions": {
+      "enableAppBlock": "App-Block aktivieren",
+      "disableAppBlock": "App-Block deaktivieren"
+    },
+    "plan": {
+      "limitReachedTitle": "Limit des kostenlosen Plans erreicht",
+      "limitReachedDesc": "Das Limit des kostenlosen Plans wurde erreicht (3 Produkte). Upgrade auf den Plus-Plan.",
+      "freeBadge": "Kostenloser Plan",
+      "freeLimit": "Limit von 3 Produkten"
+    },
+    "filters": {
+      "searchPlaceholder": "Nach Gruppennamen suchen",
+      "statusLabel": "Status"
+    },
+    "modal": {
+      "deleteTitle": "Overlay-Gruppe löschen?",
+      "deleteBody": "Möchten Sie diese Overlay-Gruppe wirklich löschen? Dies kann nicht rückgängig gemacht werden."
+    },
+    "table": {
+      "heading": "Overlays",
+      "group": "Gruppe",
+      "targets": "Ziele",
+      "status": "Status",
+      "action": "Aktion",
+      "editBlocked": "Upgrade erforderlich, um das Overlay für alle Produkte zu bearbeiten",
+      "fallbackName": "Overlay {{index}}"
+    }
+  },
+  "builder": {
+    "preview": {
+      "previewLanguage": "Vorschau-Sprache",
+      "selectProduct": "Produkt für Vorschau auswählen",
+      "placeholderAll": "Alle Produkte",
+      "placeholderSelected": "Ausgewählte Produkte",
+      "loading": "Lädt...",
+      "noProducts": "Keine Produkte ausgewählt",
+      "note": "Nur zur Vorschau.",
+      "title": "Vorschau",
+      "tooltip": {
+        "saveFirst": "Overlay speichern, um Vorschau anzuzeigen",
+        "selectProduct": "Produkt für Vorschau auswählen",
+        "open": "Overlay im Shop anzeigen",
+        "noHandle": "Kein Produkt-Handle für Vorschau verfügbar"
+      }
+    },
+    "toast": {
+      "somethingWrong": "Etwas ist schiefgelaufen",
+      "statusUpdated": "Status erfolgreich aktualisiert",
+      "overlaySaved": "Overlay erfolgreich gespeichert",
+      "addOverlay": "Bitte fügen Sie mindestens ein Overlay hinzu.",
+      "selectProduct": "Bitte wählen Sie mindestens ein Produkt aus.",
+      "selectCollection": "Bitte wählen Sie mindestens eine Kollektion aus.",
+      "fixErrors": "Bitte beheben Sie die Fehler in Ihrem Overlay.",
+      "leaveWarning": "Speichern oder verwerfen Sie Änderungen vor dem Verlassen.",
+      "looksGreat": "Super! Das Overlay sieht gut aus."
+    },
+    "errors": {
+      "textRequired": "Bitte geben Sie Text für das Text-Overlay ein.",
+      "imageRequired": "Bitte fügen Sie ein Bild für das Bild-Overlay hinzu."
+    },
+    "statusModal": {
+      "title": "Status aktualisieren",
+      "body": "Möchten Sie den Status dieses Overlays wirklich aktualisieren?",
+      "confirm": "Status aktualisieren"
+    },
+    "publish": {
+      "banner": "Overlay veröffentlicht!",
+      "dismiss": "Hinweis zur Overlay-Veröffentlichung schließen",
+      "title": "Ist das Overlay in Ihrem Shop sichtbar?",
+      "helpText": "Wenn das Overlay auf der Produktseite nicht angezeigt wird oder Sie eine andere Position wünschen, kontaktieren Sie uns.",
+      "confirmYes": "Ja, perfekt!",
+      "confirmNo": "Es gibt Probleme"
+    },
+    "form": {
+      "overlayGroupTitle": "Overlay-Gruppe",
+      "groupNameLabel": "Gruppenname",
+      "groupNamePlaceholder": "z. B. Feiertagsaktion",
+      "selectSource": "Quelle auswählen",
+      "allProducts": "Alle Produkte",
+      "allProductsBadge": "Plus-Plan",
+      "products": "Produkte",
+      "selectProducts": "Produkte auswählen",
+      "productsSelected": "{{count}} Produkt ausgewählt",
+      "productsSelectedPlural": "{{count}} Produkte ausgewählt",
+      "productListHeading": "Produkt(e)",
+      "productListSelectedBadge": "{{count}} ausgewählt",
+      "searchProducts": "Produkte suchen",
+      "createOverlayTitle": "Overlay erstellen",
+      "createTextOverlay": "Text-Overlay",
+      "createImageOverlay": "Bild-Overlay",
+      "productPreviewTooltip": "Dieses Produkt im Shop anzeigen",
+      "manageOverlay": "Overlay verwalten",
+      "fontSettings": "Schrifteinstellungen",
+      "alignmentSettings": "Ausrichtung & Position",
+      "spacingSettings": "Abstandseinstellungen",
+      "sectionSettings": "Abschnitteinstellungen",
+      "imageSettings": "Bildeinstellungen",
+      "imageSpacingSettings": "Abstandseinstellungen"
+    }
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "language": {
+      "heading": "App-Sprache",
+      "description": "Wählen Sie die Sprache der App-Oberfläche.",
+      "label": "Sprache",
+      "saved": "Einstellungen gespeichert",
+      "save": "Speichern"
+    }
+  },
+  "navigation": {
+    "home": "Startseite",
+    "settings": "Einstellungen",
+    "plan": "Plan"
+  },
+  "plans": {
+    "title": "Plan & Preise",
+    "current": "Aktuell",
+    "upgrade": "Upgrade",
+    "downgrade": "Downgrade",
+    "perMonth": "/ Monat",
+    "unlimitedProducts": "Unbegrenzte aktive Produkte",
+    "limitedProducts": "Bis zu {{count}} aktive Produkte",
+    "freeTrial": "{{count}}-tägige kostenlose Testversion",
+    "noTrial": "Kein Testzeitraum",
+    "billingWarning": "Ihre Abrechnung ist {{status}}",
+    "errors": {
+      "somethingWrong": "Etwas läuft schief",
+      "patience": "Wir arbeiten daran. Vielen Dank für Ihre Geduld"
+    },
+    "modal": {
+      "title": "Plan ändern",
+      "confirm": "Änderung bestätigen",
+      "cancel": "Abbrechen",
+      "switchingTo": "Sie wechseln zu **{{title}}**.",
+      "limitWarning": "Dieser Plan ist auf {{count}} Produkte begrenzt. Wenn Ihre Nutzung dieses Limit überschreitet, werden überschüssige Produkte deaktiviert (aber nicht gelöscht)."
+    }
+  }
+}

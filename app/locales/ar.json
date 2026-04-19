@@ -1,0 +1,182 @@
+{
+  "common": {
+    "actions": {
+      "createOverlay": "إنشاء طبقة",
+      "delete": "حذف",
+      "cancel": "إلغاء",
+      "enable": "تفعيل",
+      "disable": "تعطيل",
+      "previous": "السابق",
+      "next": "التالي",
+      "clearAll": "مسح الكل",
+      "upgradePlan": "ترقية الخطة",
+      "save": "حفظ",
+      "discard": "تجاهل",
+      "confirm": "نعم"
+    },
+    "table": {
+      "showing": "عرض",
+      "of": "من",
+      "page": "صفحة",
+      "noResultsTitle": "لا توجد طبقات بعد",
+      "noResultsDesc": "قم بإنشاء طبقات جديدة لمتجرك"
+    },
+    "status": {
+      "active": "نشط",
+      "inactive": "غير نشط",
+      "all": "الكل"
+    },
+    "targets": {
+      "allProducts": "جميع المنتجات",
+      "products": "{{count}} منتج",
+      "productsPlural": "{{count}} منتجات"
+    },
+    "resources": {
+      "overlay": "طبقة",
+      "overlays": "طبقات"
+    }
+  },
+  "home": {
+    "appSetupGuide": {
+      "title": "دليل إعداد التطبيق",
+      "instructions": "أولاً، قم بتفعيل التطبيق. في لوحة تحكم المتجر، انتقل إلى المتجر الإلكتروني > تخصيص > إعدادات القالب > تضمينات التطبيق > ابحث عن \"Easy Overlay Settings\" ثم قم بالتفعيل أو التعطيل."
+    },
+    "actions": {
+      "enableAppBlock": "تفعيل مكون التطبيق",
+      "disableAppBlock": "تعطيل مكون التطبيق"
+    },
+    "plan": {
+      "limitReachedTitle": "تم الوصول إلى حد الخطة المجانية",
+      "limitReachedDesc": "تم الوصول إلى حد الخطة المجانية (3 منتجات). قم بالترقية إلى خطة Plus.",
+      "freeBadge": "الخطة المجانية",
+      "freeLimit": "حد 3 منتجات"
+    },
+    "filters": {
+      "searchPlaceholder": "البحث حسب اسم المجموعة",
+      "statusLabel": "الحالة"
+    },
+    "modal": {
+      "deleteTitle": "حذف مجموعة الطبقات؟",
+      "deleteBody": "هل أنت متأكد أنك تريد حذف مجموعة الطبقات هذه؟ لا يمكن التراجع عن هذا الإجراء."
+    },
+    "table": {
+      "heading": "الطبقات",
+      "group": "المجموعة",
+      "targets": "الأهداف",
+      "status": "الحالة",
+      "action": "إجراء",
+      "editBlocked": "قم بالترقية لتعديل طبقة جميع المنتجات",
+      "fallbackName": "طبقة {{index}}"
+    }
+  },
+  "builder": {
+    "preview": {
+      "previewLanguage": "لغة المعاينة",
+      "selectProduct": "اختر منتجًا للمعاينة",
+      "placeholderAll": "جميع المنتجات",
+      "placeholderSelected": "المنتجات المحددة",
+      "loading": "جارٍ التحميل...",
+      "noProducts": "لم يتم تحديد منتجات",
+      "note": "لأغراض العرض فقط.",
+      "title": "المعاينة",
+      "tooltip": {
+        "saveFirst": "احفظ الطبقة للمعاينة",
+        "selectProduct": "اختر منتجًا للمعاينة",
+        "open": "معاينة الطبقة في المتجر",
+        "noHandle": "لا يوجد معرّف منتج متاح للمعاينة"
+      }
+    },
+    "toast": {
+      "somethingWrong": "حدث خطأ ما",
+      "statusUpdated": "تم تحديث الحالة بنجاح",
+      "overlaySaved": "تم حفظ الطبقة بنجاح",
+      "addOverlay": "يرجى إضافة طبقة واحدة على الأقل.",
+      "selectProduct": "يرجى اختيار منتج واحد على الأقل.",
+      "selectCollection": "يرجى اختيار مجموعة واحدة على الأقل.",
+      "fixErrors": "يرجى تصحيح الأخطاء في الطبقة (الطبقات).",
+      "leaveWarning": "احفظ التغييرات أو تجاهلها قبل المغادرة.",
+      "looksGreat": "رائع! الطبقة تبدو جيدة."
+    },
+    "errors": {
+      "textRequired": "يرجى إدخال نص لطبقة النص.",
+      "imageRequired": "يرجى إضافة صورة لطبقة الصورة."
+    },
+    "statusModal": {
+      "title": "تحديث الحالة",
+      "body": "هل أنت متأكد من تحديث حالة هذه الطبقة؟",
+      "confirm": "تحديث الحالة"
+    },
+    "publish": {
+      "banner": "تم نشر الطبقة!",
+      "dismiss": "إغلاق إشعار نشر الطبقة",
+      "title": "هل الطبقة مرئية في متجرك؟",
+      "helpText": "إذا لم تظهر الطبقة في صفحة المنتج أو كنت ترغب في تغيير موضعها، يرجى التواصل معنا.",
+      "confirmYes": "نعم، ممتاز!",
+      "confirmNo": "توجد مشاكل"
+    },
+    "form": {
+      "overlayGroupTitle": "مجموعة الطبقات",
+      "groupNameLabel": "اسم المجموعة",
+      "groupNamePlaceholder": "مثال: عرض العطلات",
+      "selectSource": "اختر المصدر",
+      "allProducts": "جميع المنتجات",
+      "allProductsBadge": "خطة Plus",
+      "products": "المنتجات",
+      "selectProducts": "اختر المنتجات",
+      "productsSelected": "تم اختيار {{count}} منتج",
+      "productsSelectedPlural": "تم اختيار {{count}} منتجات",
+      "productListHeading": "المنتج (المنتجات)",
+      "productListSelectedBadge": "{{count}} محدد",
+      "searchProducts": "البحث عن المنتجات",
+      "createOverlayTitle": "إنشاء طبقة",
+      "createTextOverlay": "طبقة نصية",
+      "createImageOverlay": "طبقة صورة",
+      "productPreviewTooltip": "معاينة هذا المنتج في المتجر",
+      "manageOverlay": "إدارة الطبقة",
+      "fontSettings": "إعدادات الخط",
+      "alignmentSettings": "المحاذاة والموضع",
+      "spacingSettings": "إعدادات التباعد",
+      "sectionSettings": "إعدادات القسم",
+      "imageSettings": "إعدادات الصورة",
+      "imageSpacingSettings": "إعدادات التباعد"
+    }
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "language": {
+      "heading": "لغة التطبيق",
+      "description": "اختر لغة واجهة التطبيق.",
+      "label": "اللغة",
+      "saved": "تم حفظ الإعدادات",
+      "save": "حفظ"
+    }
+  },
+  "navigation": {
+    "home": "الرئيسية",
+    "settings": "الإعدادات",
+    "plan": "الخطة"
+  },
+  "plans": {
+    "title": "الخطة والأسعار",
+    "current": "الحالية",
+    "upgrade": "ترقية",
+    "downgrade": "تخفيض",
+    "perMonth": "/ شهر",
+    "unlimitedProducts": "منتجات نشطة غير محدودة",
+    "limitedProducts": "حتى {{count}} منتجات نشطة",
+    "freeTrial": "نسخة تجريبية مجانية لمدة {{count}} أيام",
+    "noTrial": "لا توجد فترة تجريبية",
+    "billingWarning": "فوترتك هي {{status}}",
+    "errors": {
+      "somethingWrong": "هناك خطأ ما",
+      "patience": "نحن نعمل على ذلك. شكراً لصبركم"
+    },
+    "modal": {
+      "title": "تغيير الخطة",
+      "confirm": "تأكيد التغيير",
+      "cancel": "إلغاء",
+      "switchingTo": "أنت بصدد التبديل إلى **{{title}}**.",
+      "limitWarning": "هذه الخطة محدودة بـ {{count}} منتجات. إذا تجاوز استخدامك هذا الحد، فسيتم إلغاء تنشيط المنتجات الزائدة (لكن لن يتم حذفها)."
+    }
+  }
+}

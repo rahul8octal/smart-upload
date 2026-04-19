@@ -1,0 +1,182 @@
+{
+  "common": {
+    "actions": {
+      "createOverlay": "Créer un overlay",
+      "delete": "Supprimer",
+      "cancel": "Annuler",
+      "enable": "Activer",
+      "disable": "Désactiver",
+      "previous": "Précédent",
+      "next": "Suivant",
+      "clearAll": "Tout effacer",
+      "upgradePlan": "Mettre à niveau le forfait",
+      "save": "Enregistrer",
+      "discard": "Annuler",
+      "confirm": "Oui"
+    },
+    "table": {
+      "showing": "Affichage",
+      "of": "sur",
+      "page": "Page",
+      "noResultsTitle": "Aucun overlay pour le moment",
+      "noResultsDesc": "Créez de nouveaux overlays pour votre boutique"
+    },
+    "status": {
+      "active": "Actif",
+      "inactive": "Inactif",
+      "all": "Tous"
+    },
+    "targets": {
+      "allProducts": "Tous les produits",
+      "products": "{{count}} produit",
+      "productsPlural": "{{count}} produits"
+    },
+    "resources": {
+      "overlay": "overlay",
+      "overlays": "overlays"
+    }
+  },
+  "home": {
+    "appSetupGuide": {
+      "title": "Guide de configuration de l’application",
+      "instructions": "Tout d’abord, activez l’application. Dans l’administration de votre boutique, cliquez sur Boutique en ligne > Personnaliser > Paramètres du thème > Intégrations d’applications > recherchez « Easy Overlay Settings » et cliquez sur Activer / Désactiver."
+    },
+    "actions": {
+      "enableAppBlock": "Activer le bloc d’application",
+      "disableAppBlock": "Désactiver le bloc d’application"
+    },
+    "plan": {
+      "limitReachedTitle": "Limite du forfait gratuit atteinte",
+      "limitReachedDesc": "Limite du forfait gratuit atteinte (3 produits). Passez au forfait Plus.",
+      "freeBadge": "Forfait gratuit",
+      "freeLimit": "Limite de 3 produits"
+    },
+    "filters": {
+      "searchPlaceholder": "Rechercher par nom de groupe",
+      "statusLabel": "Statut"
+    },
+    "modal": {
+      "deleteTitle": "Supprimer le groupe d’overlay ?",
+      "deleteBody": "Êtes-vous sûr de vouloir supprimer ce groupe d’overlay ? Cette action est irréversible."
+    },
+    "table": {
+      "heading": "Overlays",
+      "group": "Groupe",
+      "targets": "Cibles",
+      "status": "Statut",
+      "action": "Action",
+      "editBlocked": "Passez au forfait supérieur pour modifier l’overlay Tous les produits",
+      "fallbackName": "Overlay {{index}}"
+    }
+  },
+  "builder": {
+    "preview": {
+      "previewLanguage": "Langue de prévisualisation",
+      "selectProduct": "Sélectionner un produit pour l’aperçu",
+      "placeholderAll": "Tous les produits",
+      "placeholderSelected": "Produits sélectionnés",
+      "loading": "Chargement…",
+      "noProducts": "Aucun produit sélectionné",
+      "note": "Affichage à des fins de prévisualisation uniquement.",
+      "title": "Aperçu",
+      "tooltip": {
+        "saveFirst": "Enregistrez l’overlay pour le prévisualiser",
+        "selectProduct": "Sélectionnez un produit à prévisualiser",
+        "open": "Prévisualiser l’overlay sur la boutique",
+        "noHandle": "Aucun identifiant de produit disponible pour la prévisualisation"
+      }
+    },
+    "toast": {
+      "somethingWrong": "Une erreur s’est produite",
+      "statusUpdated": "Statut mis à jour avec succès",
+      "overlaySaved": "Overlay enregistré avec succès",
+      "addOverlay": "Veuillez ajouter au moins un overlay.",
+      "selectProduct": "Veuillez sélectionner au moins un produit.",
+      "selectCollection": "Veuillez sélectionner au moins une collection.",
+      "fixErrors": "Veuillez corriger les erreurs dans vos overlays.",
+      "leaveWarning": "Enregistrez ou annulez les modifications avant de quitter.",
+      "looksGreat": "Parfait ! L’overlay est correct."
+    },
+    "errors": {
+      "textRequired": "Veuillez saisir un texte pour l’overlay texte.",
+      "imageRequired": "Veuillez ajouter une image pour l’overlay image."
+    },
+    "statusModal": {
+      "title": "Mettre à jour le statut",
+      "body": "Voulez-vous vraiment mettre à jour le statut de cet overlay ?",
+      "confirm": "Mettre à jour le statut"
+    },
+    "publish": {
+      "banner": "Overlay publié !",
+      "dismiss": "Fermer l’avis de publication",
+      "title": "Votre overlay est-il visible sur votre boutique ?",
+      "helpText": "Si votre overlay n’apparaît pas sur la page produit ou si vous souhaitez le placer ailleurs, contactez-nous.",
+      "confirmYes": "Oui, parfait !",
+      "confirmNo": "Il y a des problèmes"
+    },
+    "form": {
+      "overlayGroupTitle": "Groupe d’overlay",
+      "groupNameLabel": "Nom du groupe",
+      "groupNamePlaceholder": "ex. Promo de Noël",
+      "selectSource": "Sélectionner la source",
+      "allProducts": "Tous les produits",
+      "allProductsBadge": "Forfait Plus",
+      "products": "Produits",
+      "selectProducts": "Sélectionner des produits",
+      "productsSelected": "{{count}} produit sélectionné",
+      "productsSelectedPlural": "{{count}} produits sélectionnés",
+      "productListHeading": "Produit(s)",
+      "productListSelectedBadge": "{{count}} sélectionné(s)",
+      "searchProducts": "Rechercher des produits",
+      "createOverlayTitle": "Créer un overlay",
+      "createTextOverlay": "Overlay texte",
+      "createImageOverlay": "Overlay image",
+      "productPreviewTooltip": "Prévisualiser ce produit sur la boutique",
+      "manageOverlay": "Gérer l’overlay",
+      "fontSettings": "Paramètres de police",
+      "alignmentSettings": "Alignement et position",
+      "spacingSettings": "Paramètres d'espacement",
+      "sectionSettings": "Paramètres de section",
+      "imageSettings": "Paramètres d'image",
+      "imageSpacingSettings": "Paramètres d'espacement"
+    }
+  },
+  "settings": {
+    "title": "Paramètres",
+    "language": {
+      "heading": "Langue de l’application",
+      "description": "Choisissez la langue de l’interface de l’application.",
+      "label": "Langue",
+      "saved": "Paramètres enregistrés",
+      "save": "Enregistrer"
+    }
+  },
+  "navigation": {
+    "home": "Accueil",
+    "settings": "Paramètres",
+    "plan": "Forfait"
+  },
+  "plans": {
+    "title": "Forfaits et tarifs",
+    "current": "Actuel",
+    "upgrade": "Mettre à niveau",
+    "downgrade": "Rétrograder",
+    "perMonth": "/ mois",
+    "unlimitedProducts": "Produits actifs illimités",
+    "limitedProducts": "Jusqu'à {{count}} produits actifs",
+    "freeTrial": "Essai gratuit de {{count}} jours",
+    "noTrial": "Pas de période d'essai",
+    "billingWarning": "Votre facturation est {{status}}",
+    "errors": {
+      "somethingWrong": "Quelque chose ne va pas",
+      "patience": "Nous y travaillons. Merci de votre patience"
+    },
+    "modal": {
+      "title": "Changer de forfait",
+      "confirm": "Confirmer le changement",
+      "cancel": "Annuler",
+      "switchingTo": "Vous passez à **{{title}}**.",
+      "limitWarning": "Ce forfait est limité à {{count}} produits. Si votre utilisation dépasse cette limite, les produits excédentaires seront désactivés (mais pas supprimés)."
+    }
+  }
+}

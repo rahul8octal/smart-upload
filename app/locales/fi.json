@@ -1,0 +1,182 @@
+{
+  "common": {
+    "actions": {
+      "createOverlay": "Luo peittokuva",
+      "delete": "Poista",
+      "cancel": "Peruuta",
+      "enable": "Ota käyttöön",
+      "disable": "Poista käytöstä",
+      "previous": "Edellinen",
+      "next": "Seuraava",
+      "clearAll": "Tyhjennä kaikki",
+      "upgradePlan": "Päivitä suunnitelma",
+      "save": "Tallenna",
+      "discard": "Hylkää",
+      "confirm": "Kyllä"
+    },
+    "table": {
+      "showing": "Näytetään",
+      "of": " / ",
+      "page": "Sivu",
+      "noResultsTitle": "Ei vielä peittokuvia",
+      "noResultsDesc": "Luo uusia peittokuvia kauppaasi"
+    },
+    "status": {
+      "active": "Aktiivinen",
+      "inactive": "Ei aktiivinen",
+      "all": "Kaikki"
+    },
+    "targets": {
+      "allProducts": "Kaikki tuotteet",
+      "products": "{{count}} tuote",
+      "productsPlural": "{{count}} tuotetta"
+    },
+    "resources": {
+      "overlay": "peittokuva",
+      "overlays": "peittokuvat"
+    }
+  },
+  "home": {
+    "appSetupGuide": {
+      "title": "Sovelluksen määritysopas",
+      "instructions": "Ota sovellus ensin käyttöön. Kaupan hallinnassa siirry kohtaan Verkkokauppa > Mukauta > Teema-asetukset > Sovellusten upotukset > Etsi \"Easy Overlay Settings\" ja ota käyttöön tai poista käytöstä."
+    },
+    "actions": {
+      "enableAppBlock": "Ota sovelluslohko käyttöön",
+      "disableAppBlock": "Poista sovelluslohko käytöstä"
+    },
+    "plan": {
+      "limitReachedTitle": "Ilmaisen suunnitelman raja saavutettu",
+      "limitReachedDesc": "Ilmaisen suunnitelman raja on saavutettu (3 tuotetta). Päivitä Plus-suunnitelmaan.",
+      "freeBadge": "Ilmainen suunnitelma",
+      "freeLimit": "3 tuotteen raja"
+    },
+    "filters": {
+      "searchPlaceholder": "Hae ryhmän nimellä",
+      "statusLabel": "Tila"
+    },
+    "modal": {
+      "deleteTitle": "Poistetaanko peittokuvaryhmä?",
+      "deleteBody": "Haluatko varmasti poistaa tämän peittokuvaryhmän? Tätä toimintoa ei voi peruuttaa."
+    },
+    "table": {
+      "heading": "Peittokuvat",
+      "group": "Ryhmä",
+      "targets": "Kohteet",
+      "status": "Tila",
+      "action": "Toiminto",
+      "editBlocked": "Päivitä muokataksesi kaikkien tuotteiden peittokuvaa",
+      "fallbackName": "Peittokuva {{index}}"
+    }
+  },
+  "builder": {
+    "preview": {
+      "previewLanguage": "Esikatselun kieli",
+      "selectProduct": "Valitse tuote esikatselua varten",
+      "placeholderAll": "Kaikki tuotteet",
+      "placeholderSelected": "Valitut tuotteet",
+      "loading": "Ladataan...",
+      "noProducts": "Tuotteita ei ole valittu",
+      "note": "Vain esikatselua varten.",
+      "title": "Esikatselu",
+      "tooltip": {
+        "saveFirst": "Tallenna peittokuva esikatselua varten",
+        "selectProduct": "Valitse tuote esikatselua varten",
+        "open": "Esikatsele peittokuvaa kaupassa",
+        "noHandle": "Tuotetunnistetta ei ole saatavilla esikatselua varten"
+      }
+    },
+    "toast": {
+      "somethingWrong": "Jokin meni pieleen",
+      "statusUpdated": "Tila päivitetty onnistuneesti",
+      "overlaySaved": "Peittokuva tallennettu onnistuneesti",
+      "addOverlay": "Lisää vähintään yksi peittokuva.",
+      "selectProduct": "Valitse vähintään yksi tuote.",
+      "selectCollection": "Valitse vähintään yksi kokoelma.",
+      "fixErrors": "Korjaa peittokuvan virheet.",
+      "leaveWarning": "Tallenna tai hylkää muutokset ennen poistumista.",
+      "looksGreat": "Hienoa! Peittokuva näyttää hyvältä."
+    },
+    "errors": {
+      "textRequired": "Syötä teksti tekstipeittokuvaa varten.",
+      "imageRequired": "Lisää kuva kuvan peittokuvaa varten."
+    },
+    "statusModal": {
+      "title": "Päivitä tila",
+      "body": "Haluatko varmasti päivittää tämän peittokuvan tilan?",
+      "confirm": "Päivitä tila"
+    },
+    "publish": {
+      "banner": "Peittokuva julkaistu!",
+      "dismiss": "Sulje peittokuvan julkaisuviesti",
+      "title": "Onko peittokuva näkyvissä kaupassasi?",
+      "helpText": "Jos peittokuva ei näy tuotesivulla tai haluat sen toiseen sijaintiin, ota meihin yhteyttä.",
+      "confirmYes": "Kyllä, täydellistä!",
+      "confirmNo": "Ongelmia esiintyy"
+    },
+    "form": {
+      "overlayGroupTitle": "Peittokuvaryhmä",
+      "groupNameLabel": "Ryhmän nimi",
+      "groupNamePlaceholder": "esim. Joulukampanja",
+      "selectSource": "Valitse lähde",
+      "allProducts": "Kaikki tuotteet",
+      "allProductsBadge": "Plus-suunnitelma",
+      "products": "Tuotteet",
+      "selectProducts": "Valitse tuotteet",
+      "productsSelected": "{{count}} tuote valittu",
+      "productsSelectedPlural": "{{count}} tuotetta valittu",
+      "productListHeading": "Tuote(t)",
+      "productListSelectedBadge": "{{count}} valittu",
+      "searchProducts": "Hae tuotteita",
+      "createOverlayTitle": "Luo peittokuva",
+      "createTextOverlay": "Tekstipeittokuva",
+      "createImageOverlay": "Kuvapeittokuva",
+      "productPreviewTooltip": "Esikatsele tätä tuotetta kaupassa",
+      "manageOverlay": "Hallitse peittokuvaa",
+      "fontSettings": "Fonttiasetukset",
+      "alignmentSettings": "Alignement et position",
+      "spacingSettings": "Välistysasetukset",
+      "sectionSettings": "Osioasetukset",
+      "imageSettings": "Kuva-asetukset",
+      "imageSpacingSettings": "Välistysasetukset"
+    }
+  },
+  "settings": {
+    "title": "Asetukset",
+    "language": {
+      "heading": "Sovelluksen kieli",
+      "description": "Valitse sovelluksen käyttöliittymän kieli.",
+      "label": "Kieli",
+      "saved": "Asetukset tallennettu",
+      "save": "Tallenna"
+    }
+  },
+  "navigation": {
+    "home": "Etusivu",
+    "settings": "Asetukset",
+    "plan": "Suunnitelma"
+  },
+  "plans": {
+    "title": "Suunnitelma ja hinnoittelu",
+    "current": "Nykyinen",
+    "upgrade": "Päivitä",
+    "downgrade": "Alenna",
+    "perMonth": "/ kuukausi",
+    "unlimitedProducts": "Rajoittamaton määrä aktiivisia tuotteita",
+    "limitedProducts": "Enintään {{count}} aktiivista tuotetta",
+    "freeTrial": "{{count}} päivän ilmainen kokeilu",
+    "noTrial": "Ei kokeilujaksoa",
+    "billingWarning": "Laskutuksesi on {{status}}",
+    "errors": {
+      "somethingWrong": "Jokin menee pieleen",
+      "patience": "Työskentelemme asian parissa. Kiitos kärsivällisyydestäsi"
+    },
+    "modal": {
+      "title": "Vaihda suunnitelmaa",
+      "confirm": "Vahvista muutos",
+      "cancel": "Peruuta",
+      "switchingTo": "Olet vaihtamassa suunnitelmaan **{{title}}**.",
+      "limitWarning": "Tämä suunnitelma on rajoitettu {{count}} tuotteeseen. Jos käyttö ylittää tämän rajan, ylimääräiset tuotteet poistetaan käytöstä (mutta niitä ei poisteta)."
+    }
+  }
+}

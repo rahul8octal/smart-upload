@@ -1,0 +1,23 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "13a6111503f330d11d661bde5cf3c2c9"
+name = "overlay"
+application_url = "https://supersentimentally-intercommunicable-charolette.ngrok-free.dev"
+embedded = true
+
+[webhooks]
+api_version = "2026-01"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products,write_themes"
+optional_scopes = [ ]
+use_legacy_install_flow = false
+
+[auth]
+redirect_urls = [
+  "https://supersentimentally-intercommunicable-charolette.ngrok-free.dev/auth/callback"
+]
+
+[build]
+automatically_update_urls_on_dev = true

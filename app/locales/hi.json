@@ -1,0 +1,182 @@
+{
+  "common": {
+    "actions": {
+      "createOverlay": "ओवरले बनाएं",
+      "delete": "हटाएं",
+      "cancel": "रद्द करें",
+      "enable": "सक्रिय करें",
+      "disable": "निष्क्रिय करें",
+      "previous": "पिछला",
+      "next": "अगला",
+      "clearAll": "सभी साफ़ करें",
+      "upgradePlan": "प्लान अपग्रेड करें",
+      "save": "सेव करें",
+      "discard": "रद्द करें",
+      "confirm": "हाँ"
+    },
+    "table": {
+      "showing": "दिखा रहे हैं",
+      "of": "में से",
+      "page": "पेज",
+      "noResultsTitle": "अभी कोई ओवरले नहीं",
+      "noResultsDesc": "अपने स्टोर के लिए नए ओवरले बनाएं"
+    },
+    "status": {
+      "active": "सक्रिय",
+      "inactive": "निष्क्रिय",
+      "all": "सभी"
+    },
+    "targets": {
+      "allProducts": "सभी उत्पाद",
+      "products": "{{count}} उत्पाद",
+      "productsPlural": "{{count}} उत्पाद"
+    },
+    "resources": {
+      "overlay": "ओवरले",
+      "overlays": "ओवरले"
+    }
+  },
+  "home": {
+    "appSetupGuide": {
+      "title": "ऐप सेटअप गाइड",
+      "instructions": "सबसे पहले ऐप को सक्षम करें। स्टोर एडमिन में जाएं: Online Store > Customize > Theme settings > App embeds > \"Easy Overlay Settings\" ढूंढें और Enable / Disable पर क्लिक करें।"
+    },
+    "actions": {
+      "enableAppBlock": "ऐप ब्लॉक सक्षम करें",
+      "disableAppBlock": "ऐप ब्लॉक निष्क्रिय करें"
+    },
+    "plan": {
+      "limitReachedTitle": "फ्री प्लान की सीमा पूरी हो गई",
+      "limitReachedDesc": "फ्री प्लान की सीमा पूरी हो गई है (3 उत्पाद)। Plus प्लान में अपग्रेड करें।",
+      "freeBadge": "फ्री प्लान",
+      "freeLimit": "3 उत्पाद की सीमा"
+    },
+    "filters": {
+      "searchPlaceholder": "ग्रुप नाम से खोजें",
+      "statusLabel": "स्थिति"
+    },
+    "modal": {
+      "deleteTitle": "ओवरले ग्रुप हटाएं?",
+      "deleteBody": "क्या आप वाकई इस ओवरले ग्रुप को हटाना चाहते हैं? यह कार्रवाई वापस नहीं की जा सकती।"
+    },
+    "table": {
+      "heading": "ओवरले",
+      "group": "ग्रुप",
+      "targets": "लक्ष्य",
+      "status": "स्थिति",
+      "action": "एक्शन",
+      "editBlocked": "All Products ओवरले एडिट करने के लिए अपग्रेड करें",
+      "fallbackName": "ओवरले {{index}}"
+    }
+  },
+  "builder": {
+    "preview": {
+      "previewLanguage": "प्रीव्यू भाषा",
+      "selectProduct": "प्रीव्यू के लिए उत्पाद चुनें",
+      "placeholderAll": "सभी उत्पाद",
+      "placeholderSelected": "चुने गए उत्पाद",
+      "loading": "लोड हो रहा है...",
+      "noProducts": "कोई उत्पाद चयनित नहीं",
+      "note": "केवल प्रीव्यू दिखाने के लिए।",
+      "title": "प्रीव्यू",
+      "tooltip": {
+        "saveFirst": "प्रीव्यू देखने के लिए पहले ओवरले सेव करें",
+        "selectProduct": "प्रीव्यू के लिए कोई उत्पाद चुनें",
+        "open": "स्टोरफ्रंट पर ओवरले प्रीव्यू करें",
+        "noHandle": "प्रीव्यू के लिए कोई प्रोडक्ट हैंडल उपलब्ध नहीं है"
+      }
+    },
+    "toast": {
+      "somethingWrong": "कुछ गलत हो गया",
+      "statusUpdated": "स्थिति सफलतापूर्वक अपडेट की गई",
+      "overlaySaved": "ओवरले सफलतापूर्वक सेव किया गया",
+      "addOverlay": "कृपया कम से कम एक ओवरले जोड़ें।",
+      "selectProduct": "कृपया कम से कम एक उत्पाद चुनें।",
+      "selectCollection": "कृपया कम से कम एक कलेक्शन चुनें।",
+      "fixErrors": "कृपया अपने ओवरले में त्रुटियाँ ठीक करें।",
+      "leaveWarning": "जाने से पहले बदलाव सेव करें या रद्द करें।",
+      "looksGreat": "शानदार! ओवरले अच्छा दिख रहा है।"
+    },
+    "errors": {
+      "textRequired": "कृपया टेक्स्ट ओवरले के लिए टेक्स्ट दर्ज करें।",
+      "imageRequired": "कृपया इमेज ओवरले के लिए एक इमेज जोड़ें।"
+    },
+    "statusModal": {
+      "title": "स्थिति अपडेट करें",
+      "body": "क्या आप इस ओवरले की स्थिति अपडेट करना चाहते हैं?",
+      "confirm": "स्थिति अपडेट करें"
+    },
+    "publish": {
+      "banner": "ओवरले प्रकाशित हो गया!",
+      "dismiss": "ओवरले पब्लिश नोटिस बंद करें",
+      "title": "क्या आपका ओवरले स्टोर पर दिख रहा है?",
+      "helpText": "अगर ओवरले प्रोडक्ट पेज पर नहीं दिख रहा है या आप उसकी पोज़िशन बदलना चाहते हैं, तो हमसे संपर्क करें।",
+      "confirmYes": "हाँ, बिल्कुल सही!",
+      "confirmNo": "कुछ समस्याएँ हैं"
+    },
+    "form": {
+      "overlayGroupTitle": "ओवरले ग्रुप",
+      "groupNameLabel": "ग्रुप नाम",
+      "groupNamePlaceholder": "जैसे: Holiday Promo",
+      "selectSource": "सोर्स चुनें",
+      "allProducts": "सभी उत्पाद",
+      "allProductsBadge": "Plus प्लान",
+      "products": "उत्पाद",
+      "selectProducts": "उत्पाद चुनें",
+      "productsSelected": "{{count}} उत्पाद चयनित",
+      "productsSelectedPlural": "{{count}} उत्पाद चयनित",
+      "productListHeading": "उत्पाद",
+      "productListSelectedBadge": "{{count}} चयनित",
+      "searchProducts": "उत्पाद खोजें",
+      "createOverlayTitle": "ओवरले बनाएं",
+      "createTextOverlay": "टेक्स्ट ओवरले",
+      "createImageOverlay": "इमेज ओवरले",
+      "productPreviewTooltip": "इस उत्पाद का स्टोरफ्रंट प्रीव्यू देखें",
+      "manageOverlay": "ओवरले मैनेज करें",
+      "fontSettings": "फ़ॉन्ट सेटिंग्स",
+      "alignmentSettings": "अलाइनमेंट और पोज़िशन",
+      "spacingSettings": "स्पेसिंग सेटिंग्स",
+      "sectionSettings": "सेक्शन सेटिंग्स",
+      "imageSettings": "इमेज सेटिंग्स",
+      "imageSpacingSettings": "स्पेसिंग सेटिंग्स"
+    }
+  },
+  "settings": {
+    "title": "सेटिंग्स",
+    "language": {
+      "heading": "ऐप भाषा",
+      "description": "अपने ऐप इंटरफ़ेस के लिए भाषा चुनें।",
+      "label": "भाषा",
+      "saved": "सेटिंग्स सेव हो गईं",
+      "save": "सेव करें"
+    }
+  },
+  "navigation": {
+    "home": "होम",
+    "settings": "सेटिंग्स",
+    "plan": "प्लान"
+  },
+  "plans": {
+    "title": "प्लान और कीमतें",
+    "current": "वर्तमान",
+    "upgrade": "अपग्रेड",
+    "downgrade": "डाउनग्रेड",
+    "perMonth": "/ महीना",
+    "unlimitedProducts": "असीमित सक्रिय उत्पाद",
+    "limitedProducts": "{{count}} सक्रिय उत्पादों तक",
+    "freeTrial": "{{count}} दिनों का निःशुल्क परीक्षण",
+    "noTrial": "कोई परीक्षण अवधि नहीं",
+    "billingWarning": "आपकी बिलिंग {{status}} है",
+    "errors": {
+      "somethingWrong": "कुछ गलत हो रहा है",
+      "patience": "हम इस पर काम कर रहे हैं। आपके धैर्य के लिए धन्यवाद"
+    },
+    "modal": {
+      "title": "प्लान बदलें",
+      "confirm": "बदलाव की पुष्टि करें",
+      "cancel": "रद्द करें",
+      "switchingTo": "आप **{{title}}** पर स्विच कर रहे हैं।",
+      "limitWarning": "यह प्लान {{count}} उत्पादों तक सीमित है। यदि आपका उपयोग इस सीमा से अधिक हो जाता है, तो अतिरिक्त उत्पादों को निष्क्रिय कर दिया जाएगा (लेकिन हटाया नहीं जाएगा)।"
+    }
+  }
+}

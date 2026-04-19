@@ -1,0 +1,182 @@
+{
+  "common": {
+    "actions": {
+      "createOverlay": "Crear superposición",
+      "delete": "Eliminar",
+      "cancel": "Cancelar",
+      "enable": "Activar",
+      "disable": "Desactivar",
+      "previous": "Anterior",
+      "next": "Siguiente",
+      "clearAll": "Borrar todo",
+      "upgradePlan": "Actualizar plan",
+      "save": "Guardar",
+      "discard": "Descartar",
+      "confirm": "Sí"
+    },
+    "table": {
+      "showing": "Mostrando",
+      "of": "de",
+      "page": "Página",
+      "noResultsTitle": "Aún no hay superposiciones",
+      "noResultsDesc": "Crea nuevas superposiciones para tu tienda"
+    },
+    "status": {
+      "active": "Activo",
+      "inactive": "Inactivo",
+      "all": "Todos"
+    },
+    "targets": {
+      "allProducts": "Todos los productos",
+      "products": "{{count}} producto",
+      "productsPlural": "{{count}} productos"
+    },
+    "resources": {
+      "overlay": "superposición",
+      "overlays": "superposiciones"
+    }
+  },
+  "home": {
+    "appSetupGuide": {
+      "title": "Guía de configuración de la aplicación",
+      "instructions": "Primero, activa la aplicación. En el panel de administración de la tienda, ve a Tienda online > Personalizar > Configuración del tema > Integraciones de aplicaciones > Busca \"Easy Overlay Settings\" y actívalo o desactívalo."
+    },
+    "actions": {
+      "enableAppBlock": "Activar bloque de la aplicación",
+      "disableAppBlock": "Desactivar bloque de la aplicación"
+    },
+    "plan": {
+      "limitReachedTitle": "Límite del plan gratuito alcanzado",
+      "limitReachedDesc": "Se ha alcanzado el límite del plan gratuito (3 productos). Actualiza al plan Plus.",
+      "freeBadge": "Plan gratuito",
+      "freeLimit": "Límite de 3 productos"
+    },
+    "filters": {
+      "searchPlaceholder": "Buscar por nombre del grupo",
+      "statusLabel": "Estado"
+    },
+    "modal": {
+      "deleteTitle": "¿Eliminar grupo de superposiciones?",
+      "deleteBody": "¿Estás seguro de que deseas eliminar este grupo de superposiciones? Esta acción no se puede deshacer."
+    },
+    "table": {
+      "heading": "Superposiciones",
+      "group": "Grupo",
+      "targets": "Objetivos",
+      "status": "Estado",
+      "action": "Acción",
+      "editBlocked": "Actualiza para editar la superposición de todos los productos",
+      "fallbackName": "Superposición {{index}}"
+    }
+  },
+  "builder": {
+    "preview": {
+      "previewLanguage": "Idioma de vista previa",
+      "selectProduct": "Seleccionar producto para vista previa",
+      "placeholderAll": "Todos los productos",
+      "placeholderSelected": "Productos seleccionados",
+      "loading": "Cargando...",
+      "noProducts": "No hay productos seleccionados",
+      "note": "Solo para visualización.",
+      "title": "Vista previa",
+      "tooltip": {
+        "saveFirst": "Guarda la superposición para previsualizar",
+        "selectProduct": "Selecciona un producto para previsualizar",
+        "open": "Previsualizar la superposición en la tienda",
+        "noHandle": "No hay identificador de producto disponible para la vista previa"
+      }
+    },
+    "toast": {
+      "somethingWrong": "Algo salió mal",
+      "statusUpdated": "Estado actualizado correctamente",
+      "overlaySaved": "Superposición guardada correctamente",
+      "addOverlay": "Agrega al menos una superposición.",
+      "selectProduct": "Selecciona al menos un producto.",
+      "selectCollection": "Selecciona al menos una colección.",
+      "fixErrors": "Corrige los errores en tu superposición.",
+      "leaveWarning": "Guarda o descarta los cambios antes de salir.",
+      "looksGreat": "¡Genial! La superposición se ve bien."
+    },
+    "errors": {
+      "textRequired": "Ingresa texto para la superposición de texto.",
+      "imageRequired": "Agrega una imagen para la superposición de imagen."
+    },
+    "statusModal": {
+      "title": "Actualizar estado",
+      "body": "¿Estás seguro de que deseas actualizar el estado de esta superposición?",
+      "confirm": "Actualizar estado"
+    },
+    "publish": {
+      "banner": "¡Superposición publicada!",
+      "dismiss": "Cerrar aviso de publicación",
+      "title": "¿La superposición es visible en tu tienda?",
+      "helpText": "Si la superposición no se muestra en la página del producto o deseas una posición diferente, contáctanos.",
+      "confirmYes": "¡Sí, perfecto!",
+      "confirmNo": "Hay problemas"
+    },
+    "form": {
+      "overlayGroupTitle": "Grupo de superposiciones",
+      "groupNameLabel": "Nombre del grupo",
+      "groupNamePlaceholder": "p. ej. Promoción de vacaciones",
+      "selectSource": "Seleccionar fuente",
+      "allProducts": "Todos los productos",
+      "allProductsBadge": "Plan Plus",
+      "products": "Productos",
+      "selectProducts": "Seleccionar productos",
+      "productsSelected": "{{count}} producto seleccionado",
+      "productsSelectedPlural": "{{count}} productos seleccionados",
+      "productListHeading": "Producto(s)",
+      "productListSelectedBadge": "{{count}} seleccionados",
+      "searchProducts": "Buscar productos",
+      "createOverlayTitle": "Crear superposición",
+      "createTextOverlay": "Superposición de texto",
+      "createImageOverlay": "Superposición de imagen",
+      "productPreviewTooltip": "Previsualizar este producto en la tienda",
+      "manageOverlay": "Administrar superposición",
+      "fontSettings": "Configuración de fuente",
+      "alignmentSettings": "Alineación y posición",
+      "spacingSettings": "Configuración de espaciado",
+      "sectionSettings": "Configuración de sección",
+      "imageSettings": "Configuración de imagen",
+      "imageSpacingSettings": "Configuración de espaciado"
+    }
+  },
+  "settings": {
+    "title": "Configuración",
+    "language": {
+      "heading": "Idioma de la aplicación",
+      "description": "Elige el idioma de la interfaz de la aplicación.",
+      "label": "Idioma",
+      "saved": "Configuración guardada",
+      "save": "Guardar"
+    }
+  },
+  "navigation": {
+    "home": "Inicio",
+    "settings": "Configuración",
+    "plan": "Plan"
+  },
+  "plans": {
+    "title": "Plan y precios",
+    "current": "Actual",
+    "upgrade": "Actualizar",
+    "downgrade": "Degradar",
+    "perMonth": "/ mes",
+    "unlimitedProducts": "Productos activos ilimitados",
+    "limitedProducts": "Hasta {{count}} productos activos",
+    "freeTrial": "{{count}} días de prueba gratuita",
+    "noTrial": "Sin período de prueba",
+    "billingWarning": "Tu facturación está {{status}}",
+    "errors": {
+      "somethingWrong": "Algo está saliendo mal",
+      "patience": "Estamos trabajando en ello. Gracias por tu paciencia"
+    },
+    "modal": {
+      "title": "Cambiar de plan",
+      "confirm": "Confirmar cambio",
+      "cancel": "Cancelar",
+      "switchingTo": "Estás cambiando a **{{title}}**.",
+      "limitWarning": "Este plan está limitado a {{count}} productos. Si tu uso supera este límite, los productos excedentes se desactivarán (pero no se eliminarán)."
+    }
+  }
+}

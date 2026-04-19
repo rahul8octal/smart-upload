@@ -1,0 +1,182 @@
+{
+  "common": {
+    "actions": {
+      "createOverlay": "Opret overlay",
+      "delete": "Slet",
+      "cancel": "Annuller",
+      "enable": "Aktivér",
+      "disable": "Deaktiver",
+      "previous": "Forrige",
+      "next": "Næste",
+      "clearAll": "Ryd alt",
+      "upgradePlan": "Opgrader plan",
+      "save": "Gem",
+      "discard": "Kassér",
+      "confirm": "Ja"
+    },
+    "table": {
+      "showing": "Viser",
+      "of": "af",
+      "page": "Side",
+      "noResultsTitle": "Ingen overlays endnu",
+      "noResultsDesc": "Opret nye overlays til din butik"
+    },
+    "status": {
+      "active": "Aktiv",
+      "inactive": "Inaktiv",
+      "all": "Alle"
+    },
+    "targets": {
+      "allProducts": "Alle produkter",
+      "products": "{{count}} produkt",
+      "productsPlural": "{{count}} produkter"
+    },
+    "resources": {
+      "overlay": "overlay",
+      "overlays": "overlays"
+    }
+  },
+  "home": {
+    "appSetupGuide": {
+      "title": "Guide til opsætning af app",
+      "instructions": "Først skal du aktivere appen. Gå til Onlinebutik > Tilpas > Temaindstillinger > App-integreringer > Find \"Easy Overlay Settings\" og aktivér eller deaktiver."
+    },
+    "actions": {
+      "enableAppBlock": "Aktivér app-blok",
+      "disableAppBlock": "Deaktiver app-blok"
+    },
+    "plan": {
+      "limitReachedTitle": "Gratis plan-grænsen er nået",
+      "limitReachedDesc": "Grænsen for den gratis plan er nået (3 produkter). Opgrader til Plus-planen.",
+      "freeBadge": "Gratis plan",
+      "freeLimit": "Grænse på 3 produkter"
+    },
+    "filters": {
+      "searchPlaceholder": "Søg efter gruppenavn",
+      "statusLabel": "Status"
+    },
+    "modal": {
+      "deleteTitle": "Slet overlay-gruppe?",
+      "deleteBody": "Er du sikker på, at du vil slette denne overlay-gruppe? Dette kan ikke fortrydes."
+    },
+    "table": {
+      "heading": "Overlays",
+      "group": "Gruppe",
+      "targets": "Mål",
+      "status": "Status",
+      "action": "Handling",
+      "editBlocked": "Opgrader for at redigere overlay for alle produkter",
+      "fallbackName": "Overlay {{index}}"
+    }
+  },
+  "builder": {
+    "preview": {
+      "previewLanguage": "Forhåndsvisningssprog",
+      "selectProduct": "Vælg produkt til forhåndsvisning",
+      "placeholderAll": "Alle produkter",
+      "placeholderSelected": "Valgte produkter",
+      "loading": "Indlæser...",
+      "noProducts": "Ingen produkter valgt",
+      "note": "Kun til visning.",
+      "title": "Forhåndsvisning",
+      "tooltip": {
+        "saveFirst": "Gem overlay for at forhåndsvise",
+        "selectProduct": "Vælg et produkt for forhåndsvisning",
+        "open": "Forhåndsvis overlay i butikken",
+        "noHandle": "Ingen produkthåndtag tilgængeligt for forhåndsvisning"
+      }
+    },
+    "toast": {
+      "somethingWrong": "Noget gik galt",
+      "statusUpdated": "Status blev opdateret",
+      "overlaySaved": "Overlay blev gemt",
+      "addOverlay": "Tilføj mindst ét overlay.",
+      "selectProduct": "Vælg mindst ét produkt.",
+      "selectCollection": "Vælg mindst én kollektion.",
+      "fixErrors": "Ret fejlene i dit overlay/dine overlays.",
+      "leaveWarning": "Gem eller kassér ændringer før du forlader siden.",
+      "looksGreat": "Fantastisk! Overlayet ser godt ud."
+    },
+    "errors": {
+      "textRequired": "Indtast tekst til tekst-overlayet.",
+      "imageRequired": "Tilføj et billede til billede-overlayet."
+    },
+    "statusModal": {
+      "title": "Opdater status",
+      "body": "Er du sikker på, at du vil opdatere status for dette overlay?",
+      "confirm": "Opdater status"
+    },
+    "publish": {
+      "banner": "Overlay udgivet!",
+      "dismiss": "Luk meddelelse om overlay-udgivelse",
+      "title": "Er overlayet synligt i din butik?",
+      "helpText": "Hvis overlayet ikke vises på produktsiden, eller du ønsker en anden placering, kontakt os.",
+      "confirmYes": "Ja, perfekt!",
+      "confirmNo": "Der er problemer"
+    },
+    "form": {
+      "overlayGroupTitle": "Overlay-gruppe",
+      "groupNameLabel": "Gruppenavn",
+      "groupNamePlaceholder": "fx Ferietilbud",
+      "selectSource": "Vælg kilde",
+      "allProducts": "Alle produkter",
+      "allProductsBadge": "Plus-plan",
+      "products": "Produkter",
+      "selectProducts": "Vælg produkter",
+      "productsSelected": "{{count}} produkt valgt",
+      "productsSelectedPlural": "{{count}} produkter valgt",
+      "productListHeading": "Produkt(er)",
+      "productListSelectedBadge": "{{count}} valgt",
+      "searchProducts": "Søg produkter",
+      "createOverlayTitle": "Opret overlay",
+      "createTextOverlay": "Tekst-overlay",
+      "createImageOverlay": "Billede-overlay",
+      "productPreviewTooltip": "Forhåndsvis dette produkt i butikken",
+      "manageOverlay": "Administrer overlay",
+      "fontSettings": "Skrifttypeindstillinger",
+      "alignmentSettings": "Justering og placering",
+      "spacingSettings": "Afstandsindstillinger",
+      "sectionSettings": "Sektionsindstillinger",
+      "imageSettings": "Billedindstillinger",
+      "imageSpacingSettings": "Afstandsindstillinger"
+    }
+  },
+  "settings": {
+    "title": "Indstillinger",
+    "language": {
+      "heading": "App-sprog",
+      "description": "Vælg sproget for appens brugerflade.",
+      "label": "Sprog",
+      "saved": "Indstillinger gemt",
+      "save": "Gem"
+    }
+  },
+  "navigation": {
+    "home": "Hjem",
+    "settings": "Indstillinger",
+    "plan": "Plan"
+  },
+  "plans": {
+    "title": "Plan & Priser",
+    "current": "Nuværende",
+    "upgrade": "Opgrader",
+    "downgrade": "Nedgrader",
+    "perMonth": "/ måned",
+    "unlimitedProducts": "Ubegrænset antal aktive produkter",
+    "limitedProducts": "Op til {{count}} aktive produkter",
+    "freeTrial": "{{count}} dages gratis prøveperiode",
+    "noTrial": "Ingen prøveperiode",
+    "billingWarning": "Din fakturering er {{status}}",
+    "errors": {
+      "somethingWrong": "Noget går galt",
+      "patience": "Vi arbejder på det. Tak for din tålmodighed"
+    },
+    "modal": {
+      "title": "Skift plan",
+      "confirm": "Bekræft ændring",
+      "cancel": "Annuller",
+      "switchingTo": "Du skifter til **{{title}}**.",
+      "limitWarning": "Denne plan er begrænset til {{count}} produkter. Hvis dit forbrug overstiger denne grænse, vil overskydende produkter blive deaktiveret (men ikke slettet)."
+    }
+  }
+}

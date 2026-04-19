@@ -1,0 +1,182 @@
+{
+  "common": {
+    "actions": {
+      "createOverlay": "Búa til yfirlag",
+      "delete": "Eyða",
+      "cancel": "Hætta við",
+      "enable": "Virkja",
+      "disable": "Óvirkja",
+      "previous": "Fyrri",
+      "next": "Næsti",
+      "clearAll": "Hreinsa allt",
+      "upgradePlan": "Uppfæra áætlun",
+      "save": "Vista",
+      "discard": "Henda",
+      "confirm": "Já"
+    },
+    "table": {
+      "showing": "Sýnir",
+      "of": "af",
+      "page": "Síða",
+      "noResultsTitle": "Engin yfirlag ennþá",
+      "noResultsDesc": "Búðu til ný yfirlag fyrir verslunina þína"
+    },
+    "status": {
+      "active": "Virkt",
+      "inactive": "Óvirkt",
+      "all": "Allt"
+    },
+    "targets": {
+      "allProducts": "Allar vörur",
+      "products": "{{count}} vara",
+      "productsPlural": "{{count}} vörur"
+    },
+    "resources": {
+      "overlay": "yfirlag",
+      "overlays": "yfirlag"
+    }
+  },
+  "home": {
+    "appSetupGuide": {
+      "title": "Leiðbeiningar um uppsetningu forrits",
+      "instructions": "Fyrst skaltu virkja forritið. Í stjórnborði verslunarinnar farðu í Netverslun > Sérsníða > Þema stillingar > Forritaísetningar > Finndu \"Easy Overlay Settings\" og virkjaðu eða óvirkjaðu."
+    },
+    "actions": {
+      "enableAppBlock": "Virkja forritsblokk",
+      "disableAppBlock": "Óvirkja forritsblokk"
+    },
+    "plan": {
+      "limitReachedTitle": "Takmörk ókeypis áætlunar náð",
+      "limitReachedDesc": "Takmörk ókeypis áætlunar hafa verið náð (3 vörur). Uppfærðu í Plus áætlun.",
+      "freeBadge": "Ókeypis áætlun",
+      "freeLimit": "3 vara takmörk"
+    },
+    "filters": {
+      "searchPlaceholder": "Leita eftir heiti hóps",
+      "statusLabel": "Staða"
+    },
+    "modal": {
+      "deleteTitle": "Eyða yfirlagahópi?",
+      "deleteBody": "Ertu viss um að þú viljir eyða þessum yfirlagahópi? Þetta er ekki hægt að afturkalla."
+    },
+    "table": {
+      "heading": "Yfirlag",
+      "group": "Hópur",
+      "targets": "Markmið",
+      "status": "Staða",
+      "action": "Aðgerð",
+      "editBlocked": "Uppfærðu til að breyta yfirlagi allra vara",
+      "fallbackName": "Yfirlag {{index}}"
+    }
+  },
+  "builder": {
+    "preview": {
+      "previewLanguage": "Forskoðunarmál",
+      "selectProduct": "Veldu vöru til forskoðunar",
+      "placeholderAll": "Allar vörur",
+      "placeholderSelected": "Valdar vörur",
+      "loading": "Hleður...",
+      "noProducts": "Engar vörur valdar",
+      "note": "Aðeins til forskoðunar.",
+      "title": "Forskoðun",
+      "tooltip": {
+        "saveFirst": "Vistaðu yfirlagið til að forskoða",
+        "selectProduct": "Veldu vöru til forskoðunar",
+        "open": "Forskoða yfirlag í verslun",
+        "noHandle": "Engin vöruauðkenni tiltæk til forskoðunar"
+      }
+    },
+    "toast": {
+      "somethingWrong": "Eitthvað fór úrskeiðis",
+      "statusUpdated": "Staða uppfærð",
+      "overlaySaved": "Yfirlag vistað",
+      "addOverlay": "Bættu við að minnsta kosti einu yfirlagi.",
+      "selectProduct": "Veldu að minnsta kosti eina vöru.",
+      "selectCollection": "Veldu að minnsta kosti eina safn.",
+      "fixErrors": "Lagaðu villurnar í yfirlaginu.",
+      "leaveWarning": "Vistaðu eða hentu breytingum áður en þú ferð.",
+      "looksGreat": "Frábært! Yfirlagið lítur vel út."
+    },
+    "errors": {
+      "textRequired": "Sláðu inn texta fyrir textayfirlag.",
+      "imageRequired": "Bættu við mynd fyrir myndayfirlag."
+    },
+    "statusModal": {
+      "title": "Uppfæra stöðu",
+      "body": "Ertu viss um að þú viljir uppfæra stöðu þessa yfirlag?",
+      "confirm": "Uppfæra stöðu"
+    },
+    "publish": {
+      "banner": "Yfirlag birt!",
+      "dismiss": "Loka tilkynningu um birtingu yfirlag",
+      "title": "Er yfirlagið sýnilegt í versluninni þinni?",
+      "helpText": "Ef yfirlagið birtist ekki á vörusíðu eða þú vilt hafa það á öðrum stað, hafðu samband við okkur.",
+      "confirmYes": "Já, fullkomið!",
+      "confirmNo": "Það eru vandamál"
+    },
+    "form": {
+      "overlayGroupTitle": "Yfirlagahópur",
+      "groupNameLabel": "Heiti hóps",
+      "groupNamePlaceholder": "t.d. Hátíðartilboð",
+      "selectSource": "Veldu uppruna",
+      "allProducts": "Allar vörur",
+      "allProductsBadge": "Plus áætlun",
+      "products": "Vörur",
+      "selectProducts": "Veldu vörur",
+      "productsSelected": "{{count}} vara valin",
+      "productsSelectedPlural": "{{count}} vörur valdar",
+      "productListHeading": "Vara(r)",
+      "productListSelectedBadge": "{{count}} valið",
+      "searchProducts": "Leita að vörum",
+      "createOverlayTitle": "Búa til yfirlag",
+      "createTextOverlay": "Textayfirlag",
+      "createImageOverlay": "Myndayfirlag",
+      "productPreviewTooltip": "Forskoða þessa vöru í verslun",
+      "manageOverlay": "Stjórna yfirlagi",
+      "fontSettings": "Leturstillingar",
+      "alignmentSettings": "Jöfnun og staðsetning",
+      "spacingSettings": "Bilastillingar",
+      "sectionSettings": "Hluta stillingar",
+      "imageSettings": "Myndstillingar",
+      "imageSpacingSettings": "Bilastillingar"
+    }
+  },
+  "settings": {
+    "title": "Stillingar",
+    "language": {
+      "heading": "Tungumál forrits",
+      "description": "Veldu tungumál fyrir notendaviðmót forritsins.",
+      "label": "Tungumál",
+      "saved": "Stillingar vistaðar",
+      "save": "Vista"
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "settings": "Settings",
+    "plan": "Plan"
+  },
+  "plans": {
+    "title": "Plan & Pricing",
+    "current": "Current",
+    "upgrade": "Upgrade",
+    "downgrade": "Downgrade",
+    "perMonth": "/ month",
+    "unlimitedProducts": "Unlimited active products",
+    "limitedProducts": "Up to {{count}} active products",
+    "freeTrial": "{{count}}-day free trial",
+    "noTrial": "No trial period",
+    "billingWarning": "Your billing is {{status}}",
+    "errors": {
+      "somethingWrong": "Something is going wrong",
+      "patience": "We are working on it. Thanks for your patience"
+    },
+    "modal": {
+      "title": "Change Plan",
+      "confirm": "Confirm Change",
+      "cancel": "Cancel",
+      "switchingTo": "You are switching to **{{title}}**.",
+      "limitWarning": "This plan is limited to {{count}} products. If you usage exceeds this limit, excess products will be deactivated (but not deleted)."
+    }
+  }
+}

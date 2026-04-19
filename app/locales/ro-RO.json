@@ -1,0 +1,182 @@
+{
+  "common": {
+    "actions": {
+      "createOverlay": "Creează suprapunere",
+      "delete": "Șterge",
+      "cancel": "Anulează",
+      "enable": "Activează",
+      "disable": "Dezactivează",
+      "previous": "Anterior",
+      "next": "Următor",
+      "clearAll": "Șterge tot",
+      "upgradePlan": "Actualizează plan",
+      "save": "Salvează",
+      "discard": "Renunță",
+      "confirm": "Da"
+    },
+    "table": {
+      "showing": "Se afișează",
+      "of": "din",
+      "page": "Pagină",
+      "noResultsTitle": "Nu există suprapuneri încă",
+      "noResultsDesc": "Creează noi suprapuneri pentru magazinul tău"
+    },
+    "status": {
+      "active": "Activ",
+      "inactive": "Inactiv",
+      "all": "Toate"
+    },
+    "targets": {
+      "allProducts": "Toate produsele",
+      "products": "{{count}} produs",
+      "productsPlural": "{{count}} produse"
+    },
+    "resources": {
+      "overlay": "suprapunere",
+      "overlays": "suprapuneri"
+    }
+  },
+  "home": {
+    "appSetupGuide": {
+      "title": "Ghid de configurare a aplicației",
+      "instructions": "Mai întâi, activează aplicația. În panoul de administrare al magazinului, accesează Magazin Online > Personalizare > Setări temă > Aplicații încorporate > găsește \"Easy Overlay Settings\" și activează/dezactivează."
+    },
+    "actions": {
+      "enableAppBlock": "Activează blocul aplicației",
+      "disableAppBlock": "Dezactivează blocul aplicației"
+    },
+    "plan": {
+      "limitReachedTitle": "Limita planului gratuit atinsă",
+      "limitReachedDesc": "Limita planului gratuit a fost atinsă (3 produse). Actualizează la planul Plus.",
+      "freeBadge": "Plan gratuit",
+      "freeLimit": "Limită de 3 produse"
+    },
+    "filters": {
+      "searchPlaceholder": "Caută după numele grupului",
+      "statusLabel": "Stare"
+    },
+    "modal": {
+      "deleteTitle": "Ștergi grupul de suprapuneri?",
+      "deleteBody": "Ești sigur că vrei să ștergi acest grup de suprapuneri? Această acțiune nu poate fi anulată."
+    },
+    "table": {
+      "heading": "Suprapuneri",
+      "group": "Grup",
+      "targets": "Ținte",
+      "status": "Stare",
+      "action": "Acțiune",
+      "editBlocked": "Actualizează planul pentru a edita suprapunerea pentru toate produsele",
+      "fallbackName": "Suprapunere {{index}}"
+    }
+  },
+  "builder": {
+    "preview": {
+      "previewLanguage": "Limba pentru previzualizare",
+      "selectProduct": "Selectează produs pentru previzualizare",
+      "placeholderAll": "Toate produsele",
+      "placeholderSelected": "Produse selectate",
+      "loading": "Se încarcă...",
+      "noProducts": "Nu este selectat niciun produs",
+      "note": "Doar pentru afișare previzualizare.",
+      "title": "Previzualizare",
+      "tooltip": {
+        "saveFirst": "Salvează suprapunerea pentru previzualizare",
+        "selectProduct": "Selectează un produs pentru previzualizare",
+        "open": "Previzualizează suprapunerea în magazin",
+        "noHandle": "Nu există identificator de produs disponibil pentru previzualizare"
+      }
+    },
+    "toast": {
+      "somethingWrong": "Ceva nu a mers bine",
+      "statusUpdated": "Starea a fost actualizată cu succes",
+      "overlaySaved": "Suprapunerea a fost salvată cu succes",
+      "addOverlay": "Adaugă cel puțin o suprapunere.",
+      "selectProduct": "Selectează cel puțin un produs.",
+      "selectCollection": "Selectează cel puțin o colecție.",
+      "fixErrors": "Te rog să corectezi erorile din suprapunere(i).",
+      "leaveWarning": "Salvează sau renunță la modificări înainte de a părăsi pagina.",
+      "looksGreat": "Perfect! Suprapunerea arată bine."
+    },
+    "errors": {
+      "textRequired": "Introdu text pentru suprapunerea de tip text.",
+      "imageRequired": "Adaugă o imagine pentru suprapunerea de tip imagine."
+    },
+    "statusModal": {
+      "title": "Actualizează starea",
+      "body": "Ești sigur că vrei să actualizezi starea acestei suprapuneri?",
+      "confirm": "Actualizează starea"
+    },
+    "publish": {
+      "banner": "Suprapunere publicată!",
+      "dismiss": "Închide notificarea de publicare",
+      "title": "Suprapunerea este vizibilă în magazinul tău?",
+      "helpText": "Dacă suprapunerea nu este afișată pe pagina produsului sau vrei o altă poziție, contactează-ne.",
+      "confirmYes": "Da, perfect!",
+      "confirmNo": "Există probleme"
+    },
+    "form": {
+      "overlayGroupTitle": "Grup de suprapuneri",
+      "groupNameLabel": "Nume grup",
+      "groupNamePlaceholder": "ex.: Promoție de sărbători",
+      "selectSource": "Selectează sursa",
+      "allProducts": "Toate produsele",
+      "allProductsBadge": "Plan Plus",
+      "products": "Produse",
+      "selectProducts": "Selectează produse",
+      "productsSelected": "{{count}} produs selectat",
+      "productsSelectedPlural": "{{count}} produse selectate",
+      "productListHeading": "Produs(e)",
+      "productListSelectedBadge": "{{count}} selectat(e)",
+      "searchProducts": "Caută produse",
+      "createOverlayTitle": "Creează suprapunere",
+      "createTextOverlay": "Suprapunere text",
+      "createImageOverlay": "Suprapunere imagine",
+      "productPreviewTooltip": "Previzualizează acest produs în magazin",
+      "manageOverlay": "Gestionează suprapunerea",
+      "fontSettings": "Setări font",
+      "alignmentSettings": "Aliniere și poziție",
+      "spacingSettings": "Setări spațiere",
+      "sectionSettings": "Setări secțiune",
+      "imageSettings": "Setări imagine",
+      "imageSpacingSettings": "Setări spațiere"
+    }
+  },
+  "settings": {
+    "title": "Setări",
+    "language": {
+      "heading": "Limba aplicației",
+      "description": "Alege limba pentru interfața aplicației.",
+      "label": "Limba",
+      "saved": "Setările au fost salvate",
+      "save": "Salvează"
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "settings": "Settings",
+    "plan": "Plan"
+  },
+  "plans": {
+    "title": "Plan & Pricing",
+    "current": "Current",
+    "upgrade": "Upgrade",
+    "downgrade": "Downgrade",
+    "perMonth": "/ month",
+    "unlimitedProducts": "Unlimited active products",
+    "limitedProducts": "Up to {{count}} active products",
+    "freeTrial": "{{count}}-day free trial",
+    "noTrial": "No trial period",
+    "billingWarning": "Your billing is {{status}}",
+    "errors": {
+      "somethingWrong": "Something is going wrong",
+      "patience": "We are working on it. Thanks for your patience"
+    },
+    "modal": {
+      "title": "Change Plan",
+      "confirm": "Confirm Change",
+      "cancel": "Cancel",
+      "switchingTo": "You are switching to **{{title}}**.",
+      "limitWarning": "This plan is limited to {{count}} products. If you usage exceeds this limit, excess products will be deactivated (but not deleted)."
+    }
+  }
+}

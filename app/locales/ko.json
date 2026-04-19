@@ -1,0 +1,182 @@
+{
+  "common": {
+    "actions": {
+      "createOverlay": "오버레이 생성",
+      "delete": "삭제",
+      "cancel": "취소",
+      "enable": "활성화",
+      "disable": "비활성화",
+      "previous": "이전",
+      "next": "다음",
+      "clearAll": "모두 지우기",
+      "upgradePlan": "요금제 업그레이드",
+      "save": "저장",
+      "discard": "삭제",
+      "confirm": "예"
+    },
+    "table": {
+      "showing": "표시 중",
+      "of": "/",
+      "page": "페이지",
+      "noResultsTitle": "아직 오버레이가 없습니다",
+      "noResultsDesc": "스토어를 위한 새 오버레이를 생성하세요"
+    },
+    "status": {
+      "active": "활성",
+      "inactive": "비활성",
+      "all": "전체"
+    },
+    "targets": {
+      "allProducts": "모든 상품",
+      "products": "{{count}}개 상품",
+      "productsPlural": "{{count}}개 상품"
+    },
+    "resources": {
+      "overlay": "오버레이",
+      "overlays": "오버레이"
+    }
+  },
+  "home": {
+    "appSetupGuide": {
+      "title": "앱 설정 가이드",
+      "instructions": "먼저 앱을 활성화하세요. 스토어 관리자에서 온라인 스토어 > 사용자 지정 > 테마 설정 > 앱 임베드로 이동한 후 \"Easy Overlay Settings\"를 찾아 활성화 또는 비활성화하세요."
+    },
+    "actions": {
+      "enableAppBlock": "앱 블록 활성화",
+      "disableAppBlock": "앱 블록 비활성화"
+    },
+    "plan": {
+      "limitReachedTitle": "무료 요금제 한도 초과",
+      "limitReachedDesc": "무료 요금제 한도(상품 3개)에 도달했습니다. Plus 요금제로 업그레이드하세요.",
+      "freeBadge": "무료 요금제",
+      "freeLimit": "상품 3개 제한"
+    },
+    "filters": {
+      "searchPlaceholder": "그룹 이름으로 검색",
+      "statusLabel": "상태"
+    },
+    "modal": {
+      "deleteTitle": "오버레이 그룹을 삭제하시겠습니까?",
+      "deleteBody": "이 오버레이 그룹을 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다."
+    },
+    "table": {
+      "heading": "오버레이",
+      "group": "그룹",
+      "targets": "대상",
+      "status": "상태",
+      "action": "작업",
+      "editBlocked": "모든 상품 오버레이를 편집하려면 업그레이드하세요",
+      "fallbackName": "오버레이 {{index}}"
+    }
+  },
+  "builder": {
+    "preview": {
+      "previewLanguage": "미리보기 언어",
+      "selectProduct": "미리보기용 상품 선택",
+      "placeholderAll": "모든 상품",
+      "placeholderSelected": "선택된 상품",
+      "loading": "로딩 중...",
+      "noProducts": "선택된 상품이 없습니다",
+      "note": "미리보기 전용입니다.",
+      "title": "미리보기",
+      "tooltip": {
+        "saveFirst": "미리보기를 위해 오버레이를 저장하세요",
+        "selectProduct": "미리보기할 상품을 선택하세요",
+        "open": "스토어에서 오버레이 미리보기",
+        "noHandle": "미리보기에 사용할 상품 핸들이 없습니다"
+      }
+    },
+    "toast": {
+      "somethingWrong": "문제가 발생했습니다",
+      "statusUpdated": "상태가 성공적으로 업데이트되었습니다",
+      "overlaySaved": "오버레이가 성공적으로 저장되었습니다",
+      "addOverlay": "최소 하나의 오버레이를 추가하세요.",
+      "selectProduct": "최소 하나의 상품을 선택하세요.",
+      "selectCollection": "최소 하나의 컬렉션을 선택하세요.",
+      "fixErrors": "오버레이의 오류를 수정하세요.",
+      "leaveWarning": "나가기 전에 변경 사항을 저장하거나 취소하세요.",
+      "looksGreat": "훌륭합니다! 오버레이가 잘 보입니다."
+    },
+    "errors": {
+      "textRequired": "텍스트 오버레이에 사용할 텍스트를 입력하세요.",
+      "imageRequired": "이미지 오버레이에 사용할 이미지를 추가하세요."
+    },
+    "statusModal": {
+      "title": "상태 업데이트",
+      "body": "이 오버레이의 상태를 업데이트하시겠습니까?",
+      "confirm": "상태 업데이트"
+    },
+    "publish": {
+      "banner": "오버레이가 게시되었습니다!",
+      "dismiss": "게시 알림 닫기",
+      "title": "오버레이가 스토어에 표시되고 있나요?",
+      "helpText": "상품 페이지에 오버레이가 표시되지 않거나 다른 위치에 표시하고 싶다면 문의해 주세요.",
+      "confirmYes": "네, 완벽합니다!",
+      "confirmNo": "문제가 있습니다"
+    },
+    "form": {
+      "overlayGroupTitle": "오버레이 그룹",
+      "groupNameLabel": "그룹 이름",
+      "groupNamePlaceholder": "예: 휴일 프로모션",
+      "selectSource": "소스 선택",
+      "allProducts": "모든 상품",
+      "allProductsBadge": "Plus 요금제",
+      "products": "상품",
+      "selectProducts": "상품 선택",
+      "productsSelected": "{{count}}개 상품 선택됨",
+      "productsSelectedPlural": "{{count}}개 상품 선택됨",
+      "productListHeading": "상품",
+      "productListSelectedBadge": "{{count}}개 선택됨",
+      "searchProducts": "상품 검색",
+      "createOverlayTitle": "오버레이 생성",
+      "createTextOverlay": "텍스트 오버레이",
+      "createImageOverlay": "이미지 오버레이",
+      "productPreviewTooltip": "스토어에서 이 상품 미리보기",
+      "manageOverlay": "오버레이 관리",
+      "fontSettings": "글꼴 설정",
+      "alignmentSettings": "정렬 및 위치",
+      "spacingSettings": "간격 설정",
+      "sectionSettings": "섹션 설정",
+      "imageSettings": "이미지 설정",
+      "imageSpacingSettings": "간격 설정"
+    }
+  },
+  "settings": {
+    "title": "설정",
+    "language": {
+      "heading": "앱 언어",
+      "description": "앱 인터페이스의 언어를 선택하세요.",
+      "label": "언어",
+      "saved": "설정이 저장되었습니다",
+      "save": "저장"
+    }
+  },
+  "navigation": {
+    "home": "홈",
+    "settings": "설정",
+    "plan": "요금제"
+  },
+  "plans": {
+    "title": "요금제 및 가격",
+    "current": "현재",
+    "upgrade": "업그레이드",
+    "downgrade": "다운그레이드",
+    "perMonth": "/ 월",
+    "unlimitedProducts": "활성 제품 무제한",
+    "limitedProducts": "최대 {{count}}개의 활성 제품",
+    "freeTrial": "{{count}}일 무료 체험",
+    "noTrial": "체험 기간 없음",
+    "billingWarning": "결제 상태는 {{status}}입니다",
+    "errors": {
+      "somethingWrong": "문제가 발생했습니다",
+      "patience": "작업 중입니다. 잠시만 기다려 주십시오"
+    },
+    "modal": {
+      "title": "요금제 변경",
+      "confirm": "변경 확인",
+      "cancel": "취소",
+      "switchingTo": "**{{title}}**(으)로 전환합니다.",
+      "limitWarning": "이 요금제는 {{count}}개의 제품으로 제한됩니다. 사용량이 이 한도를 초과하면 초과된 제품은 비활성화됩니다(삭제되지는 않음)."
+    }
+  }
+}

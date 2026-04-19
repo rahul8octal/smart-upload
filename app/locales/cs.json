@@ -1,0 +1,182 @@
+{
+  "common": {
+    "actions": {
+      "createOverlay": "Vytvořit překryv",
+      "delete": "Smazat",
+      "cancel": "Zrušit",
+      "enable": "Povolit",
+      "disable": "Zakázat",
+      "previous": "Předchozí",
+      "next": "Další",
+      "clearAll": "Vymazat vše",
+      "upgradePlan": "Upgradovat plán",
+      "save": "Uložit",
+      "discard": "Zahodit",
+      "confirm": "Ano"
+    },
+    "table": {
+      "showing": "Zobrazeno",
+      "of": "z",
+      "page": "Strana",
+      "noResultsTitle": "Zatím žádné překryvy",
+      "noResultsDesc": "Vytvořte nové překryvy pro váš obchod"
+    },
+    "status": {
+      "active": "Aktivní",
+      "inactive": "Neaktivní",
+      "all": "Vše"
+    },
+    "targets": {
+      "allProducts": "Všechny produkty",
+      "products": "{{count}} produkt",
+      "productsPlural": "{{count}} produkty"
+    },
+    "resources": {
+      "overlay": "překryv",
+      "overlays": "překryvy"
+    }
+  },
+  "home": {
+    "appSetupGuide": {
+      "title": "Průvodce nastavením aplikace",
+      "instructions": "Nejprve povolte aplikaci. V administraci obchodu přejděte na Online obchod > Přizpůsobit > Nastavení motivu > Vložení aplikací > Najděte \"Easy Overlay Settings\" a povolte nebo zakažte."
+    },
+    "actions": {
+      "enableAppBlock": "Povolit blok aplikace",
+      "disableAppBlock": "Zakázat blok aplikace"
+    },
+    "plan": {
+      "limitReachedTitle": "Dosažen limit bezplatného plánu",
+      "limitReachedDesc": "Byl dosažen limit bezplatného plánu (3 produkty). Upgradujte na plán Plus.",
+      "freeBadge": "Bezplatný plán",
+      "freeLimit": "Limit 3 produktů"
+    },
+    "filters": {
+      "searchPlaceholder": "Hledat podle názvu skupiny",
+      "statusLabel": "Stav"
+    },
+    "modal": {
+      "deleteTitle": "Smazat skupinu překryvů?",
+      "deleteBody": "Opravdu chcete smazat tuto skupinu překryvů? Tuto akci nelze vrátit zpět."
+    },
+    "table": {
+      "heading": "Překryvy",
+      "group": "Skupina",
+      "targets": "Cíle",
+      "status": "Stav",
+      "action": "Akce",
+      "editBlocked": "Upgradujte pro úpravu překryvu všech produktů",
+      "fallbackName": "Překryv {{index}}"
+    }
+  },
+  "builder": {
+    "preview": {
+      "previewLanguage": "Jazyk náhledu",
+      "selectProduct": "Vyberte produkt pro náhled",
+      "placeholderAll": "Všechny produkty",
+      "placeholderSelected": "Vybrané produkty",
+      "loading": "Načítání...",
+      "noProducts": "Nebyly vybrány žádné produkty",
+      "note": "Pouze pro náhled.",
+      "title": "Náhled",
+      "tooltip": {
+        "saveFirst": "Uložte překryv pro náhled",
+        "selectProduct": "Vyberte produkt pro náhled",
+        "open": "Zobrazit překryv v obchodě",
+        "noHandle": "Pro náhled není k dispozici identifikátor produktu"
+      }
+    },
+    "toast": {
+      "somethingWrong": "Něco se pokazilo",
+      "statusUpdated": "Stav byl úspěšně aktualizován",
+      "overlaySaved": "Překryv byl úspěšně uložen",
+      "addOverlay": "Přidejte alespoň jeden překryv.",
+      "selectProduct": "Vyberte alespoň jeden produkt.",
+      "selectCollection": "Vyberte alespoň jednu kolekci.",
+      "fixErrors": "Opravte chyby ve svém překryvu (překryvech).",
+      "leaveWarning": "Před odchodem změny uložte nebo zrušte.",
+      "looksGreat": "Skvělé! Překryv vypadá dobře."
+    },
+    "errors": {
+      "textRequired": "Zadejte text pro textový překryv.",
+      "imageRequired": "Přidejte obrázek pro obrázkový překryv."
+    },
+    "statusModal": {
+      "title": "Aktualizovat stav",
+      "body": "Opravdu chcete aktualizovat stav tohoto překryvu?",
+      "confirm": "Aktualizovat stav"
+    },
+    "publish": {
+      "banner": "Překryv publikován!",
+      "dismiss": "Zavřít oznámení o publikování",
+      "title": "Je překryv viditelný ve vašem obchodě?",
+      "helpText": "Pokud se překryv nezobrazuje na stránce produktu nebo jej chcete umístit jinam, kontaktujte nás.",
+      "confirmYes": "Ano, perfektní!",
+      "confirmNo": "Vyskytly se problémy"
+    },
+    "form": {
+      "overlayGroupTitle": "Skupina překryvů",
+      "groupNameLabel": "Název skupiny",
+      "groupNamePlaceholder": "např. Prázdninová akce",
+      "selectSource": "Vybrat zdroj",
+      "allProducts": "Všechny produkty",
+      "allProductsBadge": "Plán Plus",
+      "products": "Produkty",
+      "selectProducts": "Vybrat produkty",
+      "productsSelected": "Vybrán {{count}} produkt",
+      "productsSelectedPlural": "Vybrány {{count}} produkty",
+      "productListHeading": "Produkt(y)",
+      "productListSelectedBadge": "{{count}} vybráno",
+      "searchProducts": "Hledat produkty",
+      "createOverlayTitle": "Vytvořit překryv",
+      "createTextOverlay": "Textový překryv",
+      "createImageOverlay": "Obrázkový překryv",
+      "productPreviewTooltip": "Zobrazit náhled produktu v obchodě",
+      "manageOverlay": "Spravovat překryv",
+      "fontSettings": "Nastavení písma",
+      "alignmentSettings": "Zarovnání a pozice",
+      "spacingSettings": "Nastavení rozestupů",
+      "sectionSettings": "Nastavení sekce",
+      "imageSettings": "Nastavení obrázku",
+      "imageSpacingSettings": "Nastavení rozestupů"
+    }
+  },
+  "settings": {
+    "title": "Nastavení",
+    "language": {
+      "heading": "Jazyk aplikace",
+      "description": "Vyberte jazyk rozhraní aplikace.",
+      "label": "Jazyk",
+      "saved": "Nastavení bylo uloženo",
+      "save": "Uložit"
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "settings": "Settings",
+    "plan": "Plan"
+  },
+  "plans": {
+    "title": "Plan & Pricing",
+    "current": "Current",
+    "upgrade": "Upgrade",
+    "downgrade": "Downgrade",
+    "perMonth": "/ month",
+    "unlimitedProducts": "Unlimited active products",
+    "limitedProducts": "Up to {{count}} active products",
+    "freeTrial": "{{count}}-day free trial",
+    "noTrial": "No trial period",
+    "billingWarning": "Your billing is {{status}}",
+    "errors": {
+      "somethingWrong": "Something is going wrong",
+      "patience": "We are working on it. Thanks for your patience"
+    },
+    "modal": {
+      "title": "Change Plan",
+      "confirm": "Confirm Change",
+      "cancel": "Cancel",
+      "switchingTo": "You are switching to **{{title}}**.",
+      "limitWarning": "This plan is limited to {{count}} products. If you usage exceeds this limit, excess products will be deactivated (but not deleted)."
+    }
+  }
+}

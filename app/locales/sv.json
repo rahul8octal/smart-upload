@@ -1,0 +1,182 @@
+{
+  "common": {
+    "actions": {
+      "createOverlay": "Skapa överlägg",
+      "delete": "Ta bort",
+      "cancel": "Avbryt",
+      "enable": "Aktivera",
+      "disable": "Inaktivera",
+      "previous": "Föregående",
+      "next": "Nästa",
+      "clearAll": "Rensa allt",
+      "upgradePlan": "Uppgradera plan",
+      "save": "Spara",
+      "discard": "Kassera",
+      "confirm": "Ja"
+    },
+    "table": {
+      "showing": "Visar",
+      "of": "av",
+      "page": "Sida",
+      "noResultsTitle": "Inga överlägg än",
+      "noResultsDesc": "Skapa nya överlägg för din butik"
+    },
+    "status": {
+      "active": "Aktiv",
+      "inactive": "Inaktiv",
+      "all": "Alla"
+    },
+    "targets": {
+      "allProducts": "Alla produkter",
+      "products": "{{count}} produkt",
+      "productsPlural": "{{count}} produkter"
+    },
+    "resources": {
+      "overlay": "överlägg",
+      "overlays": "överlägg"
+    }
+  },
+  "home": {
+    "appSetupGuide": {
+      "title": "Appinställningsguide",
+      "instructions": "Först, aktivera appen. I butikens adminpanel, klicka på Onlinebutik > Anpassa > Temainställningar > Inbäddade appar > hitta \"Easy Overlay Settings\" och aktivera/inaktivera."
+    },
+    "actions": {
+      "enableAppBlock": "Aktivera appblock",
+      "disableAppBlock": "Inaktivera appblock"
+    },
+    "plan": {
+      "limitReachedTitle": "Gräns för gratisplan nådd",
+      "limitReachedDesc": "Gränsen för gratisplanen har nåtts (3 produkter). Uppgradera till Plus-plan.",
+      "freeBadge": "Gratisplan",
+      "freeLimit": "3 produkters gräns"
+    },
+    "filters": {
+      "searchPlaceholder": "Sök efter gruppnamn",
+      "statusLabel": "Status"
+    },
+    "modal": {
+      "deleteTitle": "Ta bort överläggsgrupp?",
+      "deleteBody": "Är du säker på att du vill ta bort denna överläggsgrupp? Detta kan inte ångras."
+    },
+    "table": {
+      "heading": "Överlägg",
+      "group": "Grupp",
+      "targets": "Mål",
+      "status": "Status",
+      "action": "Åtgärd",
+      "editBlocked": "Uppgradera plan för att redigera alla produkter",
+      "fallbackName": "Överlägg {{index}}"
+    }
+  },
+  "builder": {
+    "preview": {
+      "previewLanguage": "Förhandsgranskningsspråk",
+      "selectProduct": "Välj produkt för förhandsgranskning",
+      "placeholderAll": "Alla produkter",
+      "placeholderSelected": "Valda produkter",
+      "loading": "Laddar...",
+      "noProducts": "Inga produkter valda",
+      "note": "Endast för förhandsvisning.",
+      "title": "Förhandsvisning",
+      "tooltip": {
+        "saveFirst": "Spara överlägg för förhandsvisning",
+        "selectProduct": "Välj en produkt för förhandsvisning",
+        "open": "Förhandsgranska överlägg i butik",
+        "noHandle": "Ingen produktidentifierare tillgänglig för förhandsvisning"
+      }
+    },
+    "toast": {
+      "somethingWrong": "Något gick fel",
+      "statusUpdated": "Status uppdaterad",
+      "overlaySaved": "Överlägg sparat",
+      "addOverlay": "Lägg till minst ett överlägg.",
+      "selectProduct": "Välj minst en produkt.",
+      "selectCollection": "Välj minst en samling.",
+      "fixErrors": "Åtgärda fel i dina överlägg.",
+      "leaveWarning": "Spara eller kassera ändringar innan du lämnar.",
+      "looksGreat": "Bra! Överlägget ser bra ut."
+    },
+    "errors": {
+      "textRequired": "Ange text för textöverlägg.",
+      "imageRequired": "Lägg till en bild för bildöverlägg."
+    },
+    "statusModal": {
+      "title": "Uppdatera status",
+      "body": "Är du säker på att du vill uppdatera status för detta överlägg?",
+      "confirm": "Uppdatera status"
+    },
+    "publish": {
+      "banner": "Överlägg publicerat!",
+      "dismiss": "Stäng meddelande om publicering",
+      "title": "Är ditt överlägg synligt i din butik?",
+      "helpText": "Om överlägget inte visas på produktsidan eller om du vill ha en annan position, kontakta oss.",
+      "confirmYes": "Ja, perfekt!",
+      "confirmNo": "Det finns problem"
+    },
+    "form": {
+      "overlayGroupTitle": "Överläggsgrupp",
+      "groupNameLabel": "Gruppnamn",
+      "groupNamePlaceholder": "t.ex. Julkampanj",
+      "selectSource": "Välj källa",
+      "allProducts": "Alla produkter",
+      "allProductsBadge": "Plus-plan",
+      "products": "Produkter",
+      "selectProducts": "Välj produkter",
+      "productsSelected": "{{count}} produkt vald",
+      "productsSelectedPlural": "{{count}} produkter valda",
+      "productListHeading": "Produkt(er)",
+      "productListSelectedBadge": "{{count}} vald",
+      "searchProducts": "Sök produkter",
+      "createOverlayTitle": "Skapa överlägg",
+      "createTextOverlay": "Textöverlägg",
+      "createImageOverlay": "Bildöverlägg",
+      "productPreviewTooltip": "Förhandsgranska denna produkt i butik",
+      "manageOverlay": "Hantera överlägg",
+      "fontSettings": "Teckeninställningar",
+      "alignmentSettings": "Justering & position",
+      "spacingSettings": "Avståndsinställningar",
+      "sectionSettings": "Sektioninställningar",
+      "imageSettings": "Bildinställningar",
+      "imageSpacingSettings": "Avståndsinställningar"
+    }
+  },
+  "settings": {
+    "title": "Inställningar",
+    "language": {
+      "heading": "Appspråk",
+      "description": "Välj språk för appens gränssnitt.",
+      "label": "Språk",
+      "saved": "Inställningar sparade",
+      "save": "Spara"
+    }
+  },
+  "navigation": {
+    "home": "Hem",
+    "settings": "Inställningar",
+    "plan": "Plan"
+  },
+  "plans": {
+    "title": "Plan & Priser",
+    "current": "Nuvarande",
+    "upgrade": "Uppgradera",
+    "downgrade": "Nedgradera",
+    "perMonth": "/ månad",
+    "unlimitedProducts": "Obegränsat antal aktiva produkter",
+    "limitedProducts": "Upp till {{count}} aktiva produkter",
+    "freeTrial": "{{count}} dagars gratis provperiod",
+    "noTrial": "Ingen provperiod",
+    "billingWarning": "Din fakturering är {{status}}",
+    "errors": {
+      "somethingWrong": "Något går fel",
+      "patience": "Vi arbetar på det. Tack för ditt tålamod"
+    },
+    "modal": {
+      "title": "Ändra plan",
+      "confirm": "Bekräfta ändring",
+      "cancel": "Avbryt",
+      "switchingTo": "Du bytter till **{{title}}**.",
+      "limitWarning": "Denna plan är begränsad till {{count}} produkter. Om din användning överskrider denna gräns kommer överflödiga produkter att inaktiveras (men inte raderas)."
+    }
+  }
+}

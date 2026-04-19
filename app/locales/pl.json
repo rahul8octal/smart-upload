@@ -1,0 +1,182 @@
+{
+  "common": {
+    "actions": {
+      "createOverlay": "Utwórz nakładkę",
+      "delete": "Usuń",
+      "cancel": "Anuluj",
+      "enable": "Włącz",
+      "disable": "Wyłącz",
+      "previous": "Poprzednia",
+      "next": "Następna",
+      "clearAll": "Wyczyść wszystko",
+      "upgradePlan": "Ulepsz plan",
+      "save": "Zapisz",
+      "discard": "Odrzuć",
+      "confirm": "Tak"
+    },
+    "table": {
+      "showing": "Wyświetlanie",
+      "of": "z",
+      "page": "Strona",
+      "noResultsTitle": "Brak nakładek",
+      "noResultsDesc": "Utwórz nowe nakładki dla swojego sklepu"
+    },
+    "status": {
+      "active": "Aktywne",
+      "inactive": "Nieaktywne",
+      "all": "Wszystkie"
+    },
+    "targets": {
+      "allProducts": "Wszystkie produkty",
+      "products": "{{count}} produkt",
+      "productsPlural": "{{count}} produkty"
+    },
+    "resources": {
+      "overlay": "nakładka",
+      "overlays": "nakładki"
+    }
+  },
+  "home": {
+    "appSetupGuide": {
+      "title": "Przewodnik konfiguracji aplikacji",
+      "instructions": "Najpierw włącz aplikację. W panelu administracyjnym sklepu przejdź do Sklep online > Dostosuj > Ustawienia motywu > Wbudowane aplikacje > znajdź „Easy Overlay Settings” i włącz lub wyłącz."
+    },
+    "actions": {
+      "enableAppBlock": "Włącz blok aplikacji",
+      "disableAppBlock": "Wyłącz blok aplikacji"
+    },
+    "plan": {
+      "limitReachedTitle": "Osiągnięto limit darmowego planu",
+      "limitReachedDesc": "Osiągnięto limit darmowego planu (3 produkty). Ulepsz do planu Plus.",
+      "freeBadge": "Darmowy plan",
+      "freeLimit": "Limit 3 produktów"
+    },
+    "filters": {
+      "searchPlaceholder": "Szukaj według nazwy grupy",
+      "statusLabel": "Status"
+    },
+    "modal": {
+      "deleteTitle": "Usunąć grupę nakładek?",
+      "deleteBody": "Czy na pewno chcesz usunąć tę grupę nakładek? Tej operacji nie można cofnąć."
+    },
+    "table": {
+      "heading": "Nakładki",
+      "group": "Grupa",
+      "targets": "Cele",
+      "status": "Status",
+      "action": "Akcja",
+      "editBlocked": "Ulepsz plan, aby edytować nakładki dla wszystkich produktów",
+      "fallbackName": "Nakładka {{index}}"
+    }
+  },
+  "builder": {
+    "preview": {
+      "previewLanguage": "Język podglądu",
+      "selectProduct": "Wybierz produkt do podglądu",
+      "placeholderAll": "Wszystkie produkty",
+      "placeholderSelected": "Wybrane produkty",
+      "loading": "Ładowanie...",
+      "noProducts": "Nie wybrano produktów",
+      "note": "Tylko do podglądu.",
+      "title": "Podgląd",
+      "tooltip": {
+        "saveFirst": "Zapisz nakładkę, aby wyświetlić podgląd",
+        "selectProduct": "Wybierz produkt do podglądu",
+        "open": "Wyświetl nakładkę w sklepie",
+        "noHandle": "Brak uchwytu produktu do podglądu"
+      }
+    },
+    "toast": {
+      "somethingWrong": "Coś poszło nie tak",
+      "statusUpdated": "Status zaktualizowany",
+      "overlaySaved": "Nakładka zapisana",
+      "addOverlay": "Dodaj co najmniej jedną nakładkę.",
+      "selectProduct": "Wybierz co najmniej jeden produkt.",
+      "selectCollection": "Wybierz co najmniej jedną kolekcję.",
+      "fixErrors": "Popraw błędy w nakładce.",
+      "leaveWarning": "Zapisz lub odrzuć zmiany przed opuszczeniem strony.",
+      "looksGreat": "Świetnie! Nakładka wygląda dobrze."
+    },
+    "errors": {
+      "textRequired": "Wprowadź tekst dla nakładki tekstowej.",
+      "imageRequired": "Dodaj obraz dla nakładki graficznej."
+    },
+    "statusModal": {
+      "title": "Aktualizuj status",
+      "body": "Czy na pewno chcesz zaktualizować status tej nakładki?",
+      "confirm": "Aktualizuj status"
+    },
+    "publish": {
+      "banner": "Nakładka opublikowana!",
+      "dismiss": "Zamknij baner publikacji",
+      "title": "Czy nakładka jest widoczna w Twoim sklepie?",
+      "helpText": "Jeśli nakładka nie wyświetla się na stronie produktu lub chcesz inne umiejscowienie, skontaktuj się z nami.",
+      "confirmYes": "Tak, idealnie!",
+      "confirmNo": "Występują problemy"
+    },
+    "form": {
+      "overlayGroupTitle": "Grupa nakładek",
+      "groupNameLabel": "Nazwa grupy",
+      "groupNamePlaceholder": "np. Promocja świąteczna",
+      "selectSource": "Wybierz źródło",
+      "allProducts": "Wszystkie produkty",
+      "allProductsBadge": "Plan Plus",
+      "products": "Produkty",
+      "selectProducts": "Wybierz produkty",
+      "productsSelected": "{{count}} produkt wybrany",
+      "productsSelectedPlural": "{{count}} produkty wybrane",
+      "productListHeading": "Produkt(y)",
+      "productListSelectedBadge": "{{count}} wybrane",
+      "searchProducts": "Szukaj produktów",
+      "createOverlayTitle": "Utwórz nakładkę",
+      "createTextOverlay": "Nakładka tekstowa",
+      "createImageOverlay": "Nakładka graficzna",
+      "productPreviewTooltip": "Wyświetl podgląd tego produktu w sklepie",
+      "manageOverlay": "Zarządzaj nakładką",
+      "fontSettings": "Ustawienia czcionki",
+      "alignmentSettings": "Wyrównanie i pozycja",
+      "spacingSettings": "Ustawienia odstępów",
+      "sectionSettings": "Ustawienia sekcji",
+      "imageSettings": "Ustawienia obrazu",
+      "imageSpacingSettings": "Ustawienia odstępów"
+    }
+  },
+  "settings": {
+    "title": "Ustawienia",
+    "language": {
+      "heading": "Język aplikacji",
+      "description": "Wybierz język interfejsu aplikacji.",
+      "label": "Język",
+      "saved": "Ustawienia zapisane",
+      "save": "Zapisz"
+    }
+  },
+  "navigation": {
+    "home": "Strona główna",
+    "settings": "Ustawienia",
+    "plan": "Plan"
+  },
+  "plans": {
+    "title": "Plan i ceny",
+    "current": "Aktualny",
+    "upgrade": "Uaktualnij",
+    "downgrade": "Obniż",
+    "perMonth": "/ miesiąc",
+    "unlimitedProducts": "Nieograniczona liczba aktywnych produktów",
+    "limitedProducts": "Do {{count}} aktywnych produktów",
+    "freeTrial": "{{count}}-dniowy bezpłatny okres próbny",
+    "noTrial": "Brak okresu próbnego",
+    "billingWarning": "Twój status rozliczeniowy to {{status}}",
+    "errors": {
+      "somethingWrong": "Coś poszło nie tak",
+      "patience": "Pracujemy nad tym. Dziękujemy za cierpliwość"
+    },
+    "modal": {
+      "title": "Zmień plan",
+      "confirm": "Potwierdź zmianę",
+      "cancel": "Anuluj",
+      "switchingTo": "Zmieniasz plan na **{{title}}**.",
+      "limitWarning": "Ten plan jest ograniczony do {{count}} produktów. Jeśli Twoje użycie przekroczy ten limit, nadmiarowe produkty zostaną dezaktywowane (ale nie usunięte)."
+    }
+  }
+}

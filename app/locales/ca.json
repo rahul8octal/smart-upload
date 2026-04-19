@@ -1,0 +1,182 @@
+{
+  "common": {
+    "actions": {
+      "createOverlay": "Crear superposició",
+      "delete": "Eliminar",
+      "cancel": "Cancel·lar",
+      "enable": "Activar",
+      "disable": "Desactivar",
+      "previous": "Anterior",
+      "next": "Següent",
+      "clearAll": "Esborrar-ho tot",
+      "upgradePlan": "Actualitzar pla",
+      "save": "Desar",
+      "discard": "Descartar",
+      "confirm": "Sí"
+    },
+    "table": {
+      "showing": "Mostrant",
+      "of": "de",
+      "page": "Pàgina",
+      "noResultsTitle": "Encara no hi ha superposicions",
+      "noResultsDesc": "Crea noves superposicions per a la teva botiga"
+    },
+    "status": {
+      "active": "Actiu",
+      "inactive": "Inactiu",
+      "all": "Tots"
+    },
+    "targets": {
+      "allProducts": "Tots els productes",
+      "products": "{{count}} producte",
+      "productsPlural": "{{count}} productes"
+    },
+    "resources": {
+      "overlay": "superposició",
+      "overlays": "superposicions"
+    }
+  },
+  "home": {
+    "appSetupGuide": {
+      "title": "Guia de configuració de l'aplicació",
+      "instructions": "Primer, activa l'aplicació. Al panell d'administració de la botiga, ves a Botiga online > Personalitzar > Configuració del tema > Integracions d'aplicacions > Cerca \"Easy Overlay Settings\" i activa o desactiva."
+    },
+    "actions": {
+      "enableAppBlock": "Activar bloc de l'aplicació",
+      "disableAppBlock": "Desactivar bloc de l'aplicació"
+    },
+    "plan": {
+      "limitReachedTitle": "S'ha assolit el límit del pla gratuït",
+      "limitReachedDesc": "S'ha assolit el límit del pla gratuït (3 productes). Actualitza al pla Plus.",
+      "freeBadge": "Pla gratuït",
+      "freeLimit": "Límit de 3 productes"
+    },
+    "filters": {
+      "searchPlaceholder": "Cercar per nom del grup",
+      "statusLabel": "Estat"
+    },
+    "modal": {
+      "deleteTitle": "Eliminar grup de superposicions?",
+      "deleteBody": "Estàs segur que vols eliminar aquest grup de superposicions? Aquesta acció no es pot desfer."
+    },
+    "table": {
+      "heading": "Superposicions",
+      "group": "Grup",
+      "targets": "Objectius",
+      "status": "Estat",
+      "action": "Acció",
+      "editBlocked": "Actualitza per editar la superposició de tots els productes",
+      "fallbackName": "Superposició {{index}}"
+    }
+  },
+  "builder": {
+    "preview": {
+      "previewLanguage": "Idioma de previsualització",
+      "selectProduct": "Selecciona un producte per a la previsualització",
+      "placeholderAll": "Tots els productes",
+      "placeholderSelected": "Productes seleccionats",
+      "loading": "Carregant...",
+      "noProducts": "No s'han seleccionat productes",
+      "note": "Només per a visualització prèvia.",
+      "title": "Previsualització",
+      "tooltip": {
+        "saveFirst": "Desa la superposició per previsualitzar",
+        "selectProduct": "Selecciona un producte per previsualitzar",
+        "open": "Previsualitzar la superposició a la botiga",
+        "noHandle": "No hi ha identificador de producte disponible per previsualitzar"
+      }
+    },
+    "toast": {
+      "somethingWrong": "Alguna cosa ha anat malament",
+      "statusUpdated": "L'estat s'ha actualitzat correctament",
+      "overlaySaved": "La superposició s'ha desat correctament",
+      "addOverlay": "Afegeix almenys una superposició.",
+      "selectProduct": "Selecciona almenys un producte.",
+      "selectCollection": "Selecciona almenys una col·lecció.",
+      "fixErrors": "Corregeix els errors de la superposició.",
+      "leaveWarning": "Desa o descarta els canvis abans de sortir.",
+      "looksGreat": "Genial! La superposició es veu bé."
+    },
+    "errors": {
+      "textRequired": "Introdueix text per a la superposició de text.",
+      "imageRequired": "Afegeix una imatge per a la superposició d'imatge."
+    },
+    "statusModal": {
+      "title": "Actualitzar estat",
+      "body": "Estàs segur que vols actualitzar l'estat d'aquesta superposició?",
+      "confirm": "Actualitzar estat"
+    },
+    "publish": {
+      "banner": "Superposició publicada!",
+      "dismiss": "Tancar l'avís de publicació",
+      "title": "La superposició és visible a la teva botiga?",
+      "helpText": "Si la superposició no es mostra a la pàgina del producte o la vols en una altra posició, contacta amb nosaltres.",
+      "confirmYes": "Sí, perfecte!",
+      "confirmNo": "Hi ha problemes"
+    },
+    "form": {
+      "overlayGroupTitle": "Grup de superposicions",
+      "groupNameLabel": "Nom del grup",
+      "groupNamePlaceholder": "p. ex. Promoció de vacances",
+      "selectSource": "Selecciona origen",
+      "allProducts": "Tots els productes",
+      "allProductsBadge": "Pla Plus",
+      "products": "Productes",
+      "selectProducts": "Selecciona productes",
+      "productsSelected": "{{count}} producte seleccionat",
+      "productsSelectedPlural": "{{count}} productes seleccionats",
+      "productListHeading": "Producte(s)",
+      "productListSelectedBadge": "{{count}} seleccionats",
+      "searchProducts": "Cercar productes",
+      "createOverlayTitle": "Crear superposició",
+      "createTextOverlay": "Superposició de text",
+      "createImageOverlay": "Superposició d'imatge",
+      "productPreviewTooltip": "Previsualitzar aquest producte a la botiga",
+      "manageOverlay": "Gestionar superposició",
+      "fontSettings": "Configuració de la font",
+      "alignmentSettings": "Alineació i posició",
+      "spacingSettings": "Configuració d'espaiat",
+      "sectionSettings": "Configuració de la secció",
+      "imageSettings": "Configuració de la imatge",
+      "imageSpacingSettings": "Configuració d'espaiat"
+    }
+  },
+  "settings": {
+    "title": "Configuració",
+    "language": {
+      "heading": "Idioma de l'aplicació",
+      "description": "Tria l'idioma de la interfície de l'aplicació.",
+      "label": "Idioma",
+      "saved": "Configuració desada",
+      "save": "Desar"
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "settings": "Settings",
+    "plan": "Plan"
+  },
+  "plans": {
+    "title": "Plan & Pricing",
+    "current": "Current",
+    "upgrade": "Upgrade",
+    "downgrade": "Downgrade",
+    "perMonth": "/ month",
+    "unlimitedProducts": "Unlimited active products",
+    "limitedProducts": "Up to {{count}} active products",
+    "freeTrial": "{{count}}-day free trial",
+    "noTrial": "No trial period",
+    "billingWarning": "Your billing is {{status}}",
+    "errors": {
+      "somethingWrong": "Something is going wrong",
+      "patience": "We are working on it. Thanks for your patience"
+    },
+    "modal": {
+      "title": "Change Plan",
+      "confirm": "Confirm Change",
+      "cancel": "Cancel",
+      "switchingTo": "You are switching to **{{title}}**.",
+      "limitWarning": "This plan is limited to {{count}} products. If you usage exceeds this limit, excess products will be deactivated (but not deleted)."
+    }
+  }
+}

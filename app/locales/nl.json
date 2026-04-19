@@ -1,0 +1,182 @@
+{
+  "common": {
+    "actions": {
+      "createOverlay": "Overlay maken",
+      "delete": "Verwijderen",
+      "cancel": "Annuleren",
+      "enable": "Inschakelen",
+      "disable": "Uitschakelen",
+      "previous": "Vorige",
+      "next": "Volgende",
+      "clearAll": "Alles wissen",
+      "upgradePlan": "Abonnement upgraden",
+      "save": "Opslaan",
+      "discard": "Verwerpen",
+      "confirm": "Ja"
+    },
+    "table": {
+      "showing": "Toont",
+      "of": "van",
+      "page": "Pagina",
+      "noResultsTitle": "Nog geen overlays",
+      "noResultsDesc": "Maak nieuwe overlays voor je winkel"
+    },
+    "status": {
+      "active": "Actief",
+      "inactive": "Inactief",
+      "all": "Alle"
+    },
+    "targets": {
+      "allProducts": "Alle producten",
+      "products": "{{count}} product",
+      "productsPlural": "{{count}} producten"
+    },
+    "resources": {
+      "overlay": "overlay",
+      "overlays": "overlays"
+    }
+  },
+  "home": {
+    "appSetupGuide": {
+      "title": "App-installatiehandleiding",
+      "instructions": "Schakel eerst de app in. Ga in het winkelbeheer naar Online winkel > Aanpassen > Thema-instellingen > App-insluitingen > Zoek \"Easy Overlay Settings\" en schakel deze in of uit."
+    },
+    "actions": {
+      "enableAppBlock": "App-blok inschakelen",
+      "disableAppBlock": "App-blok uitschakelen"
+    },
+    "plan": {
+      "limitReachedTitle": "Limiet van gratis abonnement bereikt",
+      "limitReachedDesc": "De limiet van het gratis abonnement is bereikt (3 producten). Upgrade naar het Plus-abonnement.",
+      "freeBadge": "Gratis abonnement",
+      "freeLimit": "Limiet van 3 producten"
+    },
+    "filters": {
+      "searchPlaceholder": "Zoeken op groepsnaam",
+      "statusLabel": "Status"
+    },
+    "modal": {
+      "deleteTitle": "Overlaygroep verwijderen?",
+      "deleteBody": "Weet je zeker dat je deze overlaygroep wilt verwijderen? Dit kan niet ongedaan worden gemaakt."
+    },
+    "table": {
+      "heading": "Overlays",
+      "group": "Groep",
+      "targets": "Doelen",
+      "status": "Status",
+      "action": "Actie",
+      "editBlocked": "Upgrade om overlay voor alle producten te bewerken",
+      "fallbackName": "Overlay {{index}}"
+    }
+  },
+  "builder": {
+    "preview": {
+      "previewLanguage": "Voorbeeldtaal",
+      "selectProduct": "Selecteer product voor voorbeeld",
+      "placeholderAll": "Alle producten",
+      "placeholderSelected": "Geselecteerde producten",
+      "loading": "Laden...",
+      "noProducts": "Geen producten geselecteerd",
+      "note": "Alleen voor weergave.",
+      "title": "Voorbeeld",
+      "tooltip": {
+        "saveFirst": "Sla de overlay op om een voorbeeld te bekijken",
+        "selectProduct": "Selecteer een product om een voorbeeld te bekijken",
+        "open": "Bekijk overlay in de winkel",
+        "noHandle": "Geen producthandle beschikbaar voor voorbeeld"
+      }
+    },
+    "toast": {
+      "somethingWrong": "Er is iets misgegaan",
+      "statusUpdated": "Status succesvol bijgewerkt",
+      "overlaySaved": "Overlay succesvol opgeslagen",
+      "addOverlay": "Voeg minimaal één overlay toe.",
+      "selectProduct": "Selecteer minimaal één product.",
+      "selectCollection": "Selecteer minimaal één collectie.",
+      "fixErrors": "Los de fouten in je overlay op.",
+      "leaveWarning": "Sla wijzigingen op of verwerp ze voordat je vertrekt.",
+      "looksGreat": "Geweldig! De overlay ziet er goed uit."
+    },
+    "errors": {
+      "textRequired": "Voer tekst in voor de tekstoverlay.",
+      "imageRequired": "Voeg een afbeelding toe voor de afbeeldingsoverlay."
+    },
+    "statusModal": {
+      "title": "Status bijwerken",
+      "body": "Weet je zeker dat je de status van deze overlay wilt bijwerken?",
+      "confirm": "Status bijwerken"
+    },
+    "publish": {
+      "banner": "Overlay gepubliceerd!",
+      "dismiss": "Publicatiebericht sluiten",
+      "title": "Is de overlay zichtbaar in je winkel?",
+      "helpText": "Als de overlay niet wordt weergegeven op de productpagina of je deze op een andere plek wilt tonen, neem dan contact met ons op.",
+      "confirmYes": "Ja, perfect!",
+      "confirmNo": "Er zijn problemen"
+    },
+    "form": {
+      "overlayGroupTitle": "Overlaygroep",
+      "groupNameLabel": "Groepsnaam",
+      "groupNamePlaceholder": "bijv. Vakantieactie",
+      "selectSource": "Bron selecteren",
+      "allProducts": "Alle producten",
+      "allProductsBadge": "Plus-abonnement",
+      "products": "Producten",
+      "selectProducts": "Producten selecteren",
+      "productsSelected": "{{count}} product geselecteerd",
+      "productsSelectedPlural": "{{count}} producten geselecteerd",
+      "productListHeading": "Product(en)",
+      "productListSelectedBadge": "{{count}} geselecteerd",
+      "searchProducts": "Producten zoeken",
+      "createOverlayTitle": "Overlay maken",
+      "createTextOverlay": "Tekstoverlay",
+      "createImageOverlay": "Afbeeldingsoverlay",
+      "productPreviewTooltip": "Bekijk dit product in de winkel",
+      "manageOverlay": "Overlay beheren",
+      "fontSettings": "Lettertype-instellingen",
+      "alignmentSettings": "Uitlijning en positie",
+      "spacingSettings": "Afstand-instellingen",
+      "sectionSettings": "Sectie-instellingen",
+      "imageSettings": "Afbeeldingsinstellingen",
+      "imageSpacingSettings": "Afstand-instellingen"
+    }
+  },
+  "settings": {
+    "title": "Instellingen",
+    "language": {
+      "heading": "App-taal",
+      "description": "Kies de taal voor de app-interface.",
+      "label": "Taal",
+      "saved": "Instellingen opgeslagen",
+      "save": "Opslaan"
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "settings": "Instellingen",
+    "plan": "Abonnement"
+  },
+  "plans": {
+    "title": "Abonnement & Prijzen",
+    "current": "Huidig",
+    "upgrade": "Upgrade",
+    "downgrade": "Downgrade",
+    "perMonth": "/ maand",
+    "unlimitedProducts": "Onbeperkt aantal actieve producten",
+    "limitedProducts": "Tot {{count}} actieve producten",
+    "freeTrial": "{{count}} dagen gratis proefperiode",
+    "noTrial": "Geen proefperiode",
+    "billingWarning": "Uw facturering is {{status}}",
+    "errors": {
+      "somethingWrong": "Er gaat iets mis",
+      "patience": "We werken eraan. Bedankt voor uw geduld"
+    },
+    "modal": {
+      "title": "Abonnement wijzigen",
+      "confirm": "Wijziging bevestigen",
+      "cancel": "Annuleren",
+      "switchingTo": "U stapt over naar **{{title}}**.",
+      "limitWarning": "Dit abonnement is beperkt tot {{count}} producten. Als uw verbruik deze limiet overschrijdt, worden overtollige producten gedeactiveerd (maar niet verwijderd)."
+    }
+  }
+}

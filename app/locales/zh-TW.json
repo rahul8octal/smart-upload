@@ -1,0 +1,182 @@
+{
+  "common": {
+    "actions": {
+      "createOverlay": "建立覆蓋層",
+      "delete": "刪除",
+      "cancel": "取消",
+      "enable": "啟用",
+      "disable": "停用",
+      "previous": "上一頁",
+      "next": "下一頁",
+      "clearAll": "全部清除",
+      "upgradePlan": "升級方案",
+      "save": "儲存",
+      "discard": "放棄",
+      "confirm": "是"
+    },
+    "table": {
+      "showing": "顯示",
+      "of": "共",
+      "page": "頁",
+      "noResultsTitle": "尚無覆蓋層",
+      "noResultsDesc": "為您的商店建立新的覆蓋層"
+    },
+    "status": {
+      "active": "啟用",
+      "inactive": "未啟用",
+      "all": "全部"
+    },
+    "targets": {
+      "allProducts": "所有產品",
+      "products": "{{count}} 個產品",
+      "productsPlural": "{{count}} 個產品"
+    },
+    "resources": {
+      "overlay": "覆蓋層",
+      "overlays": "覆蓋層"
+    }
+  },
+  "home": {
+    "appSetupGuide": {
+      "title": "應用程式設定指南",
+      "instructions": "首先啟用應用程式。在商店管理頁面，點擊 線上商店 > 自訂 > 主題設定 > 應用程式嵌入 > 找到 \"Easy Overlay Settings\" 並點擊啟用/停用。"
+    },
+    "actions": {
+      "enableAppBlock": "啟用應用區塊",
+      "disableAppBlock": "停用應用區塊"
+    },
+    "plan": {
+      "limitReachedTitle": "免費方案已達上限",
+      "limitReachedDesc": "免費方案已達上限（3 個產品）。升級至 Plus 方案。",
+      "freeBadge": "免費方案",
+      "freeLimit": "3 個產品限制"
+    },
+    "filters": {
+      "searchPlaceholder": "依群組名稱搜尋",
+      "statusLabel": "狀態"
+    },
+    "modal": {
+      "deleteTitle": "刪除覆蓋組？",
+      "deleteBody": "您確定要刪除此覆蓋組嗎？此操作無法復原。"
+    },
+    "table": {
+      "heading": "覆蓋層",
+      "group": "群組",
+      "targets": "目標",
+      "status": "狀態",
+      "action": "操作",
+      "editBlocked": "升級方案以編輯所有產品覆蓋層",
+      "fallbackName": "覆蓋層 {{index}}"
+    }
+  },
+  "builder": {
+    "preview": {
+      "previewLanguage": "預覽語言",
+      "selectProduct": "選擇產品進行預覽",
+      "placeholderAll": "所有產品",
+      "placeholderSelected": "已選擇的產品",
+      "loading": "載入中...",
+      "noProducts": "尚未選擇產品",
+      "note": "僅用於預覽。",
+      "title": "預覽",
+      "tooltip": {
+        "saveFirst": "先儲存覆蓋層以進行預覽",
+        "selectProduct": "請選擇產品進行預覽",
+        "open": "在商店中預覽覆蓋層",
+        "noHandle": "無可預覽的產品識別碼"
+      }
+    },
+    "toast": {
+      "somethingWrong": "發生錯誤",
+      "statusUpdated": "狀態更新成功",
+      "overlaySaved": "覆蓋層儲存成功",
+      "addOverlay": "請至少新增一個覆蓋層。",
+      "selectProduct": "請至少選擇一個產品。",
+      "selectCollection": "請至少選擇一個集合。",
+      "fixErrors": "請修復覆蓋層中的錯誤。",
+      "leaveWarning": "離開前請先儲存或放棄變更。",
+      "looksGreat": "太好了！覆蓋層看起來很棒。"
+    },
+    "errors": {
+      "textRequired": "請輸入文字覆蓋層的內容。",
+      "imageRequired": "請為圖片覆蓋層新增圖片。"
+    },
+    "statusModal": {
+      "title": "更新狀態",
+      "body": "您確定要更新此覆蓋層的狀態嗎？",
+      "confirm": "更新狀態"
+    },
+    "publish": {
+      "banner": "覆蓋層已發佈！",
+      "dismiss": "關閉發佈通知",
+      "title": "您的覆蓋層在商店中可見嗎？",
+      "helpText": "如果覆蓋層未顯示在產品頁或希望在其他位置顯示，請聯絡我們。",
+      "confirmYes": "是的，完美！",
+      "confirmNo": "有問題"
+    },
+    "form": {
+      "overlayGroupTitle": "覆蓋群組",
+      "groupNameLabel": "群組名稱",
+      "groupNamePlaceholder": "例如：假日促銷",
+      "selectSource": "選擇來源",
+      "allProducts": "所有產品",
+      "allProductsBadge": "Plus 方案",
+      "products": "產品",
+      "selectProducts": "選擇產品",
+      "productsSelected": "已選擇 {{count}} 個產品",
+      "productsSelectedPlural": "已選擇 {{count}} 個產品",
+      "productListHeading": "產品",
+      "productListSelectedBadge": "已選擇 {{count}}",
+      "searchProducts": "搜尋產品",
+      "createOverlayTitle": "建立覆蓋層",
+      "createTextOverlay": "文字覆蓋層",
+      "createImageOverlay": "圖片覆蓋層",
+      "productPreviewTooltip": "在商店中預覽此產品",
+      "manageOverlay": "管理覆蓋層",
+      "fontSettings": "字型設定",
+      "alignmentSettings": "對齊與位置",
+      "spacingSettings": "間距設定",
+      "sectionSettings": "區塊設定",
+      "imageSettings": "圖片設定",
+      "imageSpacingSettings": "間距設定"
+    }
+  },
+  "settings": {
+    "title": "設定",
+    "language": {
+      "heading": "應用程式語言",
+      "description": "選擇應用程式介面的語言。",
+      "label": "語言",
+      "saved": "設定已儲存",
+      "save": "儲存"
+    }
+  },
+  "navigation": {
+    "home": "首页",
+    "settings": "设置",
+    "plan": "套餐"
+  },
+  "plans": {
+    "title": "套餐与定价",
+    "current": "当前",
+    "upgrade": "升级",
+    "downgrade": "降级",
+    "perMonth": "/ 月",
+    "unlimitedProducts": "无限个活跃产品",
+    "limitedProducts": "最多 {{count}} 个活跃产品",
+    "freeTrial": "{{count}} 天免费试用",
+    "noTrial": "无试用期",
+    "billingWarning": "您的账单状态为 {{status}}",
+    "errors": {
+      "somethingWrong": "出错了",
+      "patience": "我们正在处理中。感谢您的耐心配合"
+    },
+    "modal": {
+      "title": "更改套餐",
+      "confirm": "确认更改",
+      "cancel": "取消",
+      "switchingTo": "您正切换到 **{{title}}**。",
+      "limitWarning": "此套餐限制为 {{count}} 个产品。如果您的使用量超过此限制，超出的产品将被停用（但不会删除）。"
+    }
+  }
+}

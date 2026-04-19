@@ -1,0 +1,182 @@
+{
+  "common": {
+    "actions": {
+      "createOverlay": "オーバーレイを作成",
+      "delete": "削除",
+      "cancel": "キャンセル",
+      "enable": "有効化",
+      "disable": "無効化",
+      "previous": "前へ",
+      "next": "次へ",
+      "clearAll": "すべてクリア",
+      "upgradePlan": "プランをアップグレード",
+      "save": "保存",
+      "discard": "破棄",
+      "confirm": "はい"
+    },
+    "table": {
+      "showing": "表示中",
+      "of": " / ",
+      "page": "ページ",
+      "noResultsTitle": "まだオーバーレイはありません",
+      "noResultsDesc": "ストア用の新しいオーバーレイを作成してください"
+    },
+    "status": {
+      "active": "有効",
+      "inactive": "無効",
+      "all": "すべて"
+    },
+    "targets": {
+      "allProducts": "すべての商品",
+      "products": "{{count}} 件の商品",
+      "productsPlural": "{{count}} 件の商品"
+    },
+    "resources": {
+      "overlay": "オーバーレイ",
+      "overlays": "オーバーレイ"
+    }
+  },
+  "home": {
+    "appSetupGuide": {
+      "title": "アプリ設定ガイド",
+      "instructions": "最初にアプリを有効にしてください。ストア管理画面で「オンラインストア > カスタマイズ > テーマ設定 > アプリ埋め込み」に進み、「Easy Overlay Settings」を見つけて有効または無効にします。"
+    },
+    "actions": {
+      "enableAppBlock": "アプリブロックを有効化",
+      "disableAppBlock": "アプリブロックを無効化"
+    },
+    "plan": {
+      "limitReachedTitle": "無料プランの上限に達しました",
+      "limitReachedDesc": "無料プランの上限（3商品）に達しました。Plusプランにアップグレードしてください。",
+      "freeBadge": "無料プラン",
+      "freeLimit": "3商品制限"
+    },
+    "filters": {
+      "searchPlaceholder": "グループ名で検索",
+      "statusLabel": "ステータス"
+    },
+    "modal": {
+      "deleteTitle": "オーバーレイグループを削除しますか？",
+      "deleteBody": "このオーバーレイグループを削除してもよろしいですか？この操作は元に戻せません。"
+    },
+    "table": {
+      "heading": "オーバーレイ",
+      "group": "グループ",
+      "targets": "対象",
+      "status": "ステータス",
+      "action": "操作",
+      "editBlocked": "すべての商品用オーバーレイを編集するにはアップグレードしてください",
+      "fallbackName": "オーバーレイ {{index}}"
+    }
+  },
+  "builder": {
+    "preview": {
+      "previewLanguage": "プレビュー言語",
+      "selectProduct": "プレビュー用の商品を選択",
+      "placeholderAll": "すべての商品",
+      "placeholderSelected": "選択された商品",
+      "loading": "読み込み中...",
+      "noProducts": "商品が選択されていません",
+      "note": "プレビュー専用です。",
+      "title": "プレビュー",
+      "tooltip": {
+        "saveFirst": "プレビューするにはオーバーレイを保存してください",
+        "selectProduct": "プレビューする商品を選択してください",
+        "open": "ストアでオーバーレイをプレビュー",
+        "noHandle": "プレビューに使用できる商品IDがありません"
+      }
+    },
+    "toast": {
+      "somethingWrong": "問題が発生しました",
+      "statusUpdated": "ステータスが正常に更新されました",
+      "overlaySaved": "オーバーレイが正常に保存されました",
+      "addOverlay": "少なくとも1つのオーバーレイを追加してください。",
+      "selectProduct": "少なくとも1つの商品を選択してください。",
+      "selectCollection": "少なくとも1つのコレクションを選択してください。",
+      "fixErrors": "オーバーレイのエラーを修正してください。",
+      "leaveWarning": "終了する前に変更を保存または破棄してください。",
+      "looksGreat": "素晴らしい！オーバーレイは完璧です。"
+    },
+    "errors": {
+      "textRequired": "テキストオーバーレイのテキストを入力してください。",
+      "imageRequired": "画像オーバーレイの画像を追加してください。"
+    },
+    "statusModal": {
+      "title": "ステータスを更新",
+      "body": "このオーバーレイのステータスを更新してもよろしいですか？",
+      "confirm": "ステータスを更新"
+    },
+    "publish": {
+      "banner": "オーバーレイが公開されました！",
+      "dismiss": "公開通知を閉じる",
+      "title": "オーバーレイはストアに表示されていますか？",
+      "helpText": "商品ページにオーバーレイが表示されない、または別の位置に表示したい場合は、お問い合わせください。",
+      "confirmYes": "はい、問題ありません！",
+      "confirmNo": "問題があります"
+    },
+    "form": {
+      "overlayGroupTitle": "オーバーレイグループ",
+      "groupNameLabel": "グループ名",
+      "groupNamePlaceholder": "例：ホリデーセール",
+      "selectSource": "対象を選択",
+      "allProducts": "すべての商品",
+      "allProductsBadge": "Plusプラン",
+      "products": "商品",
+      "selectProducts": "商品を選択",
+      "productsSelected": "{{count}} 件の商品を選択",
+      "productsSelectedPlural": "{{count}} 件の商品を選択",
+      "productListHeading": "商品",
+      "productListSelectedBadge": "{{count}} 件選択",
+      "searchProducts": "商品を検索",
+      "createOverlayTitle": "オーバーレイを作成",
+      "createTextOverlay": "テキストオーバーレイ",
+      "createImageOverlay": "画像オーバーレイ",
+      "productPreviewTooltip": "この商品をストアで表示",
+      "manageOverlay": "オーバーレイを管理",
+      "fontSettings": "フォント設定",
+      "alignmentSettings": "配置と位置",
+      "spacingSettings": "間隔設定",
+      "sectionSettings": "セクション設定",
+      "imageSettings": "画像設定",
+      "imageSpacingSettings": "間隔設定"
+    }
+  },
+  "settings": {
+    "title": "設定",
+    "language": {
+      "heading": "アプリの言語",
+      "description": "アプリのインターフェース言語を選択してください。",
+      "label": "言語",
+      "saved": "設定が保存されました",
+      "save": "保存"
+    }
+  },
+  "navigation": {
+    "home": "ホーム",
+    "settings": "設定",
+    "plan": "プラン"
+  },
+  "plans": {
+    "title": "プランと料金",
+    "current": "現在",
+    "upgrade": "アップグレード",
+    "downgrade": "ダウングレード",
+    "perMonth": "/ 月",
+    "unlimitedProducts": "アクティブな製品が無制限",
+    "limitedProducts": "最大 {{count}} 個のアクティブな製品",
+    "freeTrial": "{{count}} 日間の無料試用",
+    "noTrial": "試用期間なし",
+    "billingWarning": "請求状態は {{status}} です",
+    "errors": {
+      "somethingWrong": "問題が発生しました",
+      "patience": "現在対応中です。しばらくお待ちください"
+    },
+    "modal": {
+      "title": "プランの変更",
+      "confirm": "変更を確定",
+      "cancel": "キャンセル",
+      "switchingTo": "**{{title}}** に切り替えます。",
+      "limitWarning": "このプランは {{count}} 個の製品に制限されています。使用量がこの制限を超えると, 超過した製品は無効化されます（削除はされません）。"
+    }
+  }
+}

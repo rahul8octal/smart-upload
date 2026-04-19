@@ -1,0 +1,182 @@
+{
+  "common": {
+    "actions": {
+      "createOverlay": "Átfedés létrehozása",
+      "delete": "Törlés",
+      "cancel": "Mégse",
+      "enable": "Engedélyezés",
+      "disable": "Letiltás",
+      "previous": "Előző",
+      "next": "Következő",
+      "clearAll": "Összes törlése",
+      "upgradePlan": "Csomag frissítése",
+      "save": "Mentés",
+      "discard": "Elvetés",
+      "confirm": "Igen"
+    },
+    "table": {
+      "showing": "Megjelenítve",
+      "of": " / ",
+      "page": "Oldal",
+      "noResultsTitle": "Még nincsenek átfedések",
+      "noResultsDesc": "Hozzon létre új átfedéseket az üzletéhez"
+    },
+    "status": {
+      "active": "Aktív",
+      "inactive": "Inaktív",
+      "all": "Összes"
+    },
+    "targets": {
+      "allProducts": "Összes termék",
+      "products": "{{count}} termék",
+      "productsPlural": "{{count}} termék"
+    },
+    "resources": {
+      "overlay": "átfedés",
+      "overlays": "átfedések"
+    }
+  },
+  "home": {
+    "appSetupGuide": {
+      "title": "Alkalmazás beállítási útmutató",
+      "instructions": "Először engedélyezze az alkalmazást. Az áruház adminisztrációjában lépjen a Online áruház > Testreszabás > Téma beállítások > Alkalmazás beágyazások menüpontra, majd keresse meg az \"Easy Overlay Settings\" opciót és engedélyezze vagy tiltsa le."
+    },
+    "actions": {
+      "enableAppBlock": "Alkalmazásblokk engedélyezése",
+      "disableAppBlock": "Alkalmazásblokk letiltása"
+    },
+    "plan": {
+      "limitReachedTitle": "Az ingyenes csomag korlátja elérve",
+      "limitReachedDesc": "Elérte az ingyenes csomag korlátját (3 termék). Frissítsen Plus csomagra.",
+      "freeBadge": "Ingyenes csomag",
+      "freeLimit": "3 termékes korlát"
+    },
+    "filters": {
+      "searchPlaceholder": "Keresés csoportnév alapján",
+      "statusLabel": "Állapot"
+    },
+    "modal": {
+      "deleteTitle": "Átfedéscsoport törlése?",
+      "deleteBody": "Biztosan törli ezt az átfedéscsoportot? Ez a művelet nem vonható vissza."
+    },
+    "table": {
+      "heading": "Átfedések",
+      "group": "Csoport",
+      "targets": "Célok",
+      "status": "Állapot",
+      "action": "Művelet",
+      "editBlocked": "Frissítsen az összes termék átfedésének szerkesztéséhez",
+      "fallbackName": "Átfedés {{index}}"
+    }
+  },
+  "builder": {
+    "preview": {
+      "previewLanguage": "Előnézeti nyelv",
+      "selectProduct": "Termék kiválasztása előnézethez",
+      "placeholderAll": "Összes termék",
+      "placeholderSelected": "Kiválasztott termékek",
+      "loading": "Betöltés...",
+      "noProducts": "Nincs kiválasztott termék",
+      "note": "Csak előnézethez.",
+      "title": "Előnézet",
+      "tooltip": {
+        "saveFirst": "Mentse az átfedést az előnézethez",
+        "selectProduct": "Válasszon terméket az előnézethez",
+        "open": "Átfedés előnézete az áruházban",
+        "noHandle": "Nincs elérhető termékazonosító az előnézethez"
+      }
+    },
+    "toast": {
+      "somethingWrong": "Valami hiba történt",
+      "statusUpdated": "Állapot sikeresen frissítve",
+      "overlaySaved": "Átfedés sikeresen mentve",
+      "addOverlay": "Adjon hozzá legalább egy átfedést.",
+      "selectProduct": "Válasszon ki legalább egy terméket.",
+      "selectCollection": "Válasszon ki legalább egy kollekciót.",
+      "fixErrors": "Javítsa ki az átfedés hibáit.",
+      "leaveWarning": "Mentse vagy vesse el a módosításokat kilépés előtt.",
+      "looksGreat": "Nagyszerű! Az átfedés jól néz ki."
+    },
+    "errors": {
+      "textRequired": "Adjon meg szöveget a szöveges átfedéshez.",
+      "imageRequired": "Adjon hozzá képet a képes átfedéshez."
+    },
+    "statusModal": {
+      "title": "Állapot frissítése",
+      "body": "Biztosan frissíti ennek az átfedésnek az állapotát?",
+      "confirm": "Állapot frissítése"
+    },
+    "publish": {
+      "banner": "Átfedés közzétéve!",
+      "dismiss": "Átfedés közzétételi értesítés bezárása",
+      "title": "Látható az átfedés az áruházában?",
+      "helpText": "Ha az átfedés nem jelenik meg a termékoldalon, vagy más pozícióban szeretné, vegye fel velünk a kapcsolatot.",
+      "confirmYes": "Igen, tökéletes!",
+      "confirmNo": "Problémák vannak"
+    },
+    "form": {
+      "overlayGroupTitle": "Átfedéscsoport",
+      "groupNameLabel": "Csoport neve",
+      "groupNamePlaceholder": "pl. Ünnepi akció",
+      "selectSource": "Forrás kiválasztása",
+      "allProducts": "Összes termék",
+      "allProductsBadge": "Plus csomag",
+      "products": "Termékek",
+      "selectProducts": "Termékek kiválasztása",
+      "productsSelected": "{{count}} termék kiválasztva",
+      "productsSelectedPlural": "{{count}} termék kiválasztva",
+      "productListHeading": "Termék(ek)",
+      "productListSelectedBadge": "{{count}} kiválasztva",
+      "searchProducts": "Termékek keresése",
+      "createOverlayTitle": "Átfedés létrehozása",
+      "createTextOverlay": "Szöveges átfedés",
+      "createImageOverlay": "Képes átfedés",
+      "productPreviewTooltip": "Termék előnézete az áruházban",
+      "manageOverlay": "Átfedés kezelése",
+      "fontSettings": "Betűtípus beállítások",
+      "alignmentSettings": "Igazítás és pozíció",
+      "spacingSettings": "Térköz beállítások",
+      "sectionSettings": "Szakasz beállítások",
+      "imageSettings": "Kép beállítások",
+      "imageSpacingSettings": "Térköz beállítások"
+    }
+  },
+  "settings": {
+    "title": "Beállítások",
+    "language": {
+      "heading": "Alkalmazás nyelve",
+      "description": "Válassza ki az alkalmazás felületének nyelvét.",
+      "label": "Nyelv",
+      "saved": "Beállítások mentve",
+      "save": "Mentés"
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "settings": "Settings",
+    "plan": "Plan"
+  },
+  "plans": {
+    "title": "Plan & Pricing",
+    "current": "Current",
+    "upgrade": "Upgrade",
+    "downgrade": "Downgrade",
+    "perMonth": "/ month",
+    "unlimitedProducts": "Unlimited active products",
+    "limitedProducts": "Up to {{count}} active products",
+    "freeTrial": "{{count}}-day free trial",
+    "noTrial": "No trial period",
+    "billingWarning": "Your billing is {{status}}",
+    "errors": {
+      "somethingWrong": "Something is going wrong",
+      "patience": "We are working on it. Thanks for your patience"
+    },
+    "modal": {
+      "title": "Change Plan",
+      "confirm": "Confirm Change",
+      "cancel": "Cancel",
+      "switchingTo": "You are switching to **{{title}}**.",
+      "limitWarning": "This plan is limited to {{count}} products. If you usage exceeds this limit, excess products will be deactivated (but not deleted)."
+    }
+  }
+}

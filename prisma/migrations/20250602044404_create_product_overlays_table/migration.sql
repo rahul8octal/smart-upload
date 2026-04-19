@@ -1,0 +1,32 @@
+-- CreateTable
+CREATE TABLE `product_overlays` (
+    `id` INTEGER NOT NULL AUTO_INCREMENT,
+    `shop_id` VARCHAR(191) NOT NULL,
+    `product_id` VARCHAR(191) NOT NULL,
+    `type` ENUM('text', 'image') NOT NULL,
+    `image_url` VARCHAR(191) NULL,
+    `text` VARCHAR(191) NULL,
+    `font_family` VARCHAR(191) NULL,
+    `font_size` VARCHAR(191) NULL,
+    `font_color` VARCHAR(191) NULL,
+    `font_weight` VARCHAR(191) NULL,
+    `font_style` VARCHAR(191) NULL,
+    `bg_color` VARCHAR(191) NULL,
+    `opacity` VARCHAR(191) NULL,
+    `rotation` VARCHAR(191) NULL,
+    `padding_top` VARCHAR(191) NULL,
+    `padding_right` VARCHAR(191) NULL,
+    `padding_bottom` VARCHAR(191) NULL,
+    `padding_left` VARCHAR(191) NULL,
+    `text_align` ENUM('left', 'center', 'right') NULL,
+    `position` ENUM('top_left', 'top_center', 'top_right', 'middle_left', 'middle_center', 'middle_right', 'bottom_left', 'bottom_center', 'bottom_right') NULL,
+    `display_in` JSON NOT NULL,
+    `scale_in_collection` VARCHAR(191) NULL,
+    `scale_in_product` VARCHAR(191) NULL,
+    `scale_in_search` VARCHAR(191) NULL,
+    `status` VARCHAR(191) NULL DEFAULT 'active',
+    `created_at` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+    `updated_at` DATETIME(3) NOT NULL,
+
+    PRIMARY KEY (`id`)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
