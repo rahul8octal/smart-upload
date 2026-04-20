@@ -19,6 +19,7 @@ export const loader = async ({ request }) => {
     
     console.log("DEBUG: Final Callback baseUrl:", baseUrl);
     console.log("Exchanging code for tokens with baseUrl:", baseUrl);
+    
     const tokens = await getTokensFromCode(code, baseUrl);
     console.log("Tokens received, fetching user info...");
     const userInfo = await getUserInfo(tokens);

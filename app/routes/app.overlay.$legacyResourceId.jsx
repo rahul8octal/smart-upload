@@ -61,7 +61,7 @@ import prisma from "../db.server";
 // import path from "path";
 import { CommonModal } from "../component/CommonModal";
 import { OverlayPreviewModal } from "../component/OverlayPreviewModal";
-import { deleteFile, uploadFile } from '../helper.server';
+
 
 const fetchOverlays = async (legacyResourceId, shop, skip, perPage = 10) => {
   try {
@@ -209,6 +209,7 @@ export const action = async ({ request }) => {
               bucket:'new-easyoverlay-dev',
               key:`public-app/${shop}/${fileName}`,
           }
+           const { uploadFile } = await import('../helper.server');
            const awsFileUrl = await uploadFile(fileObj);
             if (awsFileUrl) {
                 // if (recordId){

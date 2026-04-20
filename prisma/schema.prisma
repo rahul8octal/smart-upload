@@ -171,3 +171,15 @@ enum OverlayScope {
   PRODUCT
   COLLECTION
 }
+
+model upload_jobs {
+  id             Int      @id @default(autoincrement())
+  shop           String
+  folder_name    String?
+  total_files    Int
+  processed_files Int     @default(0)
+  status         String   @default("running") // running, completed, stopped
+  logs           Json?    // Array of log objects: { time, message, type }
+  created_at     DateTime @default(now())
+  updated_at     DateTime @updatedAt
+}

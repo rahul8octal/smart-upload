@@ -5,10 +5,10 @@ export const matchImagesToProducts = async (images, products, matchingType, meta
   // Helper to strip common suffixes like _1, _2, -1, (1), etc.
   const getBaseFilename = (name) => {
     // Remove extension
-    let filename = name.split('.').slice(0, -1).join('.').toLowerCase();
+    let filename = name.split('.').slice(0, -1).join('.').toLowerCase().trim();
     // Remove suffixes like _1, -1, (1)
     // Match patterns: _[digit], -[digit], ([digit])
-    const base = filename.replace(/(_\d+|-?\d+| \(\d+\))$/, '');
+    const base = filename.replace(/(_\d+|-?\d+| \(\d+\))$/, '').trim();
     return { filename, base };
   };
 
@@ -19,17 +19,38 @@ export const matchImagesToProducts = async (images, products, matchingType, meta
     let matchedVariant = null;
 
     for (const product of products) {
-      // 1. Match by Title
+      const pTitle = product.title.toLowerCase().trim();
+
+      // 1. Match by Title (Product or Variant combinations)
       if (matchingType === 'title') {
-        if (product.title.toLowerCase() === filename || product.title.toLowerCase() === base) {
+        const normalizedFilename = filename.replace(/-/g, ' ').replace(/_/g, ' ');
+        const normalizedPTitle = pTitle.replace(/-/g, ' ').replace(/_/g, ' ');
+
+        // Check exact product title match
+        if (pTitle === filename || pTitle === base || normalizedPTitle === normalizedFilename) {
           matchedProduct = product;
+        }
+
+        // Check Variant title combinations (e.g. "Color ProductTitle" or "ProductTitle Color")
+        if (!matchedProduct) {
+          for (const variant of product.variants.nodes) {
+            const vTitle = variant.title.toLowerCase().trim();
+            const combo1 = `${vTitle} ${pTitle}`.replace(/-/g, ' ').replace(/_/g, ' ');
+            const combo2 = `${pTitle} ${vTitle}`.replace(/-/g, ' ').replace(/_/g, ' ');
+            
+            if (normalizedFilename === vTitle.replace(/-/g, ' ').replace(/_/g, ' ') || normalizedFilename === combo1 || normalizedFilename === combo2) {
+              matchedVariant = variant;
+              matchedProduct = product;
+              break;
+            }
+          }
         }
       }
 
       // 2. Match by SKU or Barcode in variants
       if (!matchedProduct && (matchingType === 'sku' || matchingType === 'barcode')) {
         for (const variant of product.variants.nodes) {
-          const identifier = (matchingType === 'sku' ? variant.sku : variant.barcode)?.toLowerCase();
+          const identifier = (matchingType === 'sku' ? variant.sku : variant.barcode)?.toLowerCase().trim();
           if (identifier && (identifier === filename || identifier === base)) {
             matchedVariant = variant;
             matchedProduct = product;
@@ -40,28 +61,26 @@ export const matchImagesToProducts = async (images, products, matchingType, meta
 
       // 3. Match by Metafield (if settings provided)
       if (!matchedProduct && matchingType === 'metafield' && metafieldSettings?.key) {
-        // Metafields are not fetched in bulk yet, this would need to be handled in fetchAllProducts
-        // For now, assume they might be in product.metafields if we update fetchAllProducts
         const metafields = product.metafields?.nodes || [];
         const target = metafields.find(m => `${m.namespace}.${m.key}` === metafieldSettings.key);
-        if (target && target.value.toLowerCase() === filename) {
+        if (target && target.value.toLowerCase().trim() === filename) {
           matchedProduct = product;
         }
 
         // Check variant metafields
         if (!matchedProduct) {
           for (const variant of product.variants.nodes) {
-            const vMetafields = variant.metafields?.nodes || [];
-            const vTarget = vMetafields.find(m => `${m.namespace}.${m.key}` === metafieldSettings.key);
-            if (vTarget && vTarget.value.toLowerCase() === filename) {
-              matchedVariant = variant;
-              matchedProduct = product;
-              break;
-            }
+             const vMetafields = variant.metafields?.nodes || [];
+             const vTarget = vMetafields.find(m => `${m.namespace}.${m.key}` === metafieldSettings.key);
+             if (vTarget && vTarget.value.toLowerCase().trim() === filename) {
+               matchedVariant = variant;
+               matchedProduct = product;
+               break;
+             }
           }
         }
       }
-
+      
       if (matchedProduct) break;
     }
 

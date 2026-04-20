@@ -28,7 +28,7 @@ import { authenticate } from "../shopify.server";
 import prisma from "../db.server";
 import { useI18n } from "../i18n";
 
-import { getOAuthClient, listFolders } from "../utils/google-drive.server";
+
 
 export const loader = async ({ request }) => {
   const { session } = await authenticate.admin(request);
@@ -74,8 +74,9 @@ export const action = async ({ request }) => {
     const url = new URL(request.url);
     const hostName = request.headers.get("X-Forwarded-Host") || request.headers.get("Host") || url.host;
     const protocol = request.headers.get("X-Forwarded-Proto") || "https";
-    const baseUrl = `${protocol}://${hostName}`;
+    const baseUrl = process.env.SHOPIFY_APP_URL || `${protocol}://${hostName}`;
     
+    const { getOAuthClient } = await import("../utils/google-drive.server");
     const oauth2Client = getOAuthClient(baseUrl);
     const authUrl = oauth2Client.generateAuthUrl({
       access_type: 'offline',
@@ -98,6 +99,7 @@ export const action = async ({ request }) => {
     if (!settings || !settings.google_access_token) {
       return { success: false, error: "Not connected" };
     }
+    const { listFolders } = await import("../utils/google-drive.server");
     const folders = await listFolders({
       access_token: settings.google_access_token,
       refresh_token: settings.google_refresh_token,
@@ -337,6 +339,7 @@ export default function CreateUpload() {
                         folderId: selectedFolderId,
                         matchingType,
                         replacementOption,
+                        folderName: folderOptions.find(f => f.value === selectedFolderId)?.label || "",
                       });
                       navigate(`/app/preview_match?${params.toString()}`);
                     }}

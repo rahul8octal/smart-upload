@@ -4,15 +4,22 @@ export const getOAuthClient = (baseUrl) => {
   const CLIENT_ID = process.env.GOOGLE_CLIENT_ID;
   const CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET;
   
-  // Prioritize dynamic baseUrl for development/multi-tunnel support
   let redirectUri = "";
-  if (baseUrl) {
-    redirectUri = `${baseUrl}/api/auth/google/callback`;
-  } else if (process.env.GOOGLE_REDIRECT_URI) {
+  
+  // Rule of thumb: if we have a GOOGLE_REDIRECT_URI in .env, use it as it's what the user likely configured in Google Console.
+  // Otherwise, use baseUrl or fallback to PUBLIC_HOST.
+  if (process.env.GOOGLE_REDIRECT_URI) {
     redirectUri = process.env.GOOGLE_REDIRECT_URI;
+  } else if (baseUrl) {
+    redirectUri = `${baseUrl}/api/auth/google/callback`;
   } else {
-    redirectUri = `${process.env.PUBLIC_HOST}/api/auth/google/callback`;
+    redirectUri = `${process.env.PUBLIC_HOST || process.env.SHOPIFY_APP_URL}/api/auth/google/callback`;
   }
+  
+  // Remove any double slashes except protocol
+  redirectUri = redirectUri.replace(/([^:]\/)\/+/g, "$1");
+
+  console.log("Using Redirect URI:", redirectUri);
   
   return new google.auth.OAuth2(CLIENT_ID, CLIENT_SECRET, redirectUri);
 };
@@ -70,8 +77,17 @@ export const listFiles = async (tokens, folderId) => {
   const drive = getDriveClient(tokens);
   const response = await drive.files.list({
     q: `'${folderId}' in parents and mimeType contains 'image/' and trashed = false`,
-    fields: 'files(id, name, thumbnailLink, webContentLink, size)',
+    fields: 'files(id, name, mimeType, thumbnailLink, webContentLink, size)',
     pageSize: 1000,
   });
   return response.data.files;
+};
+
+export const getFileBuffer = async (tokens, fileId) => {
+  const drive = getDriveClient(tokens);
+  const response = await drive.files.get(
+    { fileId, alt: 'media' },
+    { responseType: 'arraybuffer' }
+  );
+  return Buffer.from(response.data);
 };

@@ -39,15 +39,32 @@ export const loader = async ({ request }) => {
 
   const isConnected = !!(settings?.google_access_token || settings?.dropbox_access_token);
   
+  const allJobs = await prisma.upload_jobs.findMany({
+    where: { shop: session.shop }
+  });
+
+  const totalUploaded = allJobs.reduce((sum, job) => sum + (job.processed_files || 0), 0);
+  // Assuming each image upload saves roughly 2 minutes of manual work
+  const timeSaved = Math.max(0, (totalUploaded * 2) / 60).toFixed(1);
+
+  let completedSteps = 0;
+  if (isConnected) completedSteps++;
+  if (allJobs.length > 0) completedSteps++;
+  if (totalUploaded > 0) completedSteps++;
+
   return {
     settings: settings || { storage_service: 'google_drive' },
     activePlan,
     isConnected,
+    totalUploaded,
+    timeSaved: timeSaved === "0.0" ? "0" : timeSaved,
+    completedSteps,
+    hasJobs: allJobs.length > 0
   };
 };
 
 export default function Home() {
-  const { settings, activePlan, isConnected } = useLoaderData();
+  const { settings, activePlan, isConnected, totalUploaded, timeSaved, completedSteps, hasJobs } = useLoaderData();
   const { t } = useI18n();
   const navigate = useNavigate();
   const [setupStep, setSetupStep] = useState(isConnected ? 1 : 0);
@@ -77,7 +94,7 @@ export default function Home() {
                 {t("home.dashboard.stats.totalUploaded", "Total uploaded")}
               </Text>
               <Text variant="heading2xl" as="p" alignment="center">
-                0
+                {totalUploaded}
               </Text>
             </BlockStack>
           </Card>
@@ -87,7 +104,7 @@ export default function Home() {
                 {t("home.dashboard.stats.timeSaved", "Time saved")}
               </Text>
               <Text variant="heading2xl" as="p" alignment="center">
-                0 {t("home.dashboard.stats.hours", "hours")}
+                {timeSaved} {t("home.dashboard.stats.hours", "hours")}
               </Text>
             </BlockStack>
           </Card>
@@ -112,9 +129,9 @@ export default function Home() {
               
               <BlockStack gap="200">
                 <Text variant="bodySm" tone="subdued">
-                  {t("home.setupGuide.completed", "{{count}} / {{total}} completed", { count: isConnected ? 1 : 0, total: 3 })}
+                  {t("home.setupGuide.completed", "{{count}} / {{total}} completed", { count: completedSteps, total: 3 })}
                 </Text>
-                <ProgressBar progress={( (isConnected ? 1 : 0) / 3) * 100} size="small" />
+                <ProgressBar progress={(completedSteps / 3) * 100} size="small" />
               </BlockStack>
 
               <BlockStack gap="300">
@@ -176,15 +193,15 @@ export default function Home() {
                              width: '24px', 
                              height: '24px', 
                              borderRadius: '50%', 
-                             border: setupStep > 1 ? 'none' : '2px dashed #999', 
-                             background: setupStep > 1 ? '#008060' : 'transparent',
+                             border: hasJobs ? 'none' : '2px dashed #999', 
+                             background: hasJobs ? '#008060' : 'transparent',
                              color: 'white',
                              display: 'flex', 
                              alignItems: 'center', 
                              justifyContent: 'center',
                              fontSize: '12px'
                            }}>
-                             {setupStep > 1 ? "✓" : ""}
+                             {hasJobs ? "✓" : ""}
                            </div>
                            <Text variant="headingSm" tone={setupStep < 1 ? "subdued" : "active"}>
                              {t("home.setupGuide.steps.matchImages.title", "Match images")}
@@ -222,15 +239,15 @@ export default function Home() {
                              width: '24px', 
                              height: '24px', 
                              borderRadius: '50%', 
-                             border: setupStep > 2 ? 'none' : '2px dashed #999', 
-                             background: setupStep > 2 ? '#008060' : 'transparent',
+                             border: totalUploaded > 0 ? 'none' : '2px dashed #999', 
+                             background: totalUploaded > 0 ? '#008060' : 'transparent',
                              color: 'white',
                              display: 'flex', 
                              alignItems: 'center', 
                              justifyContent: 'center',
                              fontSize: '12px'
                            }}>
-                             {setupStep > 2 ? "✓" : ""}
+                             {totalUploaded > 0 ? "✓" : ""}
                            </div>
                            <Text variant="headingSm" tone={setupStep < 2 ? "subdued" : "active"}>
                              {t("home.setupGuide.steps.previewBulk.title", "Preview & bulk upload images")}
