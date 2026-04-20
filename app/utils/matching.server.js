@@ -1,34 +1,67 @@
-export const matchImagesToProducts = async (images, products, matchingType) => {
+export const matchImagesToProducts = async (images, products, matchingType, metafieldSettings = null) => {
   const matches = [];
   const unmatched = [];
 
+  // Helper to strip common suffixes like _1, _2, -1, (1), etc.
+  const getBaseFilename = (name) => {
+    // Remove extension
+    let filename = name.split('.').slice(0, -1).join('.').toLowerCase();
+    // Remove suffixes like _1, -1, (1)
+    // Match patterns: _[digit], -[digit], ([digit])
+    const base = filename.replace(/(_\d+|-?\d+| \(\d+\))$/, '');
+    return { filename, base };
+  };
+
   images.forEach(image => {
-    // Remove extension from filename for matching
-    const filename = image.name.split('.').slice(0, -1).join('.').toLowerCase();
-    
+    const { filename, base } = getBaseFilename(image.name);
+
     let matchedProduct = null;
     let matchedVariant = null;
 
     for (const product of products) {
-      if (matchingType === 'title' && product.title.toLowerCase() === filename) {
-        matchedProduct = product;
-        break;
-      }
-      
-      // Check variants
-      for (const variant of product.variants.nodes) {
-        if (matchingType === 'sku' && variant.sku?.toLowerCase() === filename) {
-          matchedVariant = variant;
+      // 1. Match by Title
+      if (matchingType === 'title') {
+        if (product.title.toLowerCase() === filename || product.title.toLowerCase() === base) {
           matchedProduct = product;
-          break;
-        }
-        if (matchingType === 'barcode' && variant.barcode?.toLowerCase() === filename) {
-          matchedVariant = variant;
-          matchedProduct = product;
-          break;
         }
       }
-      
+
+      // 2. Match by SKU or Barcode in variants
+      if (!matchedProduct && (matchingType === 'sku' || matchingType === 'barcode')) {
+        for (const variant of product.variants.nodes) {
+          const identifier = (matchingType === 'sku' ? variant.sku : variant.barcode)?.toLowerCase();
+          if (identifier && (identifier === filename || identifier === base)) {
+            matchedVariant = variant;
+            matchedProduct = product;
+            break;
+          }
+        }
+      }
+
+      // 3. Match by Metafield (if settings provided)
+      if (!matchedProduct && matchingType === 'metafield' && metafieldSettings?.key) {
+        // Metafields are not fetched in bulk yet, this would need to be handled in fetchAllProducts
+        // For now, assume they might be in product.metafields if we update fetchAllProducts
+        const metafields = product.metafields?.nodes || [];
+        const target = metafields.find(m => `${m.namespace}.${m.key}` === metafieldSettings.key);
+        if (target && target.value.toLowerCase() === filename) {
+          matchedProduct = product;
+        }
+
+        // Check variant metafields
+        if (!matchedProduct) {
+          for (const variant of product.variants.nodes) {
+            const vMetafields = variant.metafields?.nodes || [];
+            const vTarget = vMetafields.find(m => `${m.namespace}.${m.key}` === metafieldSettings.key);
+            if (vTarget && vTarget.value.toLowerCase() === filename) {
+              matchedVariant = variant;
+              matchedProduct = product;
+              break;
+            }
+          }
+        }
+      }
+
       if (matchedProduct) break;
     }
 
@@ -46,15 +79,17 @@ export const matchImagesToProducts = async (images, products, matchingType) => {
   return { matches, unmatched };
 };
 
-export const fetchAllProducts = async (admin) => {
+export const fetchAllProducts = async (admin, metafieldKey = null) => {
   let allProducts = [];
   let hasNextPage = true;
   let cursor = null;
 
+  const [namespace, key] = metafieldKey ? metafieldKey.split('.') : [null, null];
+
   while (hasNextPage) {
-    const response = await admin.graphql(
-      `query ($cursor: String) {
-        products(first: 250, after: $cursor) {
+    const query = `
+      query getProducts($cursor: String ${metafieldKey ? ', $namespace: String, $key: String' : ''}) {
+        products(first: 50, after: $cursor) {
           nodes {
             id
             title
@@ -68,21 +103,48 @@ export const fetchAllProducts = async (admin) => {
                 title
                 sku
                 barcode
+                ${metafieldKey ? `metafield(namespace: $namespace, key: $key) { id namespace key value }` : ''}
               }
             }
+            ${metafieldKey ? `metafield(namespace: $namespace, key: $key) { id namespace key value }` : ''}
           }
           pageInfo {
             hasNextPage
             endCursor
           }
         }
-      }`,
-      { variables: { cursor } }
-    );
+      }
+    `;
+
+    const variables = { cursor };
+    if (metafieldKey) {
+      variables.namespace = namespace;
+      variables.key = key;
+    }
+
+    const response = await admin.graphql(query, { variables });
 
     const data = await response.json();
+    if (data.errors) {
+      console.error("GraphQL errors fetching products:", data.errors);
+      hasNextPage = false;
+      continue;
+    }
     const products = data.data.products;
-    allProducts = [...allProducts, ...products.nodes];
+
+    // Normalize metafields into arrays for consistency with my logic above
+    const nodes = products.nodes.map(p => ({
+      ...p,
+      metafields: { nodes: p.metafield ? [p.metafield] : [] },
+      variants: {
+        nodes: p.variants.nodes.map(v => ({
+          ...v,
+          metafields: { nodes: v.metafield ? [v.metafield] : [] }
+        }))
+      }
+    }));
+
+    allProducts = [...allProducts, ...nodes];
     hasNextPage = products.pageInfo.hasNextPage;
     cursor = products.pageInfo.endCursor;
   }

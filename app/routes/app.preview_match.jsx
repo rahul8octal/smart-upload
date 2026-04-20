@@ -30,24 +30,67 @@ export const action = async ({ request }) => {
     let successCount = 0;
     let failCount = 0;
 
-    for (const match of matchesData) {
+    // Group matches by product to handle replacement once per product
+    const productGroups = {};
+    matchesData.forEach(match => {
+      const pid = match.product.id;
+      if (!productGroups[pid]) productGroups[pid] = { product: match.product, matches: [] };
+      productGroups[pid].matches.push(match);
+    });
+
+    for (const pid in productGroups) {
+      const { product, matches } = productGroups[pid];
+      
       try {
-        const { image, product, variant } = match;
-        
-        // 1. If replacement option is 'replace', delete existing images first
+        // 1. If replacement option is 'replace', delete all existing product images first
         if (replacementOption === 'replace') {
-           // This requires more complex logic to find and delete only for first image of product
-           // For simplicity in MVP, we skip deletion or do it once per product
+          // Fetch existing media IDs
+          const mediaResponse = await admin.graphql(
+            `query getProductMedia($id: ID!) {
+              product(id: $id) {
+                media(first: 50) {
+                  nodes {
+                    id
+                  }
+                }
+              }
+            }`,
+            { variables: { id: pid } }
+          );
+          const mediaResult = await mediaResponse.json();
+          const mediaIds = mediaResult.data?.product?.media?.nodes?.map(n => n.id) || [];
+          
+          if (mediaIds.length > 0) {
+            await admin.graphql(
+              `mutation productDeleteMedia($mediaIds: [ID!]!, $productId: ID!) {
+                productDeleteMedia(mediaIds: $mediaIds, productId: $productId) {
+                  deletedMediaIds
+                  userErrors {
+                    field
+                    message
+                  }
+                }
+              }`,
+              { variables: { mediaIds, productId: pid } }
+            );
+          }
         }
 
-        // 2. Add image to Shopify Product
+        // 2. Add new images to Shopify Product in one bulk operation
+        // Sort matches by filename to ensure SKU_1, SKU_2 order
+        const sortedMatches = matches.sort((a, b) => a.image.name.localeCompare(b.image.name, undefined, { numeric: true, sensitivity: 'base' }));
+        
+        const mediaInput = sortedMatches.map(match => ({
+          alt: match.image.name,
+          mediaContentType: "IMAGE",
+          originalSource: match.image.webContentLink.replace('&export=download', ''),
+        }));
+
         const response = await admin.graphql(
           `mutation productCreateMedia($media: [CreateMediaInput!]!, $productId: ID!) {
             productCreateMedia(media: $media, productId: $productId) {
               media {
                 id
-                alt
-                status
               }
               userErrors {
                 field
@@ -57,27 +100,23 @@ export const action = async ({ request }) => {
           }`,
           {
             variables: {
-              productId: product.id,
-              media: [
-                {
-                  alt: image.name,
-                  mediaContentType: "IMAGE",
-                  originalSource: image.webContentLink.replace('&export=download', ''), // Ensure it's a direct link if possible
-                },
-              ],
+              productId: pid,
+              media: mediaInput,
             },
           }
         );
 
         const result = await response.json();
         if (result.data?.productCreateMedia?.media?.length > 0) {
-          successCount++;
-        } else {
-          failCount++;
+          successCount += result.data.productCreateMedia.media.length;
+        }
+        if (result.data?.productCreateMedia?.userErrors?.length > 0) {
+          console.error("User errors adding media for", pid, result.data.productCreateMedia.userErrors);
+          failCount += result.data.productCreateMedia.userErrors.length;
         }
       } catch (err) {
-        console.error("Upload error for match:", err);
-        failCount++;
+        console.error("Detailed upload error for product:", pid, err);
+        failCount += matches.length;
       }
     }
 
@@ -111,9 +150,14 @@ export const loader = async ({ request }) => {
     folderId
   );
 
-  const products = await fetchAllProducts(admin);
+  const products = await fetchAllProducts(admin, settings.metafield_key);
 
-  const { matches, unmatched } = await matchImagesToProducts(images, products, matchingType);
+  const { matches, unmatched } = await matchImagesToProducts(
+    images, 
+    products, 
+    matchingType, 
+    { key: settings.metafield_key, type: settings.metafield_type }
+  );
 
   return { matches, unmatched, folderId, matchingType, replacementOption };
 };
@@ -181,6 +225,7 @@ export default function PreviewMatch() {
             headings={[
               { title: "Image" },
               { title: "Matched File Name" },
+              { title: "Size" },
               { title: "Matched Product" },
               { title: "Status" },
             ]}
@@ -195,6 +240,16 @@ export default function PreviewMatch() {
                   <Text variant="bodyMd" fontWeight="bold">
                     {image.name}
                   </Text>
+                </IndexTable.Cell>
+                <IndexTable.Cell>
+                  {image.size ? (
+                    <BlockStack gap="100">
+                      <Text variant="bodySm">{(image.size / (1024 * 1024)).toFixed(2)} MB</Text>
+                      {parseInt(image.size) > 20 * 1024 * 1024 && (
+                        <Badge tone="warning">Too large</Badge>
+                      )}
+                    </BlockStack>
+                  ) : "-"}
                 </IndexTable.Cell>
                 <IndexTable.Cell>
                   <BlockStack gap="100">

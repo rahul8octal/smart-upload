@@ -70,7 +70,7 @@ export const listFiles = async (tokens, folderId) => {
   const drive = getDriveClient(tokens);
   const response = await drive.files.list({
     q: `'${folderId}' in parents and mimeType contains 'image/' and trashed = false`,
-    fields: 'files(id, name, thumbnailLink, webContentLink)',
+    fields: 'files(id, name, thumbnailLink, webContentLink, size)',
     pageSize: 1000,
   });
   return response.data.files;

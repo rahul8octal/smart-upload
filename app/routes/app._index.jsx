@@ -37,37 +37,41 @@ export const loader = async ({ request }) => {
     },
   });
 
+  const isConnected = !!(settings?.google_access_token || settings?.dropbox_access_token);
+  
   return {
     settings: settings || { storage_service: 'google_drive' },
     activePlan,
+    isConnected,
   };
 };
 
 export default function Home() {
-  const { settings, activePlan } = useLoaderData();
+  const { settings, activePlan, isConnected } = useLoaderData();
   const { t } = useI18n();
   const navigate = useNavigate();
-  const [setupStep, setSetupStep] = useState(0);
+  const [setupStep, setSetupStep] = useState(isConnected ? 1 : 0);
 
   return (
     <Page>
-      <BlockStack gap="500">
-        <InlineStack align="space-between" blockAlign="end">
-          <BlockStack gap="200">
-            <Text variant="headingXl" as="h1">
-              {t("home.dashboard.title", "Dashboard")}
-            </Text>
-            <Text variant="bodyMd" tone="subdued">
-              {t("home.dashboard.description", "You can match product images with products or variants based on SKU, barcode, or title, and upload them from Google Drive or Dropbox.")}
-            </Text>
-          </BlockStack>
+      <BlockStack gap="400">
+        <InlineStack align="space-between" blockAlign="center">
+          <Text variant="headingXl" as="h1">
+            {t("home.dashboard.title", "Dashboard")}
+          </Text>
           <Button variant="primary" onClick={() => navigate("/app/create_upload")}>
             {t("home.dashboard.createNewUpload", "Create new upload")}
           </Button>
         </InlineStack>
 
+        <Box paddingBlockEnd="200">
+          <Text variant="bodyMd" tone="subdued">
+            {t("home.dashboard.description", "You can match product images with products or variants based on SKU, barcode, or title, and upload them from Google Drive or Dropbox.")}
+          </Text>
+        </Box>
+
         <InlineGrid columns={2} gap="400">
-          <Card padding="600">
+          <Card padding="400">
             <BlockStack gap="200" align="center">
               <Text variant="headingMd" as="h2" alignment="center">
                 {t("home.dashboard.stats.totalUploaded", "Total uploaded")}
@@ -90,8 +94,8 @@ export default function Home() {
         </InlineGrid>
 
         <Card padding="0">
-          <Box padding="500">
-            <BlockStack gap="400">
+          <Box padding="400">
+            <BlockStack gap="300">
               <InlineStack align="space-between">
                 <Text variant="headingMd" as="h2">
                   {t("home.setupGuide.title", "Setup guide")}
@@ -108,75 +112,147 @@ export default function Home() {
               
               <BlockStack gap="200">
                 <Text variant="bodySm" tone="subdued">
-                  {t("home.setupGuide.completed", "{{count}} / {{total}} completed", { count: setupStep, total: 3 })}
+                  {t("home.setupGuide.completed", "{{count}} / {{total}} completed", { count: isConnected ? 1 : 0, total: 3 })}
                 </Text>
-                <ProgressBar progress={(setupStep / 3) * 100} size="small" />
+                <ProgressBar progress={( (isConnected ? 1 : 0) / 3) * 100} size="small" />
               </BlockStack>
 
-              <BlockStack gap="400">
+              <BlockStack gap="300">
                 {/* Step 1: Connect Source */}
-                <Box padding="400" background={setupStep === 0 ? "bg-surface-secondary" : "transparent"} borderRadius="200">
-                   <BlockStack gap="300">
-                     <InlineStack gap="300" blockAlign="center">
-                        <div style={{ 
-                          width: '24px', 
-                          height: '24px', 
-                          borderRadius: '50%', 
-                          border: '2px dashed #999', 
-                          display: 'flex', 
-                          alignItems: 'center', 
-                          justifyContent: 'center',
-                          fontSize: '12px'
-                        }}>
-                          {setupStep > 0 ? "✓" : ""}
-                        </div>
-                        <Text variant="headingSm">
-                          {t("home.setupGuide.steps.connectSource.title", "Connect image source")}
-                        </Text>
-                     </InlineStack>
+                <Box padding="300" background={setupStep === 0 ? "bg-surface-secondary" : "transparent"} borderRadius="200">
+                   <BlockStack gap="200">
+                     <div onClick={() => setSetupStep(0)} style={{ cursor: 'pointer' }}>
+                        <InlineStack gap="300" blockAlign="center">
+                           <div style={{ 
+                             width: '24px', 
+                             height: '24px', 
+                             borderRadius: '50%', 
+                             border: isConnected ? 'none' : '2px dashed #999', 
+                             background: isConnected ? '#008060' : 'transparent',
+                             color: 'white',
+                             display: 'flex', 
+                             alignItems: 'center', 
+                             justifyContent: 'center',
+                             fontSize: '12px'
+                           }}>
+                             {isConnected ? "✓" : ""}
+                           </div>
+                           <Text variant="headingSm">
+                             {t("home.setupGuide.steps.connectSource.title", "Connect image source")}
+                           </Text>
+                        </InlineStack>
+                     </div>
                      
                      {setupStep === 0 && (
-                       <Box paddingInlineStart="900">
-                          <BlockStack gap="300">
-                            <Text variant="bodyMd" tone="subdued">
-                              {t("home.setupGuide.steps.connectSource.description", "You can use Google Drive or Dropbox as your image source. Google Drive is selected by default.")}
-                            </Text>
-                            <InlineStack gap="200">
-                              <Button variant="primary" onClick={() => navigate("/app/create_upload")}>
-                                {settings.storage_service === 'dropbox' ? t("home.setupGuide.steps.connectSource.connectDropbox", "Connect Dropbox") : t("home.setupGuide.steps.connectSource.connectGoogle", "Connect Google Drive")}
-                              </Button>
-                              <Button onClick={() => navigate("/app/setting")}>
-                                {t("home.setupGuide.steps.connectSource.changeSource", "Change source")}
-                              </Button>
-                            </InlineStack>
-                          </BlockStack>
-                       </Box>
+                        <Box paddingInlineStart="900" paddingBlockEnd="200">
+                           <BlockStack gap="300">
+                             <Text variant="bodyMd" tone="subdued">
+                               {t("home.setupGuide.steps.connectSource.description", "You can use Google Drive or Dropbox as your image source. Google Drive is selected by default.")}
+                             </Text>
+                             <InlineStack gap="200">
+                               <Button variant="primary" onClick={(e) => { e.stopPropagation(); navigate("/app/create_upload"); }}>
+                                 {settings.storage_service === 'dropbox' ? t("home.setupGuide.steps.connectSource.connectDropbox", "Connect Dropbox") : t("home.setupGuide.steps.connectSource.connectGoogle", "Connect Google Drive")}
+                               </Button>
+                               <Button onClick={(e) => { e.stopPropagation(); navigate("/app/setting"); }}>
+                                 {t("home.setupGuide.steps.connectSource.changeSource", "Change source")}
+                               </Button>
+                             </InlineStack>
+                           </BlockStack>
+                        </Box>
                      )}
                    </BlockStack>
                 </Box>
 
                 {/* Step 2: Match Images */}
-                <Box padding="400" background={setupStep === 1 ? "bg-surface-secondary" : "transparent"} borderRadius="200">
-                   <InlineStack gap="300" blockAlign="center">
-                      <div style={{ width: '24px', height: '24px', borderRadius: '50%', border: '2px dashed #999', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        {setupStep > 1 ? "✓" : ""}
+                <Box 
+                  padding="300" 
+                  background={setupStep === 1 ? "bg-surface-secondary" : "transparent"} 
+                  borderRadius="200"
+                >
+                   <BlockStack gap="200">
+                      <div onClick={() => setSetupStep(1)} style={{ cursor: 'pointer' }}>
+                        <InlineStack gap="300" blockAlign="center">
+                           <div style={{ 
+                             width: '24px', 
+                             height: '24px', 
+                             borderRadius: '50%', 
+                             border: setupStep > 1 ? 'none' : '2px dashed #999', 
+                             background: setupStep > 1 ? '#008060' : 'transparent',
+                             color: 'white',
+                             display: 'flex', 
+                             alignItems: 'center', 
+                             justifyContent: 'center',
+                             fontSize: '12px'
+                           }}>
+                             {setupStep > 1 ? "✓" : ""}
+                           </div>
+                           <Text variant="headingSm" tone={setupStep < 1 ? "subdued" : "active"}>
+                             {t("home.setupGuide.steps.matchImages.title", "Match images")}
+                           </Text>
+                        </InlineStack>
                       </div>
-                      <Text variant="headingSm" tone={setupStep < 1 ? "subdued" : "active"}>
-                        {t("home.setupGuide.steps.matchImages.title", "Match Images")}
-                      </Text>
-                   </InlineStack>
+                      
+                      {setupStep === 1 && (
+                        <Box paddingInlineStart="900" paddingBlockEnd="200">
+                           <BlockStack gap="300">
+                             <Text variant="bodyMd" tone="subdued">
+                               {t("home.setupGuide.steps.matchImages.description", "Match images with products or variants based on SKU, barcode, title or metafields.")}
+                             </Text>
+                             <div style={{ maxWidth: '200px' }}>
+                               <Button variant="primary" onClick={(e) => { e.stopPropagation(); navigate("/app/create_upload"); }} fullWidth>
+                                 {t("home.setupGuide.steps.matchImages.action", "Start matching")}
+                               </Button>
+                             </div>
+                           </BlockStack>
+                        </Box>
+                      )}
+                   </BlockStack>
                 </Box>
 
                 {/* Step 3: Preview */}
-                <Box padding="400" background={setupStep === 2 ? "bg-surface-secondary" : "transparent"} borderRadius="200">
-                   <InlineStack gap="300" blockAlign="center">
-                      <div style={{ width: '24px', height: '24px', borderRadius: '50%', border: '2px dashed #999', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        {setupStep > 2 ? "✓" : ""}
+                <Box 
+                  padding="300" 
+                  background={setupStep === 2 ? "bg-surface-secondary" : "transparent"} 
+                  borderRadius="200"
+                >
+                   <BlockStack gap="200">
+                      <div onClick={() => setSetupStep(2)} style={{ cursor: 'pointer' }}>
+                        <InlineStack gap="300" blockAlign="center">
+                           <div style={{ 
+                             width: '24px', 
+                             height: '24px', 
+                             borderRadius: '50%', 
+                             border: setupStep > 2 ? 'none' : '2px dashed #999', 
+                             background: setupStep > 2 ? '#008060' : 'transparent',
+                             color: 'white',
+                             display: 'flex', 
+                             alignItems: 'center', 
+                             justifyContent: 'center',
+                             fontSize: '12px'
+                           }}>
+                             {setupStep > 2 ? "✓" : ""}
+                           </div>
+                           <Text variant="headingSm" tone={setupStep < 2 ? "subdued" : "active"}>
+                             {t("home.setupGuide.steps.previewBulk.title", "Preview & bulk upload images")}
+                           </Text>
+                        </InlineStack>
                       </div>
-                      <Text variant="headingSm" tone={setupStep < 2 ? "subdued" : "active"}>
-                        {t("home.setupGuide.steps.previewBulk.title", "Preview & bulk upload images")}
-                      </Text>
-                   </InlineStack>
+                      
+                      {setupStep === 2 && (
+                        <Box paddingInlineStart="900" paddingBlockEnd="200">
+                           <BlockStack gap="300">
+                             <Text variant="bodyMd" tone="subdued">
+                               {t("home.setupGuide.steps.previewBulk.description", "Review your matching results and bulk upload images to your Shopify products.")}
+                             </Text>
+                             <div style={{ maxWidth: '200px' }}>
+                               <Button variant="primary" onClick={(e) => { e.stopPropagation(); navigate("/app/create_upload"); }} fullWidth>
+                                 {t("home.setupGuide.steps.previewBulk.action", "Preview results")}
+                               </Button>
+                             </div>
+                           </BlockStack>
+                        </Box>
+                      )}
+                   </BlockStack>
                 </Box>
               </BlockStack>
             </BlockStack>

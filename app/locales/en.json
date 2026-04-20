@@ -60,10 +60,14 @@
           "changeSource": "Change source"
         },
         "matchImages": {
-          "title": "Match Images"
+          "title": "Match images",
+          "description": "Match images with products or variants based on SKU, barcode, title or metafields.",
+          "action": "Start matching"
         },
         "previewBulk": {
-          "title": "Preview & bulk upload images"
+          "title": "Preview & bulk upload images",
+          "description": "Review your matching results and bulk upload images to your Shopify products.",
+          "action": "Preview results"
         }
       }
     }
